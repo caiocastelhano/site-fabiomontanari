@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fabio Montanari – Official Website
 
-## Getting Started
+This is the source code for the official website of Fabio Montanari — a brazilian director, screenwriter, and educator.
 
-First, run the development server:
+## 🧭 Structure
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The site is developed as a Next.js application with:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Home**: combines the main sections (About, Projects, Consulting, Teaching, and Contact)
+- **Internal pages**:  
+  - `/about`  
+  - `/projects`  
+  - `/consulting`  
+  - `/teaching`
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🛠️ Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [Next.js](https://nextjs.org/) with App Router
+- React
+- CSS Modules
+- Hosted on [Netlify](https://www.netlify.com/) (final version) and [Vercel](https://vercel.com/) (temporary development)
 
-## Learn More
+## 🚧 Status
 
-To learn more about Next.js, take a look at the following resources:
+The website is currently under development.  
+You can follow the progress here: [https://site-fabiomontanari.vercel.app/](https://site-fabiomontanari.vercel.app/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 👨‍💻 Developer
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Developed by Caio Castelhano – front-end developer based in Brazil.  
+Learn more about my work at [https://www.caiocastelhano.com.br/](https://www.caiocastelhano.com.br/)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
