@@ -7,11 +7,13 @@ import { useLanguage } from '../context/LanguageContext';
 export default function Footer() {
   const { language } = useLanguage();
 
+  const currentYear = new Date().getFullYear();
+
   const footerText = {
     en: {
       line: (
         <>
-          © 2025 Fabio Montanari. All rights reserved | Developed by{' '}
+          © {currentYear} Fabio Montanari. All rights reserved | Developed by{' '}
           <a
             href="https://www.caiocastelhano.com.br/"
             target="_blank"
@@ -26,7 +28,7 @@ export default function Footer() {
     pt: {
       line: (
         <>
-          © 2025 Fabio Montanari. Todos os direitos reservados | Desenvolvido por{' '}
+          © {currentYear} Fabio Montanari. Todos os direitos reservados | Desenvolvido por{' '}
           <a
             href="https://www.caiocastelhano.com.br/"
             target="_blank"
