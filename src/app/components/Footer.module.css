@@ -1,3 +1,4 @@
+/* DESKTOP */
 .footer {
   width: 100%;
   padding: 24px;
@@ -16,4 +17,20 @@
 
 .footer a:hover {
   color: #222;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .footer {
+    padding: 16px;
+    font-size: 0.8rem;
+  }
+}
+
+/* TABLET */
+@media (max-width: 900px) and (min-width: 601px) {
+  .footer {
+    padding: 20px;
+    font-size: 0.85rem;
+  }
 }

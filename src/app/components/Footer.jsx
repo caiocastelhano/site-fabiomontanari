@@ -13,11 +13,12 @@ export default function Footer() {
     en: {
       line: (
         <>
-          © {currentYear} Fabio Montanari. All rights reserved | Developed by{' '}
+          © {currentYear} Fabio Montanari. All rights reserved. Developed by{' '}
           <a
             href="https://www.caiocastelhano.com.br/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Caio Castelhano website (opens in new tab)"
           >
             Caio Castelhano
           </a>
@@ -28,11 +29,12 @@ export default function Footer() {
     pt: {
       line: (
         <>
-          © {currentYear} Fabio Montanari. Todos os direitos reservados | Desenvolvido por{' '}
+          © {currentYear} Fabio Montanari. Todos os direitos reservados. Desenvolvido por{' '}
           <a
             href="https://www.caiocastelhano.com.br/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Website de Caio Castelhano (abre em nova aba)"
           >
             Caio Castelhano
           </a>
