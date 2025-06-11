@@ -64,12 +64,13 @@ export default function Header() {
           className={styles.menuWrapper}
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
+          aria-expanded={menuOpen}
         >
           ☰
         </button>
 
         {menuOpen && (
-          <nav className={styles.navMenu}>
+          <nav className={styles.navMenu} role="navigation" tabIndex="-1">
             <ul>
               {navItems[language].map((label, index) => (
                 <li key={label}>
