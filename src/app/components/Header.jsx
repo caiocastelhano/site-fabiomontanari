@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styles from './Header.module.css';
 import { useLanguage } from '../context/LanguageContext';
 import Link from 'next/link';
@@ -16,6 +16,8 @@ export default function Header() {
   const { language, toggleLanguage } = useLanguage();
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const wrapperRef = useRef(null); // referencia o bloco inteiro (menu + botão)
+
   const navItems = {
     en: ['Consulting', 'Teaching', 'Projects'],
     pt: ['Consultoria', 'Ensino', 'Projetos'],
@@ -23,13 +25,26 @@ export default function Header() {
 
   const navLinks = ['/consulting', '/teaching', '/projects'];
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return (
     <header className={styles.header}>
       <div className={styles.left}>
         <span className={`${styles.siteName} ${cinzel.className}`}>Fabio Montanari</span>
       </div>
 
-      <div className={styles.right}>
+      <div className={styles.right} ref={wrapperRef}>
         <div className={styles.langWrapper}>
           <button
             onClick={() => toggleLanguage('en')}
