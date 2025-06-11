@@ -4,6 +4,13 @@ import React, { useState } from 'react';
 import styles from './Header.module.css';
 import { useLanguage } from '../context/LanguageContext';
 import Link from 'next/link';
+import { Cinzel } from 'next/font/google';
+
+const cinzel = Cinzel({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  display: 'swap',
+});
 
 export default function Header() {
   const { language, toggleLanguage } = useLanguage();
@@ -19,20 +26,25 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.left}>
-        <span className={styles.siteName}>Fabio Montanari</span>
+        <span className={`${styles.siteName} ${cinzel.className}`}>Fabio Montanari</span>
       </div>
 
       <div className={styles.right}>
-        {/* Botão de idioma com bandeiras */}
-        <button onClick={toggleLanguage} className={styles.langToggle}>
-          {language === 'en' ? (
-            <img src="/flags/br.png" alt="Mudar para português" />
-          ) : (
-            <img src="/flags/us.png" alt="Switch to English" />
-          )}
-        </button>
+        <div className={styles.langWrapper}>
+          <button
+            onClick={() => toggleLanguage('en')}
+            className={`${styles.langButton} ${language === 'en' ? styles.active : ''}`}
+          >
+            <img src="/flags/us.png" alt="English" />
+          </button>
+          <button
+            onClick={() => toggleLanguage('pt')}
+            className={`${styles.langButton} ${language === 'pt' ? styles.active : ''}`}
+          >
+            <img src="/flags/br.png" alt="Português" />
+          </button>
+        </div>
 
-        {/* Menu sanduíche */}
         <button
           className={styles.menuWrapper}
           onClick={() => setMenuOpen(!menuOpen)}
