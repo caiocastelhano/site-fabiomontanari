@@ -16,7 +16,7 @@ export default function Header() {
   const { language, toggleLanguage } = useLanguage();
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const wrapperRef = useRef(null); // referencia o bloco inteiro (menu + botão)
+  const wrapperRef = useRef(null);
 
   const navItems = {
     en: ['About', 'Consulting', 'Teaching', 'Projects'],
@@ -41,7 +41,9 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.left}>
-        <span className={`${styles.siteName} ${cinzel.className}`}>Fabio Montanari</span>
+        <Link href="/" className={`${styles.siteName} ${cinzel.className}`} title="Go to homepage">
+          Fabio Montanari
+        </Link>
       </div>
 
       <div className={styles.right} ref={wrapperRef}>
