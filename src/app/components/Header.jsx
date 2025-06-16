@@ -52,13 +52,13 @@ export default function Header() {
             onClick={() => toggleLanguage('en')}
             className={`${styles.langButton} ${language === 'en' ? styles.active : ''}`}
           >
-            <img src="/flags/us.png" alt="English" />
+            <img src="/flags/us.svg" alt="English" />
           </button>
           <button
             onClick={() => toggleLanguage('pt')}
             className={`${styles.langButton} ${language === 'pt' ? styles.active : ''}`}
           >
-            <img src="/flags/br.png" alt="Português" />
+            <img src="/flags/br.svg" alt="Português" />
           </button>
         </div>
 

@@ -34,29 +34,24 @@
 }
 
 .langButton {
-  background: none;
+  background: transparent;
   border: none;
-  cursor: pointer;
   padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
+  cursor: pointer;
   opacity: 0.5;
-  transition: opacity 0.3s ease;
-}
-
-.langButton img {
-  width: 100%;
-  height: 100%;
-  border-radius: 4px;
-  object-fit: cover;
+  transition: opacity 0.3s ease, transform 0.2s ease;
 }
 
 .langButton:hover {
-  opacity: 0.8;
+  opacity: 1;
+  transform: scale(1.05);
 }
+
+.langButton img {
+  width: 24px;
+  height: 24px;
+}
+
 
 .active {
   opacity: 1;
@@ -72,7 +67,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 3px;
+  padding-bottom: 6px;
 }
 
 .navMenu {
