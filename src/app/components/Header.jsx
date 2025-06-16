@@ -19,11 +19,11 @@ export default function Header() {
   const wrapperRef = useRef(null); // referencia o bloco inteiro (menu + botão)
 
   const navItems = {
-    en: ['Consulting', 'Teaching', 'Projects'],
-    pt: ['Consultoria', 'Ensino', 'Projetos'],
+    en: ['About', 'Consulting', 'Teaching', 'Projects'],
+    pt: ['Sobre', 'Consultoria', 'Ensino', 'Projetos'],
   };
 
-  const navLinks = ['/consulting', '/teaching', '/projects'];
+  const navLinks = ['/about', '/consulting', '/teaching', '/projects'];
 
   useEffect(() => {
     const handleClickOutside = (event) => {
