@@ -22,58 +22,6 @@ export default function Home() {
           Follow the development of the site.
         </p>
 
-        <p className={styles.subtitle}>
-          This website is currently under construction.
-        </p>
-
-        <p className={styles.info}>
-          Here you will soon find information about his artistic projects,
-          consultancy work, and educational practice.
-        </p>
-
-        <p className={styles.note}>
-          Follow the development of the site.
-        </p>
-
-        <p className={styles.subtitle}>
-          This website is currently under construction.
-        </p>
-
-        <p className={styles.info}>
-          Here you will soon find information about his artistic projects,
-          consultancy work, and educational practice.
-        </p>
-
-        <p className={styles.note}>
-          Follow the development of the site.
-        </p>
-
-        <p className={styles.subtitle}>
-          This website is currently under construction.
-        </p>
-
-        <p className={styles.info}>
-          Here you will soon find information about his artistic projects,
-          consultancy work, and educational practice.
-        </p>
-
-        <p className={styles.note}>
-          Follow the development of the site.
-        </p>
-
-        <p className={styles.subtitle}>
-          This website is currently under construction.
-        </p>
-
-        <p className={styles.info}>
-          Here you will soon find information about his artistic projects,
-          consultancy work, and educational practice.
-        </p>
-
-        <p className={styles.note}>
-          Follow the development of the site.
-        </p>
-
       </main>
 
       <Footer />
