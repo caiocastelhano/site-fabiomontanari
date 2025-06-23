@@ -19,11 +19,11 @@ export default function Header() {
   const wrapperRef = useRef(null);
 
   const navItems = {
-    en: ['About', 'Teaching & Research', 'Development & Consulting', 'Works'],
-    pt: ['Sobre', 'Ensino e Pesquisa', 'Desenvolvimento e Consultoria', 'Trabalhos'],
+    en: ['About', 'Development & Consulting', 'Teaching & Research', 'Works'],
+    pt: ['Sobre', 'Desenvolvimento e Consultoria', 'Ensino e Pesquisa', 'Trabalhos'],
   };
 
-  const navLinks = ['/about', '/teaching-research', '/development-consulting', '/works'];
+  const navLinks = ['/about', '/development-consulting', '/teaching-research', '/works'];
 
   useEffect(() => {
     const handleClickOutside = (event) => {
