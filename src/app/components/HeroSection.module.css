@@ -1,0 +1,50 @@
+.heroSection {
+  position: relative;
+  height: 100vh;
+  background-image: url('/images/home/hero-collage-mosaic.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 60px 20px;
+  border-radius: 8px;
+  max-width: 1000px;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.paragraph {
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.sectionLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.link {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: opacity 0.2s ease;
+}
+
+.link:hover {
+  opacity: 0.7;
+}

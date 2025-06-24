@@ -1,0 +1,48 @@
+.contactSection {
+  position: relative;
+  background-image: url('/images/home/contact-background.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 120px 24px;
+  text-align: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.paragraph {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.emails {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.emailLine {
+  font-size: 1rem;
+}
+
+.emailLink {
+  color: white;
+  text-decoration: underline;
+}
+
+.emailLink:hover {
+  text-decoration: none;
+}
