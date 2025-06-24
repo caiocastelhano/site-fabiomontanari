@@ -27,34 +27,24 @@
   gap: 12px;
 }
 
-.langWrapper {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-
 .langButton {
   background: transparent;
   border: none;
-  padding: 0;
+  font-weight: bold;
+  font-size: 0.9rem;
   cursor: pointer;
-  opacity: 0.5;
-  transition: opacity 0.3s ease, transform 0.2s ease;
+  margin: 0 0.3rem;
+  color: #333;
+  padding: 0.4rem 0.6rem;
+  transition: color 0.3s ease;
 }
 
 .langButton:hover {
-  opacity: 1;
-  transform: scale(1.05);
+  color: #000;
 }
-
-.langButton img {
-  width: 24px;
-  height: 24px;
-}
-
 
 .active {
-  opacity: 1;
+  text-decoration: underline;
 }
 
 .menuWrapper {

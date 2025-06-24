@@ -19,11 +19,11 @@ export default function Header() {
   const wrapperRef = useRef(null);
 
   const navItems = {
-    en: ['About', 'Development & Consulting', 'Teaching & Research', 'Works'],
-    pt: ['Sobre', 'Desenvolvimento e Consultoria', 'Ensino e Pesquisa', 'Trabalhos'],
+    en: ['Works', 'Teaching & Research', 'Development & Consulting', 'About'],
+    pt: ['Trabalhos', 'Ensino & Pesquisa', 'Desenvolvimento & Consultoria', 'Sobre'],
   };
 
-  const navLinks = ['/about', '/development-consulting', '/teaching-research', '/works'];
+  const navLinks = ['/works', '/teaching-research', '/development-consulting', '/about'];
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -52,13 +52,13 @@ export default function Header() {
             onClick={() => toggleLanguage('en')}
             className={`${styles.langButton} ${language === 'en' ? styles.active : ''}`}
           >
-            <img src="/flags/us.svg" alt="English" />
+            EN
           </button>
           <button
             onClick={() => toggleLanguage('pt')}
             className={`${styles.langButton} ${language === 'pt' ? styles.active : ''}`}
           >
-            <img src="/flags/br.svg" alt="Português" />
+            PT
           </button>
         </div>
 
