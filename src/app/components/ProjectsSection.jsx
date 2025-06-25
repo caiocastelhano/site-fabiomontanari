@@ -1,27 +1,10 @@
-'use client';
-
-import React from 'react';
 import styles from './ProjectsSection.module.css';
-import { useLanguage } from '../context/LanguageContext';
 import Link from 'next/link';
+import { dictionary } from '../../lib/dictionary';
 
-export default function ProjectsSection() {
-  const { language } = useLanguage();
-
-  const content = {
-    en: {
-      title: 'Featured Works',
-      paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
-      button: 'See All Works',
-    },
-    pt: {
-      title: 'Trabalhos em Destaque',
-      paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
-      button: 'Ver Todos os Trabalhos',
-    },
-  };
-
-  const { title, paragraph, button } = content[language] || content.en;
+export default function ProjectsSection({ language = 'en' }) {
+  const { title, paragraph, button } =
+    dictionary.projects[language] || dictionary.projects.en;
 
   return (
     <section id="featured works" className={styles.projectsSection}>

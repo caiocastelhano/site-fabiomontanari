@@ -1,52 +1,26 @@
-'use client';
-
-import React from 'react';
 import styles from './Footer.module.css';
-import { useLanguage } from '../context/LanguageContext';
+import { dictionary } from '../../lib/dictionary';
 
-export default function Footer() {
-  const { language } = useLanguage();
-
+export default function Footer({ language = 'en' }) {
+  const content = dictionary.footer[language] || dictionary.footer.en;
   const currentYear = new Date().getFullYear();
 
-  const footerText = {
-    en: {
-      line: (
-        <>
-          © {currentYear} Fabio Montanari. All rights reserved. Developed by{' '}
-          <a
-            href="https://www.caiocastelhano.com.br/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Caio Castelhano website (opens in new tab)"
-          >
-            Caio Castelhano
-          </a>
-          .
-        </>
-      ),
-    },
-    pt: {
-      line: (
-        <>
-          © {currentYear} Fabio Montanari. Todos os direitos reservados. Desenvolvido por{' '}
-          <a
-            href="https://www.caiocastelhano.com.br/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Website de Caio Castelhano (abre em nova aba)"
-          >
-            Caio Castelhano
-          </a>
-          .
-        </>
-      ),
-    },
-  };
+  const line = content.line.replace('{year}', currentYear);
 
   return (
     <footer className={styles.footer}>
-      <p>{footerText[language].line}</p>
+      <p>
+        {line}{' '}
+        <a
+          href="https://www.caiocastelhano.com.br/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={content.aria}
+        >
+          Caio Castelhano
+        </a>
+        .
+      </p>
     </footer>
   );
 }

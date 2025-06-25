@@ -5,6 +5,7 @@ import styles from './Header.module.css';
 import { useLanguage } from '../context/LanguageContext';
 import Link from 'next/link';
 import { Cinzel } from 'next/font/google';
+import { dictionary } from '../../lib/dictionary';
 
 const cinzel = Cinzel({
   subsets: ['latin'],
@@ -15,14 +16,9 @@ const cinzel = Cinzel({
 export default function Header() {
   const { language, toggleLanguage } = useLanguage();
   const [menuOpen, setMenuOpen] = useState(false);
-
   const wrapperRef = useRef(null);
 
-  const navItems = {
-    en: ['Works', 'Teaching & Research', 'Development & Consulting', 'About'],
-    pt: ['Trabalhos', 'Ensino & Pesquisa', 'Desenvolvimento & Consultoria', 'Sobre'],
-  };
-
+  const navItems = dictionary.header[language]?.nav || dictionary.header.en.nav;
   const navLinks = ['/works', '/teaching-research', '/development-consulting', '/about'];
 
   useEffect(() => {
@@ -67,18 +63,27 @@ export default function Header() {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
           aria-expanded={menuOpen}
+          aria-controls="main-menu"
         >
           ☰
         </button>
 
         {menuOpen && (
-          <nav className={styles.navMenu} role="navigation" tabIndex="-1">
+          <nav
+            id="main-menu"
+            className={styles.navMenu}
+            role="navigation"
+            tabIndex="-1"
+          >
             <ul>
-              {navItems[language].map((label, index) => (
-                <li key={label}>
-                  <Link href={navLinks[index]}>{label}</Link>
-                </li>
-              ))}
+              {navItems?.map((label, index) => {
+                const href = navLinks[index] || '#';
+                return (
+                  <li key={`${label}-${index}`}>
+                    <Link href={href}>{label}</Link>
+                  </li>
+                );
+              })}
             </ul>
           </nav>
         )}
