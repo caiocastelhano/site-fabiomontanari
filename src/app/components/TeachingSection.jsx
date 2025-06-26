@@ -7,7 +7,7 @@ export default function TeachingSection({ language = 'en' }) {
     dictionary.teaching[language] || dictionary.teaching.en;
 
   return (
-    <section id="teaching" className={styles.teachingSection}>
+    <section id="industry-research" className={styles.teachingSection}>
       <div className={styles.overlay}>
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.paragraph}>{paragraph}</p>

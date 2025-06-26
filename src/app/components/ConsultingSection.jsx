@@ -7,7 +7,7 @@ export default function ConsultingSection({ language = 'en' }) {
     dictionary.consulting[language] || dictionary.consulting.en;
 
   return (
-    <section id="consulting" className={styles.consultingSection}>
+    <section id="script-consulting" className={styles.consultingSection}>
       <div className={styles.overlay}>
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.paragraph}>{paragraph}</p>

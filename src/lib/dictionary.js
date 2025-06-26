@@ -3,38 +3,39 @@ export const dictionary = {
     en: {
       title: 'Fabio Montanari',
       paragraph:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
+        'Fabio Montanari is a screenwriter, filmmaker, and professor whose credits range from independent films to series on Netflix, HBO Max, and Prime Video. Fabio is also a Screenwriting professor at York University, where he leads a research project on AI & Storytelling. Find out more about his work.',
       sections: [
-        { id: 'featured works', label: 'Featured Works' },
-        { id: 'teaching', label: 'Teaching & Research' },
-        { id: 'consulting', label: 'Development & Consulting' },
-        { id: 'about', label: 'About' },
+        { id: 'selected-work', label: 'Selected Work' },
+        { id: 'industry-research', label: 'Industry Engagement & Research' },
+        { id: 'script-consulting', label: 'Script Consultant & Development' },
+        { id: 'about-me', label: 'About Me' },
         { id: 'contact', label: 'Contact' },
       ],
     },
     pt: {
       title: 'Fabio Montanari',
       paragraph:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
+        'Fabio Montanari é roteirista, cineasta e professor, com trabalhos que vão de filmes independentes a séries na Netflix, HBO Max e Prime Video. É também professor de Roteiro na York University, onde lidera uma pesquisa sobre IA e Narrativas. Conheça mais sobre o seu trabalho.',
       sections: [
-        { id: 'featured works', label: 'Trabalhos em destaque' },
-        { id: 'teaching', label: 'Ensino & Pesquisa' },
-        { id: 'consulting', label: 'Desenvolvimento & Consultoria' },
-        { id: 'about', label: 'Sobre' },
+        { id: 'selected-work', label: 'Trabalhos Selecionados' },
+        { id: 'industry-research', label: 'Pesquisa & Parcerias com a Indústria' },
+        { id: 'script-consulting', label: 'Consultoria de Roteiro & Desenvolvimento' },
+        { id: 'about-me', label: 'Sobre Mim' },
         { id: 'contact', label: 'Contato' },
       ],
     },
   },
 
+
   projects: {
     en: {
-      title: 'Featured Works',
+      title: 'Selected Work',
       paragraph:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
       button: 'See All Works',
     },
     pt: {
-      title: 'Trabalhos em Destaque',
+      title: 'Trabalhos Selecionados',
       paragraph:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
       button: 'Ver Todos os Trabalhos',
@@ -43,13 +44,13 @@ export const dictionary = {
 
   teaching: {
     en: {
-      title: 'Teaching & Research',
+      title: 'Industry Engagement & Research',
       paragraph:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
       button: 'Learn More',
     },
     pt: {
-      title: 'Ensino & Pesquisa',
+      title: 'Pesquisa & Parcerias com a Indústria',
       paragraph:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
       button: 'Saiba Mais',
@@ -58,13 +59,13 @@ export const dictionary = {
 
   consulting: {
     en: {
-      title: 'Development & Consulting',
+      title: 'Script Consultant & Development',
       paragraph:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
       button: 'Discover More',
     },
     pt: {
-      title: 'Desenvolvimento & Consultoria',
+      title: 'Consultoria de Roteiro & Desenvolvimento',
       paragraph:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
       button: 'Saiba Mais',
@@ -73,13 +74,13 @@ export const dictionary = {
 
   about: {
     en: {
-      title: 'About',
+      title: 'About Me',
       paragraph:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
       button: 'More About Me',
     },
     pt: {
-      title: 'Sobre',
+      title: 'Sobre Mim',
       paragraph:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
       button: 'Saiba Mais',
@@ -108,23 +109,23 @@ export const dictionary = {
   },
 
   header: {
-    en: {
-      nav: [
-        'Works',
-        'Teaching & Research',
-        'Development & Consulting',
-        'About',
-      ],
-    },
-    pt: {
-      nav: [
-        'Trabalhos',
-        'Ensino & Pesquisa',
-        'Desenvolvimento & Consultoria',
-        'Sobre',
-      ],
-    },
+  en: {
+    nav: [
+      'Selected Work',
+      'Industry Engagement & Research',
+      'Script Consultant & Development',
+      'About Me',
+    ],
   },
+  pt: {
+    nav: [
+      'Trabalhos Selecionados',
+      'Pesquisa & Parcerias com a Indústria',
+      'Consultoria de Roteiro & Desenvolvimento',
+      'Sobre Mim',
+    ],
+  },
+},
 
   footer: {
     en: {

@@ -7,7 +7,7 @@ export default function ProjectsSection({ language = 'en' }) {
     dictionary.projects[language] || dictionary.projects.en;
 
   return (
-    <section id="featured works" className={styles.projectsSection}>
+    <section id="selected-work" className={styles.projectsSection}>
       <div className={styles.overlay}>
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.paragraph}>{paragraph}</p>
