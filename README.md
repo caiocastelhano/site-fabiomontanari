@@ -1,17 +1,17 @@
 # Fabio Montanari – Official Website
 
-This is the source code for the official website of Fabio Montanari — a Brazilian director, screenwriter, and educator.
+This is the source code for the official website of Fabio Montanari — a Brazilian screenwriter, filmmaker, and educator.
 
 ## 🧭 Structure
 
 The site is developed as a Next.js application with:
 
-- **Home**: combines the main sections (About, Works, Development & Consulting, Teaching & Research, and Contact)
-- **Internal pages**:  
-  - `/about`  
-  - `/works`  
-  - `/development-consulting`  
-  - `/teaching-research`
+- **Home**: combines the main sections (About Me, Selected Work, Script Consulting & Development, Industry Engagement & Research, and Contact)
+- **Internal pages**:
+  - `/about-me`  
+  - `/selected-work`  
+  - `/script-consulting`  
+  - `/industry-research`
 
 ## 🛠️ Stack
 
