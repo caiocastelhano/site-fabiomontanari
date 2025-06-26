@@ -7,7 +7,15 @@ export default function AboutSection({ language = 'en' }) {
     dictionary.about[language] || dictionary.about.en;
 
   return (
-    <section id="about-me" className={styles.aboutSection}>
+    <section
+      id="about-me"
+      className={styles.aboutSection}
+      aria-label={
+        language === 'pt'
+          ? 'Seção sobre Fabio Montanari'
+          : 'About Fabio Montanari section'
+      }
+    >
       <div className={styles.overlay}>
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.paragraph}>{paragraph}</p>
