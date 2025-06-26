@@ -1,7 +1,6 @@
 export const dictionary = {
   hero: {
     en: {
-      title: 'Fabio Montanari',
       paragraph:
         'Fabio Montanari is a screenwriter, filmmaker, and professor whose credits range from independent films to series on Netflix, HBO Max, and Prime Video. Fabio is also a Screenwriting professor at York University, where he leads a research project on AI & Storytelling. Find out more about his work.',
       sections: [
@@ -13,7 +12,6 @@ export const dictionary = {
       ],
     },
     pt: {
-      title: 'Fabio Montanari',
       paragraph:
         'Fabio Montanari é roteirista, cineasta e professor, com trabalhos que vão de filmes independentes a séries na Netflix, HBO Max e Prime Video. É também professor de Roteiro na York University, onde lidera uma pesquisa sobre IA e Narrativas. Conheça mais sobre o seu trabalho.',
       sections: [

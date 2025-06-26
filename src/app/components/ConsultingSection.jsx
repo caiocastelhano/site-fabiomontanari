@@ -11,7 +11,7 @@ export default function ConsultingSection({ language = 'en' }) {
       <div className={styles.overlay}>
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.paragraph}>{paragraph}</p>
-        <Link href="/development-consulting" className={styles.button}>
+        <Link href="/script-consulting" className={styles.button}>
           {button}
         </Link>
       </div>

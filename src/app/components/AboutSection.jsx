@@ -11,7 +11,7 @@ export default function AboutSection({ language = 'en' }) {
       <div className={styles.overlay}>
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.paragraph}>{paragraph}</p>
-        <Link href="/about" className={styles.button}>
+        <Link href="/about-me" className={styles.button}>
           {button}
         </Link>
       </div>

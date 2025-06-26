@@ -11,7 +11,7 @@ export default function TeachingSection({ language = 'en' }) {
       <div className={styles.overlay}>
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.paragraph}>{paragraph}</p>
-        <Link href="/teaching-research" className={styles.button}>
+        <Link href="/industry-research" className={styles.button}>
           {button}
         </Link>
       </div>

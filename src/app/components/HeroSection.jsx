@@ -8,7 +8,6 @@ export default function HeroSection({ language = 'en' }) {
   return (
     <section className={styles.heroSection}>
       <div className={styles.overlay}>
-        <h1 className={styles.title}>{title}</h1>
         <p className={styles.paragraph}>{paragraph}</p>
         <nav className={styles.sectionLinks}>
           {sections.map((section, index) => (

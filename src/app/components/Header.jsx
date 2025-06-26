@@ -19,7 +19,12 @@ export default function Header() {
   const wrapperRef = useRef(null);
 
   const navItems = dictionary.header[language]?.nav || dictionary.header.en.nav;
-  const navLinks = ['/works', '/teaching-research', '/development-consulting', '/about'];
+  const navLinks = [
+  '/selected-work',
+  '/industry-research',
+  '/script-consulting',
+  '/about-me',
+];
 
   useEffect(() => {
     const handleClickOutside = (event) => {
