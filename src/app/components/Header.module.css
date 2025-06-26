@@ -7,6 +7,8 @@
   align-items: center;
   background-color: #f5f5f5;
   border-bottom: 1px solid #ddd;
+  position: fixed;
+  z-index: 1100;
 }
 
 .left {
@@ -61,7 +63,7 @@
 }
 
 .navMenu {
-  position: absolute;
+  position: fixed;
   top: 64px;
   right: 24px;
   background-color: #fff;
@@ -69,6 +71,7 @@
   border-radius: 4px;
   padding: 12px 16px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
 }
 
 .navMenu ul {
