@@ -6,13 +6,21 @@ export default function ContactSection({ language = 'en' }) {
     dictionary.contact[language] || dictionary.contact.en;
 
   return (
-    <section id="contact" className={styles.contactSection}>
+    <section
+      id="contact"
+      className={styles.contactSection}
+      aria-label={
+        language === 'pt'
+          ? 'Seção de contato com Fabio Montanari'
+          : 'Contact section for Fabio Montanari'
+      }
+    >
       <div className={styles.overlay}>
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.paragraph}>{paragraph}</p>
         <div className={styles.emails}>
-          {emails.map(({ label, email }, index) => (
-            <p key={index} className={styles.emailLine}>
+          {emails.map(({ label, email }) => (
+            <p key={email} className={styles.emailLine}>
               <strong>{label}:</strong>{' '}
               <a href={`mailto:${email}`} className={styles.emailLink}>
                 {email}

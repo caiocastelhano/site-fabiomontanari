@@ -46,13 +46,13 @@ export const dictionary = {
       title: 'Industry Engagement & Research',
       paragraph:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
-      button: 'Learn More',
+      button: 'See Research & Industry Partnerships',
     },
     pt: {
       title: 'Pesquisa & Parcerias com a Indústria',
       paragraph:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
-      button: 'Saiba Mais',
+      button: 'Ver Pesquisa & Parcerias com a Indústria',
     },
   },
 
@@ -61,13 +61,13 @@ export const dictionary = {
       title: 'Script Consultant & Development',
       paragraph:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
-      button: 'Discover More',
+      button: 'Explore Script Consulting & Development',
     },
     pt: {
       title: 'Consultoria de Roteiro & Desenvolvimento',
       paragraph:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
-      button: 'Saiba Mais',
+      button: 'Explorar Consultoria & Desenvolvimento',
     },
   },
 
@@ -76,13 +76,13 @@ export const dictionary = {
       title: 'About Me',
       paragraph:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
-      button: 'More About Me',
+      button: 'Read More About Fabio',
     },
     pt: {
       title: 'Sobre Mim',
       paragraph:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
-      button: 'Saiba Mais',
+      button: 'Leia Mais Sobre Fabio',
     },
   },
 
@@ -92,8 +92,8 @@ export const dictionary = {
       paragraph:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
       emails: [
-        { label: 'Direct', email: 'fabiomontanari@email.com' },
-        { label: 'Agent', email: 'agente@email.com' },
+        { label: 'Direct', email: 'fabiobmontanari@gmail.com' },
+        { label: 'Agent (Atena)', email: 'luisagiesteira@atena.art.br' },
       ],
     },
     pt: {
@@ -101,8 +101,8 @@ export const dictionary = {
       paragraph:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
       emails: [
-        { label: 'Direto', email: 'fabiomontanari@email.com' },
-        { label: 'Agente', email: 'agente@email.com' },
+        { label: 'Direto', email: 'fabiobmontanari@gmail.com' },
+        { label: 'Representante (Atena)', email: 'luisagiesteira@atena.art.br' },
       ],
     },
   },
