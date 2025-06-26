@@ -7,7 +7,7 @@
   align-items: center;
   background-color: #f5f5f5;
   border-bottom: 1px solid #ddd;
-  position: fixed;
+  position: relative;
   z-index: 1100;
 }
 
