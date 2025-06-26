@@ -1,6 +1,7 @@
+/* DESKTOP */
 .projectsSection {
   position: relative;
-  background-image: url('/images/home/projects-background.jpg'); /* ajuste o caminho conforme sua pasta */
+  background-image: url('/images/home/projects-background.jpg');
   background-size: cover;
   background-position: center;
   color: white;
@@ -9,23 +10,28 @@
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5); /* escurece o fundo para melhor leitura */
-  padding: 60px 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  padding: 64px 32px;
   max-width: 800px;
   margin: 0 auto;
-  border-radius: 8px;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
 }
 
 .title {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  font-weight: bold;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 .paragraph {
   font-size: 1.2rem;
-  margin-bottom: 30px;
-  line-height: 1.6;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .button {
@@ -33,12 +39,72 @@
   background-color: white;
   color: black;
   text-decoration: none;
-  padding: 12px 24px;
-  font-weight: bold;
+  padding: 12px 28px;
+  font-weight: 600;
+  font-size: 1rem;
   border-radius: 4px;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
 }
 
 .button:hover {
-  background-color: #eee;
+  background-color: #f2f2f2;
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .projectsSection {
+    padding: 100px 24px;
+  }
+
+  .overlay {
+    padding: 56px 28px;
+    max-width: 90%;
+  }
+
+  .title {
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+  }
+
+  .paragraph {
+    font-size: 1.15rem;
+    margin-bottom: 36px;
+  }
+
+  .button {
+    font-size: 0.95rem;
+    padding: 12px 24px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .projectsSection {
+    padding: 80px 16px 60px;
+    background-position: center top;
+  }
+
+  .overlay {
+    padding: 48px 20px;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+    margin-bottom: 32px;
+    line-height: 1.6;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 300px;
+    font-size: 1rem;
+    padding: 14px;
+  }
 }
