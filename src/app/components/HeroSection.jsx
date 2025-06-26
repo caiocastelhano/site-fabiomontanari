@@ -8,10 +8,21 @@ export default function HeroSection({ language = 'en' }) {
   return (
     <section className={styles.heroSection}>
       <div className={styles.overlay}>
+        {/* Título oculto para leitores de tela */}
+        <h1 className={styles.visuallyHidden}>{title}</h1>
+
         <p className={styles.paragraph}>{paragraph}</p>
-        <nav className={styles.sectionLinks}>
-          {sections.map((section, index) => (
-            <a key={index} href={`#${section.id}`} className={styles.link}>
+
+        <nav
+          className={styles.sectionLinks}
+          aria-label={
+            language === 'pt'
+              ? 'Links para as seções da página'
+              : 'Links to page sections'
+          }
+        >
+          {sections.map((section) => (
+            <a key={section.id} href={`#${section.id}`} className={styles.link}>
               {section.label}
             </a>
           ))}
