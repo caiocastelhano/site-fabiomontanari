@@ -19,6 +19,30 @@
   font-weight: bold;
 }
 
+.figure {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.caption {
+  font-size: 0.95rem;
+  margin-top: 12px;
+  color: #444;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
 @media (max-width: 600px) {
   .title {
     font-size: 1.8rem;
