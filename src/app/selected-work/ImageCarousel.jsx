@@ -42,7 +42,7 @@ export default function ImageCarousel({ folderName }) {
   if (imageCount === 0) return null;
 
   return (
-    <div className={styles.carousel}>
+    <div className={styles.imageWrapper}>
       {imageCount > 1 && (
         <button
           onClick={goPrev}
@@ -50,7 +50,19 @@ export default function ImageCarousel({ folderName }) {
           disabled={currentIndex === 0}
           aria-label="Previous image"
         >
-          ←
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="none"
+            stroke="black"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            viewBox="0 0 24 24"
+          >
+            <path d="M19 12H5M11 19l-7-7 7-7" />
+          </svg>
         </button>
       )}
 
@@ -67,7 +79,19 @@ export default function ImageCarousel({ folderName }) {
           disabled={currentIndex === imageCount - 1}
           aria-label="Next image"
         >
-          →
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="none"
+            stroke="black"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M13 5l7 7-7 7" />
+          </svg>
         </button>
       )}
     </div>
