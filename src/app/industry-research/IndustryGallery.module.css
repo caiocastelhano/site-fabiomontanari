@@ -7,10 +7,17 @@
 }
 
 .thumb {
+  all: unset;
+  display: block;
   cursor: pointer;
   border-radius: 6px;
   overflow: hidden;
   transition: transform 0.2s;
+}
+
+.thumb:focus-visible {
+  outline: 3px solid #555;
+  outline-offset: 2px;
 }
 
 .thumb:hover {
