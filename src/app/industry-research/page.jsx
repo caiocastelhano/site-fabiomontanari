@@ -18,7 +18,14 @@ export default function IndustryResearchPage() {
     { filename: "foto5.png", key: "foto5" },
     { filename: "foto6.png", key: "foto6" },
     { filename: "foto7.jpeg", key: "foto7" },
-    { filename: "foto8.png", key: "foto8" }
+    { filename: "foto8.png", key: "foto8" },
+    { filename: "foto9.png", key: "foto9" },
+    { filename: "foto10.png", key: "foto10" },
+    { filename: "foto11.jpg", key: "foto11" },
+    { filename: "foto12.png", key: "foto12" },
+    { filename: "foto13.png", key: "foto13" },
+    { filename: "foto14.jpg", key: "foto14" },
+    { filename: "foto15.png", key: "foto15" }
   ];
 
   return (
