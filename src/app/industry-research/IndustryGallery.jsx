@@ -1,11 +1,42 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import styles from './IndustryGallery.module.css';
 
 export default function IndustryGallery({ images, captions }) {
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedIndex, setSelectedIndex] = useState(null);
+
+  const selectedImage = selectedIndex !== null ? images[selectedIndex] : null;
+
+  const openModal = (index) => {
+    setSelectedIndex(index);
+  };
+
+  const closeModal = () => {
+    setSelectedIndex(null);
+  };
+
+  const goToNext = () => {
+    setSelectedIndex((prev) => (prev < images.length - 1 ? prev + 1 : prev));
+  };
+
+  const goToPrev = () => {
+    setSelectedIndex((prev) => (prev > 0 ? prev - 1 : prev));
+  };
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (selectedIndex !== null) {
+        if (e.key === 'ArrowRight') goToNext();
+        if (e.key === 'ArrowLeft') goToPrev();
+        if (e.key === 'Escape') closeModal();
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [selectedIndex]);
 
   return (
     <>
@@ -14,12 +45,7 @@ export default function IndustryGallery({ images, captions }) {
           <button
             key={key}
             className={styles.thumb}
-            onClick={() =>
-              setSelectedImage({
-                src: `/images/industry-research/${filename}`,
-                alt: captions[key],
-              })
-            }
+            onClick={() => openModal(index)}
             aria-label={`Open image: ${captions[key]}`}
           >
             <Image
@@ -28,7 +54,7 @@ export default function IndustryGallery({ images, captions }) {
               width={300}
               height={200}
               className={styles.image}
-              priority={index === 0} // performance: prioriza a primeira imagem
+              priority={index === 0}
             />
           </button>
         ))}
@@ -40,8 +66,20 @@ export default function IndustryGallery({ images, captions }) {
           role="dialog"
           aria-modal="true"
           aria-label="Expanded image view"
-          onClick={() => setSelectedImage(null)}
+          onClick={closeModal}
         >
+          <button
+            className={`${styles.navButton} ${styles.left}`}
+            onClick={(e) => {
+              e.stopPropagation();
+              goToPrev();
+            }}
+            aria-label="Previous image"
+            disabled={selectedIndex === 0}
+          >
+            &#8592;
+          </button>
+
           <div
             className={styles.modalContent}
             onClick={(e) => e.stopPropagation()}
@@ -51,25 +89,36 @@ export default function IndustryGallery({ images, captions }) {
               role="button"
               aria-label="Close modal"
               tabIndex={0}
-              onClick={() => setSelectedImage(null)}
+              onClick={closeModal}
               onKeyDown={(e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                  setSelectedImage(null);
-                }
+                if (e.key === 'Enter' || e.key === ' ') closeModal();
               }}
             >
               &times;
             </span>
 
             <Image
-              src={selectedImage.src}
-              alt={selectedImage.alt}
+              src={`/images/industry-research/${selectedImage.filename}`}
+              alt={captions[selectedImage.key]}
               width={800}
               height={500}
               className={styles.fullImage}
             />
-            <p className={styles.caption}>{selectedImage.alt}</p>
+
+            <p className={styles.caption}>{captions[selectedImage.key]}</p>
           </div>
+
+          <button
+            className={`${styles.navButton} ${styles.right}`}
+            onClick={(e) => {
+              e.stopPropagation();
+              goToNext();
+            }}
+            aria-label="Next image"
+            disabled={selectedIndex === images.length - 1}
+          >
+            &#8594;
+          </button>
         </div>
       )}
     </>
