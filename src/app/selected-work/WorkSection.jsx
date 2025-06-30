@@ -17,6 +17,14 @@ export default function WorkSection({ projectKey, index }) {
         {content.description.map((paragraph, idx) => (
           <p key={idx} className={styles.paragraph}>{paragraph}</p>
         ))}
+
+        {content.platformLogo && (
+          <img
+            src={content.platformLogo}
+            alt={`Logo ${content.title}`}
+            className={styles.platformLogo}
+          />
+        )}
       </div>
 
       <div className={styles.carousel}>

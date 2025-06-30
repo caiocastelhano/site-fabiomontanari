@@ -44,6 +44,12 @@
   flex-direction: row-reverse;
 }
 
+.platformLogo {
+  max-width: 120px;
+  margin-top: 12px;
+  display: block;
+}
+
 /* Responsivo */
 @media (max-width: 768px) {
   .section {
