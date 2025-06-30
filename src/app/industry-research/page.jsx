@@ -33,7 +33,7 @@ export default function IndustryResearchPage() {
     <>
       <Header />
 
-      <main className={styles.page}>
+      <main className={styles.page} aria-labelledby="industry-title">
         <div className={styles.container}>
           <h1 className={styles.title}>Industry Engagement & Research</h1>
           <p className={styles.intro}>{t.intro}</p>
