@@ -18,14 +18,19 @@ export default function SelectedWorkPage() {
       <Header />
 
       <main className={styles.page}>
-        <h1 className={styles.title}>Selected Work</h1>
+        <h1 className={styles.visuallyHidden}>Selected Work</h1>
 
         {projectKeys.map((key, index) => {
           const project = t[key];
           const isEven = index % 2 === 0;
 
           return (
-            <section key={key} className={styles.projectSection}>
+            <section
+              key={key}
+              className={`${styles.projectSection} ${
+                isEven ? styles.lightBackground : styles.darkBackground
+              }`}
+            >
               <div
                 className={`${styles.projectContent} ${
                   isEven ? styles.textRight : styles.textLeft
