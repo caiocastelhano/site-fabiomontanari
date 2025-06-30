@@ -10,7 +10,14 @@ const industryDictionary = {
       foto5: "Moderator | A conversation with Ian Iqbal Rashid on Writing for TV.",
       foto6: "Moderator | A conversation with Ian Iqbal Rashid on Writing for TV.",
       foto7: "Federal University of São Carlos (Brazil) | Masterclass on Writing for Television.",
-      foto8: "Moderator | A conversation with Ian Iqbal Rashid on Writing for TV."
+      foto8: "Moderator | A conversation with Ian Iqbal Rashid on Writing for TV.",
+      foto9: "Moderator | Podcast episode featuring a conversation with Ian Iqbal Rashid on Writing for TV.",
+      foto10: "Interview about my career on Brazil's largest screenwriting podcast.",
+      foto11: "Masterclass on Creating and Writing for Television.",
+      foto12: "Masterclass on TV Writing and Creation at Loyola University Chicago.",
+      foto13: "Masterclass on AI & Screenwriting.",
+      foto14: "Masterclass on AI & Screenwriting.",
+      foto15: "Interview about the creative process behind Suture, an Amazon Prime Video Original."
     }
   },
 
@@ -25,7 +32,14 @@ const industryDictionary = {
       foto5: "Mediação | Conversa com Ian Iqbal Rashid sobre escrita para TV.",
       foto6: "Mediação | Conversa com Ian Iqbal Rashid sobre escrita para TV.",
       foto7: "Universidade Federal de São Carlos (Brasil) | Masterclass sobre escrita para televisão.",
-      foto8: "Mediação | Conversa com Ian Iqbal Rashid sobre escrita para TV."
+      foto8: "Mediação | Conversa com Ian Iqbal Rashid sobre escrita para TV.",
+      foto9: "Mediação | Episódio de podcast com Ian Iqbal Rashid sobre escrita para TV.",
+      foto10: "Entrevista sobre minha trajetória no maior podcast brasileiro de roteiro.",
+      foto11: "Masterclass sobre criação e escrita para televisão.",
+      foto12: "Masterclass sobre escrita e criação para TV na Loyola University Chicago.",
+      foto13: "Masterclass sobre IA e roteiro.",
+      foto14: "Masterclass sobre IA e roteiro.",
+      foto15: "Entrevista sobre o processo criativo de Suture, produção original da Amazon Prime Video."
     }
   }
 };
