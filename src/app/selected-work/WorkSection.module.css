@@ -1,0 +1,58 @@
+/* DESKTOP */
+.section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 80px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.text {
+  flex: 2;
+  min-width: 300px;
+}
+
+.carousel {
+  flex: 1;
+  min-width: 280px;
+  max-width: 480px;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.role {
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 12px;
+  color: #666;
+}
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.odd {
+  flex-direction: row-reverse;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    gap: 24px;
+    padding: 48px 0;
+  }
+
+  .carousel, .text {
+    max-width: 100%;
+  }
+}
