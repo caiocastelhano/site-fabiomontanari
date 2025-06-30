@@ -16,7 +16,6 @@ export default function ImageCarousel({ folderName }) {
         urls.push(url);
     }
 
-    // Verifica de fato se os arquivos existem (opcional)
     const checkImages = async () => {
         const validUrls = [];
         for (const url of urls) {
