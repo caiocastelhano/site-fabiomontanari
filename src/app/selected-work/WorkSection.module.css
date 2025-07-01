@@ -1,3 +1,4 @@
+/* DESKTOP */
 .section {
   width: 100%;
 }
@@ -64,15 +65,47 @@
   background-color: #eaeaea;
 }
 
-/* Responsivo */
+/* TABLET */
 @media (max-width: 768px) {
   .projectContent {
     flex-direction: column;
-    gap: 24px;
+    gap: 32px;
+    padding: 32px 16px;
   }
 
-  .imageBlock,
-  .textBlock {
+  .textBlock,
+  .imageBlock {
     max-width: 100%;
+    padding: 0;
+  }
+
+  .projectTitle {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .role,
+  .description {
+    text-align: center;
+  }
+
+  .platformLogo {
+    margin: 24px auto 0;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .projectTitle {
+    font-size: 1.3rem;
+  }
+
+  .role,
+  .description {
+    font-size: 0.95rem;
+  }
+
+  .platformLogo {
+    width: 120px;
   }
 }
