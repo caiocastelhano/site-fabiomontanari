@@ -17,13 +17,18 @@ export default function SelectedWorkPage() {
     <>
       <Header />
 
-      <main className={styles.page}>
-        <h1 className={styles.visuallyHidden}>Selected Work</h1>
+      <main
+        className={styles.page}
+        role="main"
+        aria-labelledby="selectedWorkTitle"
+      >
+        <h1 id="selectedWorkTitle" className={styles.visuallyHidden}>
+          Selected Work
+        </h1>
 
         {projectKeys.map((key, index) => (
           <WorkSection key={key} projectKey={key} index={index} />
         ))}
-
       </main>
 
       <Footer />

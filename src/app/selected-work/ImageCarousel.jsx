@@ -4,46 +4,53 @@ import { useState, useEffect } from "react";
 import styles from "./ImageCarousel.module.css";
 
 export default function ImageCarousel({ folderName }) {
-  const [imageCount, setImageCount] = useState(0);
-  const [currentIndex, setCurrentIndex] = useState(0);
   const [imageUrls, setImageUrls] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const urls = [];
 
     for (let i = 1; i <= 10; i++) {
-        const url = `/images/selected-work/${folderName}/image${i}.jpg`;
-        urls.push(url);
+      urls.push(`/images/selected-work/${folderName}/image${i}.jpg`);
     }
 
     const checkImages = async () => {
-        const validUrls = [];
-        for (const url of urls) {
-        const res = await fetch(url, { method: "HEAD" });
-        if (res.ok) validUrls.push(url);
-        }
+      const validUrls = [];
 
-        setImageUrls(validUrls);
-        setImageCount(validUrls.length);
-        setCurrentIndex(0);
+      for (const url of urls) {
+        try {
+          const res = await fetch(url, { method: "HEAD" });
+          if (res.ok) validUrls.push(url);
+        } catch (err) {
+          console.error("Erro ao verificar imagem:", url);
+        }
+      }
+
+      setImageUrls(validUrls);
+      setCurrentIndex(0);
     };
 
     checkImages();
-    }, [folderName]);
+  }, [folderName]);
 
   const goPrev = () => {
     if (currentIndex > 0) setCurrentIndex(currentIndex - 1);
   };
 
   const goNext = () => {
-    if (currentIndex < imageCount - 1) setCurrentIndex(currentIndex + 1);
+    if (currentIndex < imageUrls.length - 1) setCurrentIndex(currentIndex + 1);
   };
 
-  if (imageCount === 0) return null;
+  if (imageUrls.length === 0) return null;
 
   return (
-    <div className={styles.imageWrapper}>
-      {imageCount > 1 && (
+    <div
+      className={styles.imageWrapper}
+      role="region"
+      aria-label={`Image carousel for project ${folderName}`}
+      aria-live="polite"
+    >
+      {imageUrls.length > 1 && (
         <button
           onClick={goPrev}
           className={styles.arrowLeft}
@@ -68,15 +75,17 @@ export default function ImageCarousel({ folderName }) {
 
       <img
         src={imageUrls[currentIndex]}
-        alt={`Project image ${currentIndex + 1}`}
+        alt={`Image ${currentIndex + 1} of ${imageUrls.length} from project ${folderName}`}
         className={styles.image}
+        loading={currentIndex === 0 ? "eager" : "lazy"}
+        tabIndex="0"
       />
 
-      {imageCount > 1 && (
+      {imageUrls.length > 1 && (
         <button
           onClick={goNext}
           className={styles.arrowRight}
-          disabled={currentIndex === imageCount - 1}
+          disabled={currentIndex === imageUrls.length - 1}
           aria-label="Next image"
         >
           <svg
