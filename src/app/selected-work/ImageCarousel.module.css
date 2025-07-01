@@ -1,3 +1,4 @@
+/* DESKTOP */
 .carousel {
   width: 100%;
   max-width: 700px;
@@ -50,4 +51,40 @@
 .arrowRight:disabled {
   opacity: 0.4;
   cursor: not-allowed;
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  .imageWrapper {
+    height: 300px;
+  }
+
+  .arrowLeft,
+  .arrowRight {
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .imageWrapper {
+    height: 220px;
+  }
+
+  .arrowLeft,
+  .arrowRight {
+    width: 28px;
+    height: 28px;
+    font-size: 1rem;
+  }
+
+  .arrowLeft {
+    left: 8px;
+  }
+
+  .arrowRight {
+    right: 8px;
+  }
 }
