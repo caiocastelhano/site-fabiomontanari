@@ -1,34 +1,36 @@
 import styles from './WorkSection.module.css';
 import ImageCarousel from './ImageCarousel';
 import workDictionary from './workDictionary';
-import { useLanguage } from '../../context/LanguageContext';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function WorkSection({ projectKey, index }) {
   const { language } = useLanguage();
-  const content = workDictionary[language][projectKey];
-
+  const project = workDictionary[language].projects[projectKey];
   const isEven = index % 2 === 0;
 
   return (
-    <section className={`${styles.section} ${isEven ? styles.even : styles.odd}`}>
-      <div className={styles.text}>
-        <h2 className={styles.title}>{content.title}</h2>
-        <p className={styles.role}>{content.role}</p>
-        {content.description.map((paragraph, idx) => (
-          <p key={idx} className={styles.paragraph}>{paragraph}</p>
-        ))}
+    <section className={`${styles.section} ${isEven ? styles.lightBackground : styles.darkBackground}`}>
+      <div className={`${styles.projectContent} ${isEven ? styles.textRight : styles.textLeft}`}>
+        <div className={styles.textBlock}>
+          <h2 className={styles.projectTitle}>{project.title}</h2>
+          <p className={styles.role}>{project.role}</p>
 
-        {content.platformLogo && (
-          <img
-            src={content.platformLogo}
-            alt={`Logo ${content.title}`}
-            className={styles.platformLogo}
-          />
-        )}
-      </div>
+          {project.description.split('\n\n').map((paragraph, idx) => (
+            <p key={idx} className={styles.description}>{paragraph}</p>
+          ))}
 
-      <div className={styles.carousel}>
-        <ImageCarousel folderName={projectKey} />
+          {project.platformLogo && (
+            <img
+              src={project.platformLogo}
+              alt={`Logo ${project.title}`}
+              className={styles.platformLogo}
+            />
+          )}
+        </div>
+
+        <div className={styles.imageBlock}>
+          <ImageCarousel folderName={project.folder || projectKey} />
+        </div>
       </div>
     </section>
   );

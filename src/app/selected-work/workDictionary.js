@@ -1,4 +1,4 @@
-const selectedWorkDictionary = {
+const workDictionary = {
   en: {
     projects: {
       suture: {
@@ -180,4 +180,4 @@ const selectedWorkDictionary = {
   }
 };
 
-export default selectedWorkDictionary;
+export default workDictionary;
