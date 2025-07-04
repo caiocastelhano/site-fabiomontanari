@@ -5,8 +5,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f5f5f5;
-  border-bottom: 1px solid #ddd;
+  background-color: #1f1f1f; /* fundo escuro */
+  border-bottom: 1px solid #3a3a3a;
   position: relative;
   z-index: 1100;
 }
@@ -19,7 +19,7 @@
 .siteName {
   font-size: 2rem;
   font-weight: 400;
-  color: #222;
+  color: #f2f2f2; /* texto claro */
   text-decoration: none;
 }
 
@@ -36,13 +36,13 @@
   font-size: 0.9rem;
   cursor: pointer;
   margin: 0 0.3rem;
-  color: #333;
+  color: #ccc; /* cinza claro */
   padding: 0.4rem 0.6rem;
   transition: color 0.3s ease;
 }
 
 .langButton:hover {
-  color: #000;
+  color: #fff; /* destaque no hover */
 }
 
 .active {
@@ -52,6 +52,7 @@
 .menuWrapper {
   background: none;
   border: none;
+  color: #ccc;
   font-size: 1.8rem;
   cursor: pointer;
   width: 32px;
@@ -66,11 +67,11 @@
   position: fixed;
   top: 64px;
   right: 24px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
   border-radius: 4px;
   padding: 12px 16px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
   z-index: 1000;
 }
 
@@ -90,7 +91,7 @@
 
 .navMenu a {
   text-decoration: none;
-  color: #222;
+  color: #f0f0f0;
   font-size: 1rem;
 }
 
