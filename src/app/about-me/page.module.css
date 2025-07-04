@@ -1,177 +1,127 @@
 /* DESKTOP */
 .page {
-  padding: 100px 40px;
+  padding: 0;
   background-color: var(--background);
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #222;
+  font-family: sans-serif;
 }
 
 .container {
-  max-width: 900px;
-  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  align-items: stretch;
+}
+
+/* COLUNA ESQUERDA - FIXA */
+.leftColumn {
+  flex: 1;
+  padding: 32px 24px;
+  background-color: #f8f8f8;
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  align-items: center;
+  height: auto;
+  max-width: 400px;
 }
 
 .profileImage {
   width: 100%;
-  max-width: 340px;
-  border-radius: 12px;
-  object-fit: cover;
-  margin: 0 auto;
-  display: block;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  height: auto;
+  border-radius: 8px;
 }
 
-.visuallyHidden {
-  position: absolute !important;
-  height: 1px; 
-  width: 1px; 
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px);
-  white-space: nowrap;
-}
-
-.intro {
-  font-size: 1.25rem;
-  line-height: 1.7;
+.initialText {
+  margin-top: 24px;
+  font-size: 1rem;
   text-align: center;
-  color: #444;
-  max-width: 700px;
-  margin: 0 auto;
 }
 
-.section {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  border-left: 3px solid #e0e0e0;
-  padding-left: 24px;
+/* COLUNA DIREITA - COM ROLAGEM */
+.rightColumn {
+  flex: 2;
+  min-width: 0;
+  padding: 60px 24px;
+  scroll-behavior: smooth;
 }
 
-.section h2 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #111;
-  margin-bottom: 4px;
+.scrollIntro {
+  font-size: 1.1rem;
+  margin-bottom: 32px;
+  line-height: 1.6;
 }
 
-.section p {
-  font-size: 1.05rem;
-  line-height: 1.75;
-  color: #333;
+.closing {
+  padding-top: 24px;
+  border-top: 1px solid #ccc;
 }
 
-.section a {
-  color: #0051ff;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: all 0.25s ease;
+.closing h2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
 }
 
-.section a:hover {
-  border-bottom: 1px solid #0051ff;
+.closing p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
 }
 
+/* ACCORDIONS */
+.accordion {
+  border-top: 1px solid #ccc;
+  padding: 16px 0;
+}
+
+.accordion summary {
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  outline: none;
+}
+
+.accordion p {
+  margin: 0;
+  padding-left: 12px;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* ÍCONES SOCIAIS */
 .socialIcons {
   display: flex;
-  justify-content: center;
-  gap: 28px;
-  margin-top: 16px;
+  gap: 24px;
+  margin-top: 40px;
 }
 
 .socialIcons a {
-  font-size: 3rem;
-  color: #555;
-  transition: transform 0.2s ease, color 0.2s ease;
+  font-size: 2rem;
+  color: #333;
+  transition: color 0.3s ease;
 }
 
 .socialIcons a:hover {
   color: #000;
-  transform: scale(1.15);
 }
 
-/* TABLET */
+/* RESPONSIVO */
 @media (max-width: 900px) {
-  .page {
-    padding: 80px 32px;
-  }
-
   .container {
-    gap: 48px;
+    flex-direction: column;
+    height: auto;
   }
 
-  .profileImage {
-    max-width: 280px;
+  .leftColumn {
+    position: relative;
+    top: 0;
+    max-width: 100%;
+    width: 100%;
   }
 
-  .title {
-    font-size: 2.4rem;
-  }
-
-  .intro {
-    font-size: 1.1rem;
-  }
-
-  .section {
-    padding-left: 20px;
-    border-left-width: 2px;
-  }
-
-  .section h2 {
-    font-size: 1.1rem;
-  }
-
-  .section p {
-    font-size: 1rem;
-  }
-
-  .socialIcons a {
-    font-size: 2.5rem;
-  }
-}
-
-/* MOBILE */
-@media (max-width: 600px) {
-  .page {
-    padding: 60px 20px;
-  }
-
-  .profileImage {
-    max-width: 220px;
-  }
-
-  .title {
-    font-size: 2rem;
-  }
-
-  .intro {
-    font-size: 1rem;
-    text-align: left;
-  }
-
-  .section {
-    padding-left: 16px;
-    gap: 12px;
-  }
-
-  .section h2 {
-    font-size: 1rem;
-  }
-
-  .section p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-  }
-
-  .socialIcons {
-    gap: 20px;
-  }
-
-  .socialIcons a {
-    font-size: 2rem;
+  .rightColumn {
+    max-height: none;
+    overflow: visible;
+    padding-top: 0;
   }
 }
