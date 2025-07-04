@@ -50,19 +50,34 @@
 }
 
 .platformLogo {
-  width: 150px;
-  height: auto;
   display: block;
+  width: 150px;           
+  height: 80px;           
+  background-color: #eee; 
+  padding: 8px;
+  border-radius: 2px;
   margin-top: 30px;
-  border: none;
+  object-fit: contain;    
+  box-sizing: border-box;
 }
 
+
 .lightBackground {
-  background-color: #f9f9f9;
+  background-color: #2a2a2a;
+  color: #eee;
+}
+
+.lightBackground .role {
+  color: #bbb;
 }
 
 .darkBackground {
-  background-color: #eaeaea;
+  background-color: #1c1c1c;
+  color: #eee;
+}
+
+.darkBackground .role {
+  color: #aaa;
 }
 
 /* TABLET */
