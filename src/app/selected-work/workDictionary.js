@@ -1,5 +1,6 @@
 const workDictionary = {
   en: {
+    introText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.",
     projects: {
       suture: {
         folder: "suture",
@@ -90,6 +91,7 @@ const workDictionary = {
   },
 
   pt: {
+    introText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.",
     projects: {
       suture: {
         folder: "suture",
