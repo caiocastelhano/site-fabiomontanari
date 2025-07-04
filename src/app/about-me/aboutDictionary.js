@@ -61,7 +61,7 @@ const aboutDictionary = {
     childActorText: "Yep, that's true—I acted professionally from childhood into my mid-20s, on TV, stage, and countless commercials. Thankfully, most footage is buried somewhere online. Acting profoundly shaped my understanding of drama, but these days, I happily stay behind the scenes.",
 
     closingTitle: "Let's Talk",
-    closingText: "Have a project in mind? Reach out and let's chat possibilities—ideally over coffee.",
+    closingText: "Have a project in mind? Reach out and let's chat possibilities—ideally over coffee:\n\nfabiobmontanari@gmail.com (direct)\nluisagiesteira@atena.art.br (rep: Atena)",
   },
 
   pt: {
@@ -125,8 +125,8 @@ const aboutDictionary = {
     childActorTitle: "Ator mirim",
     childActorText: "Sim, é verdade — atuei profissionalmente desde a infância até meados dos 20 e poucos anos, na TV, nos palcos e em incontáveis comerciais. Felizmente, boa parte desse material está enterrada pela internet. Atuar moldou profundamente meu entendimento sobre dramaturgia, mas hoje fico feliz nos bastidores.",
 
-    closingTitle: "Vamos conversar",
-    closingText: "Está com um projeto em mente? Me escreva — e vamos conversar (de preferência com um café no meio).",
+    closingTitle: "Vamos Conversar",
+    closingText: "Tem um projeto em mente? Escreva e vamos conversar sobre possibilidades—de preferência com um café:\n\nfabiobmontanari@gmail.com (direto)\nluisagiesteira@atena.art.br (agência: Atena)",
   }
 };
 

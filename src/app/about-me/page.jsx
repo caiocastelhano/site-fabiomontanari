@@ -8,6 +8,7 @@ import aboutDictionary from './aboutDictionary';
 import { FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { SiImdb } from 'react-icons/si';
 import Image from 'next/image';
+import React from "react";
 
 export default function AboutMePage() {
   const { language } = useLanguage();
@@ -101,7 +102,14 @@ export default function AboutMePage() {
 
             <section className={styles.closing}>
               <h2>{t.closingTitle}</h2>
-              <p>{t.closingText}</p>
+              <p>
+                {t.closingText.split('\n').map((line, index) => (
+                  <React.Fragment key={index}>
+                    {line}
+                    <br />
+                  </React.Fragment>
+                ))}
+              </p>
             </section>
           </div>
         </div>
