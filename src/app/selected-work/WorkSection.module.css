@@ -10,16 +10,16 @@
 }
 
 .textBlock {
-  flex: 2;
-  min-width: 300px;
+  flex: 1;
+  min-width: 260px;
   padding: 48px 24px;
   box-sizing: border-box;
 }
 
 .imageBlock {
-  flex: 1;
+  flex: 2;
   min-width: 280px;
-  max-width: 480px;
+  max-width: none;
 }
 
 .textRight {
