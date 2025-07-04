@@ -9,22 +9,20 @@ import WorkSection from "./WorkSection";
 
 export default function SelectedWorkPage() {
   const { language } = useLanguage();
-  const t = workDictionary[language].projects;
+  const t = workDictionary[language];
 
-  const projectKeys = Object.keys(t);
+  const projectKeys = Object.keys(t.projects);
 
   return (
     <>
       <Header />
 
-      <main
-        className={styles.page}
-        role="main"
-        aria-labelledby="selectedWorkTitle"
-      >
-        <h1 id="selectedWorkTitle" className={styles.visuallyHidden}>
-          Selected Work
-        </h1>
+      <main className={styles.page}>
+        <h1 className={styles.visuallyHidden}>Selected Work</h1>
+
+        <section className={styles.introSection}>
+          <p className={styles.introText}>{t.introText}</p>
+        </section>
 
         {projectKeys.map((key, index) => (
           <WorkSection key={key} projectKey={key} index={index} />
