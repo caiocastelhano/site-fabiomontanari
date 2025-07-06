@@ -111,11 +111,12 @@
   color: #fff;
 }
 
-/* RESPONSIVO */
+/* TABLET */
 @media (max-width: 900px) {
   .container {
     flex-direction: column;
     height: auto;
+    gap: 0;
   }
 
   .leftColumn {
@@ -123,11 +124,75 @@
     top: 0;
     max-width: 100%;
     width: 100%;
+    padding: 24px 16px;
   }
 
   .rightColumn {
     max-height: none;
     overflow: visible;
-    padding-top: 0;
+    padding: 40px 16px 24px;
+  }
+
+  .scrollIntro {
+    font-size: 1rem;
+    margin-bottom: 24px;
+  }
+
+  .accordion summary {
+    font-size: 1rem;
+  }
+
+  .accordion p {
+    font-size: 0.95rem;
+  }
+
+  .closing h2 {
+    font-size: 1rem;
+  }
+
+  .closing p {
+    font-size: 0.95rem;
+  }
+
+  .socialIcons {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .socialIcons a {
+    font-size: 1.8rem;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .leftColumn {
+    padding: 20px 12px;
+  }
+
+  .rightColumn {
+    padding: 32px 12px 20px;
+  }
+
+  .initialText {
+    font-size: 0.95rem;
+  }
+
+  .scrollIntro {
+    font-size: 0.95rem;
+  }
+
+  .accordion summary {
+    font-size: 0.95rem;
+  }
+
+  .accordion p,
+  .closing p {
+    font-size: 0.9rem;
+  }
+
+  .socialIcons a {
+    font-size: 1.6rem;
   }
 }
