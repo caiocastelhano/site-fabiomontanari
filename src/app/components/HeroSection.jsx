@@ -1,14 +1,36 @@
 import styles from './HeroSection.module.css';
+import Image from 'next/image';
 import { dictionary } from '../../lib/dictionary';
 
 export default function HeroSection({ language = 'en' }) {
   const { title, paragraph, sections } =
     dictionary.hero[language] || dictionary.hero.en;
 
+  const images = [1, 2, 3, 4];
+
   return (
     <section className={styles.heroSection}>
+      <div className={styles.imageGrid}>
+        {images.map((num) => (
+          <div key={num} className={styles.gridItem}>
+            <Image
+              src={`/images/hero/image${num}.jpg`}
+              alt={
+                language === 'pt'
+                  ? `Imagem ${num} do mosaico da seção inicial`
+                  : `Image ${num} from the HeroSection mosaic`
+              }
+              fill
+              className={styles.gridImage}
+              style={{ objectFit: "cover" }}
+              loading={num === 1 ? "eager" : "lazy"}
+            />
+          </div>
+        ))}
+        <div className={styles.mask} aria-hidden="true" />
+      </div>
+
       <div className={styles.overlay}>
-        {/* Título oculto para leitores de tela */}
         <h1 className={styles.visuallyHidden}>{title}</h1>
 
         <p className={styles.paragraph}>{paragraph}</p>
