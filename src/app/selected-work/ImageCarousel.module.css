@@ -56,6 +56,12 @@
   cursor: not-allowed;
 }
 
+.arrowLeft:focus,
+.arrowRight:focus {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+
 /* TABLET */
 @media (max-width: 768px) {
   .imageWrapper {
