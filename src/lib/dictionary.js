@@ -109,6 +109,7 @@ export const dictionary = {
 
   header: {
   en: {
+    role: "Screenwriter / Filmmaker",
     nav: [
       'Selected Work',
       'Industry Engagement & Research',
@@ -117,6 +118,7 @@ export const dictionary = {
     ],
   },
   pt: {
+    role: "Roteirista / Diretor",
     nav: [
       'Trabalhos Selecionados',
       'Pesquisa & Parcerias com a Indústria',
