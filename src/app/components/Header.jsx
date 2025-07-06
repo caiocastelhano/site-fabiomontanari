@@ -19,6 +19,7 @@ export default function Header() {
   const wrapperRef = useRef(null);
 
   const navItems = dictionary.header[language]?.nav || dictionary.header.en.nav;
+  const roleText = dictionary.header[language]?.role || dictionary.header.en.role;
   const navLinks = [
   '/selected-work',
   '/industry-research',
@@ -43,7 +44,8 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.left}>
         <Link href="/" className={`${styles.siteName} ${cinzel.className}`} title="Go to homepage">
-          Fabio Montanari
+          <span className={styles.name}>Fabio Montanari</span>
+          <span className={styles.role}>{roleText}</span>
         </Link>
       </div>
 
