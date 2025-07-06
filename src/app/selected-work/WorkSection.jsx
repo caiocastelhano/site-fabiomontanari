@@ -1,11 +1,7 @@
 import styles from './WorkSection.module.css';
 import ImageCarousel from './ImageCarousel';
-import workDictionary from './workDictionary';
-import { useLanguage } from '../context/LanguageContext';
 
-export default function WorkSection({ projectKey, index }) {
-  const { language } = useLanguage();
-  const project = workDictionary[language].projects[projectKey];
+export default function WorkSection({ project, projectKey, index }) {
   const isEven = index % 2 === 0;
 
   return (
