@@ -29,9 +29,6 @@ export default function IndustryContent() {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title} id="industry-title">
-        Industry Engagement & Research
-      </h1>
       <p className={styles.intro}>{t.intro}</p>
 
       <IndustryGallery images={images} captions={t.captions} />
