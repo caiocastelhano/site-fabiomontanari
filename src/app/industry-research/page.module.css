@@ -1,13 +1,21 @@
 /* DESKTOP */
 .page {
-  min-height: 100svh;
+  min-height: 100vh;
   padding: 80px 24px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #111;
   color: #eee;
+
+  background-color: #111;
+  background-image:
+    linear-gradient(rgba(17, 17, 17, 0.85), rgba(17, 17, 17, 0.85)),
+    url("/images/industry-research/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 
 .container {
   max-width: 800px;
