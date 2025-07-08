@@ -10,21 +10,23 @@ import styles from "./Blurb.module.css";
 
 export default function Blurb({ blurbs }) {
   return (
-    <Swiper
-      pagination={{ clickable: true }}
-      modules={[Pagination]}
-      spaceBetween={40}
-      slidesPerView={1}
-      className={styles.carousel}
-    >
-      {blurbs.map((blurb, index) => (
-        <SwiperSlide key={index}>
-          <div className={styles.blurb}>
-            <p className={styles.text}>{blurb.text}</p>
-            <p className={styles.author}>— {blurb.author}</p>
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div className={styles.carouselWrapper}>
+      <Swiper
+        pagination={{ clickable: true }}
+        modules={[Pagination]}
+        spaceBetween={40}
+        slidesPerView={1}
+        className={styles.carousel}
+      >
+        {blurbs.map((blurb, index) => (
+          <SwiperSlide key={index}>
+            <div className={styles.blurb}>
+              <p className={styles.text}>{blurb.text}</p>
+              <p className={styles.author}>— {blurb.author}</p>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 }
