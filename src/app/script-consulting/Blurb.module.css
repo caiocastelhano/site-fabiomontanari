@@ -1,5 +1,4 @@
 .blurb {
-  margin-bottom: 2rem;
   padding-left: 1rem;
   border-left: 2px solid #ccc;
 }
@@ -15,3 +14,23 @@
   font-size: 0.9rem;
   color: #555;
 }
+
+.carousel {
+  padding-bottom: 80px;
+}
+
+.carouselWrapper {
+  position: relative;
+  min-height: 250px;
+}
+
+.carousel :global(.swiper-pagination) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
