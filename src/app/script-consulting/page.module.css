@@ -1,26 +1,30 @@
 .page {
-  min-height: 100svh;
-  padding: 80px 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
-.container {
-  max-width: 800px;
+.visuallyHidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.intro {
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  white-space: pre-line;
+}
+
+.blurbsSection {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  text-align: left;
-}
-
-.title {
-  font-size: 2.2rem;
-  font-weight: bold;
-}
-
-@media (max-width: 600px) {
-  .title {
-    font-size: 1.8rem;
-  }
+  gap: 2.5rem;
 }
