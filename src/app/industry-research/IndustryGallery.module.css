@@ -39,6 +39,7 @@
   justify-content: center;
   align-items: center;
   z-index: 1200;
+  overflow-x: hidden;
 }
 
 .modalContent {
@@ -46,7 +47,7 @@
   background: white;
   padding: 24px;
   border-radius: 8px;
-  max-width: 90vw;
+  width: 90vw;
   max-height: 90vh;
   overflow-y: auto;
   text-align: center;
