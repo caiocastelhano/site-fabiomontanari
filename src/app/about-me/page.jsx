@@ -9,7 +9,6 @@ export default function AboutMePage() {
       <Header />
 
       <main className={styles.page}>
-        <h1 className={styles.visuallyHidden}>About Fabio Montanari</h1>
         <AboutContent />
       </main>
 
