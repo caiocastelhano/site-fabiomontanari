@@ -9,9 +9,6 @@ export default function IndustryResearchPage() {
       <Header />
 
       <main className={styles.page} aria-labelledby="industry-title">
-        <h1 className={styles.visuallyHidden} id="industry-title">
-          Industry Engagement & Research
-        </h1>
         <IndustryContent />
       </main>
 
@@ -19,3 +16,4 @@ export default function IndustryResearchPage() {
     </>
   );
 }
+
