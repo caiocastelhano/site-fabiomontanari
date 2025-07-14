@@ -30,7 +30,6 @@ export default function HeroSection({ language = 'en' }) {
         <div className={styles.mask} aria-hidden="true" />
       </div>
 
-      { /* 
       <div className={styles.overlay}>
         <h1 className={styles.visuallyHidden}>{title}</h1>
 
@@ -51,7 +50,6 @@ export default function HeroSection({ language = 'en' }) {
           ))}
         </nav>
       </div>
-      */}
     </section>
   );
 }
