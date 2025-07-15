@@ -1,5 +1,6 @@
 const workDictionary = {
   en: {
+    pageTitle: "Selected Work",
     introText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.",
     projects: {
       suture: {
@@ -91,6 +92,7 @@ const workDictionary = {
   },
 
   pt: {
+    pageTitle: "Trabalhos selecionados",
     introText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.",
     projects: {
       suture: {
