@@ -11,7 +11,7 @@ export default function ImageCarousel({ folderName }) {
     const urls = [];
 
     for (let i = 1; i <= 10; i++) {
-      urls.push(`/images/selected-work/${folderName}/image${i}.jpg`);
+      urls.push(`/images/selected-work/${folderName}/image${i}.webp`);
     }
 
     const checkImages = async () => {
