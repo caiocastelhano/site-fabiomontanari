@@ -113,22 +113,44 @@
 
 /* TABLET */
 @media (max-width: 900px) {
+  .page {
+    background-position: left center;
+  }
+
   .container {
     flex-direction: column;
     height: auto;
     gap: 0;
+    padding: 48px 20px;
   }
 
   .initialText {
     font-size: 1rem;
   }
 
+  .blocks {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+  }
+
+  .textCard {
+    padding: 20px;
+  }
+
+  .cardTitle {
+    font-size: 1.1rem;
+  }
+
+  .cardText p {
+    font-size: 0.95rem;
+  }
+
   .closing h2 {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .closing p {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 
   .socialIcons {
@@ -138,14 +160,48 @@
   }
 
   .socialIcons a {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
 
 /* MOBILE */
 @media (max-width: 480px) {
+  .page {
+    background-position: 10% center;
+  }
+
+  .container {
+    padding: 40px 16px;
+  }
+
+  .pageTitle {
+    font-size: 2rem;
+    margin-bottom: 32px;
+  }
+
   .initialText {
     font-size: 0.95rem;
+  }
+
+  .blocks {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .textCard {
+    padding: 16px;
+  }
+
+  .cardTitle {
+    font-size: 1rem;
+  }
+
+  .cardText p {
+    font-size: 0.9rem;
+  }
+
+  .closing h2 {
+    font-size: 1rem;
   }
 
   .closing p {
