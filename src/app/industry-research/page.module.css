@@ -58,6 +58,12 @@
   line-height: 1.2;
 }
 
+.intro {
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+}
+
 /* TABLET */
 @media (max-width: 900px) {
   .page {
