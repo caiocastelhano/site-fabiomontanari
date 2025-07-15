@@ -9,13 +9,15 @@ import React from "react";
 export default function WorkContent() {
   const { language } = useLanguage();
   const t = workDictionary[language];
-
   const projectKeys = Object.keys(t.projects);
 
   return (
-    <>
+    <div className={styles.page}>
       <section className={styles.introSection}>
-        <p className={styles.introText}>{t.introText}</p>
+        <div className={styles.container}>
+          <h1 className={styles.pageTitle}>{t.pageTitle}</h1>
+          <p className={styles.introText}>{t.introText}</p>
+        </div>
       </section>
 
       {projectKeys.map((key, index) => (
@@ -26,6 +28,6 @@ export default function WorkContent() {
           project={t.projects[key]}
         />
       ))}
-    </>
+    </div>
   );
 }
