@@ -1,4 +1,4 @@
-/*  DESKTOP */
+/* DESKTOP */
 .header {
   width: 100%;
   padding: 16px 24px;
@@ -56,21 +56,26 @@
   border: 1px solid #111;
   padding: 4px 10px;
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #ccc;
   cursor: pointer;
   transition: all 0.2s ease;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .langButton:hover {
   background-color: #333;
-  border-color: #333;
+  border-color: #666;
+  color: white;
 }
 
 .active {
   background-color: transparent;
-  color: #ccc;
-  border: 1px solid #ccc;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 .menuWrapper {
@@ -119,7 +124,7 @@
   font-size: 1rem;
 }
 
-/*  TABLET */
+/* TABLET */
 @media (max-width: 900px) and (min-width: 601px) {
   .header {
     padding: 14px 20px;
@@ -133,12 +138,19 @@
   }
 
   .right {
-    gap: 10px;
+    gap: 6px;
+  }
+
+  .langWrapper {
+    gap: 6px;
+    margin-right: 0;
   }
 
   .langButton {
     width: 30px;
     height: 30px;
+    font-size: 0.8rem;
+    padding: 0;
   }
 
   .menuWrapper {
@@ -172,12 +184,19 @@
   }
 
   .right {
-    gap: 8px;
+    gap: 6px;
+  }
+
+  .langWrapper {
+    gap: 6px;
+    margin-right: 0;
   }
 
   .langButton {
     width: 28px;
     height: 28px;
+    font-size: 0.75rem;
+    padding: 0;
   }
 
   .menuWrapper {
