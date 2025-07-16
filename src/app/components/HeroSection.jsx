@@ -14,7 +14,7 @@ export default function HeroSection({ language = 'en' }) {
         {images.map((num) => (
           <div key={num} className={styles.gridItem}>
             <Image
-              src={`/images/hero/image${num}.jpg`}
+              src={`/images/hero/image${num}.webp`}
               alt={
                 language === 'pt'
                   ? `Imagem ${num} do mosaico da seção inicial`
