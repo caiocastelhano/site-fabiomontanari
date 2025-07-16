@@ -17,7 +17,12 @@
   margin: 0 auto;
   border-radius: 4px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.overlay:hover {
+  transform: translateY(-6px) scale(1.01);
+  opacity: 0.95;
 }
 
 .title {
