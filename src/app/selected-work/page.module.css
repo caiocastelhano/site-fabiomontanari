@@ -52,3 +52,20 @@
 .darkBackground {
   background-color: #eaeaea;
 }
+
+/* TABLET & MOBILE */
+@media (max-width: 900px) {
+  .container {
+    padding: 40px 16px;
+  }
+
+  .pageTitle {
+    font-size: 1.8rem;
+    margin-bottom: 32px;
+  }
+
+  .introText {
+    font-size: 1.1rem;
+    padding: 0 8px;
+  }
+}
