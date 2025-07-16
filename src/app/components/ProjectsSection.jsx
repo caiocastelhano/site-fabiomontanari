@@ -16,7 +16,7 @@ export default function ProjectsSection({ language = 'en' }) {
           : 'Selected work section'
       }
     >
-      <div className={styles.overlay}>
+      <div className={`${styles.overlay} ${styles.hoverEffect}`}>
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.paragraph}>{paragraph}</p>
         <Link href="/selected-work" className={styles.button}>

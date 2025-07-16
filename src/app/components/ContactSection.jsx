@@ -15,7 +15,7 @@ export default function ContactSection({ language = 'en' }) {
           : 'Contact section for Fabio Montanari'
       }
     >
-      <div className={styles.overlay}>
+      <div className={`${styles.overlay} ${styles.hoverEffect}`}>
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.paragraph}>{paragraph}</p>
         <div className={styles.emails}>

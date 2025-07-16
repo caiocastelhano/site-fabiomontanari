@@ -16,7 +16,7 @@ export default function ConsultingSection({ language = 'en' }) {
           : 'Script consulting and development section'
       }
     >
-      <div className={styles.overlay}>
+      <div className={`${styles.overlay} ${styles.hoverEffect}`}>
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.paragraph}>{paragraph}</p>
         <Link href="/script-consulting" className={styles.button}>

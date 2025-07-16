@@ -16,7 +16,7 @@ export default function TeachingSection({ language = 'en' }) {
           : 'Industry engagement and research section'
       }
     >
-      <div className={styles.overlay}>
+      <div className={`${styles.overlay} ${styles.hoverEffect}`}>
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.paragraph}>{paragraph}</p>
         <Link href="/industry-research" className={styles.button}>
