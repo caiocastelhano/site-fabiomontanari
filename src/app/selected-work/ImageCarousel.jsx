@@ -7,6 +7,7 @@ export default function ImageCarousel({ folderName }) {
   const [imageUrls, setImageUrls] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Primeiro useEffect: carrega imagens válidas
   useEffect(() => {
     const urls = [];
 
@@ -33,17 +34,10 @@ export default function ImageCarousel({ folderName }) {
     checkImages();
   }, [folderName]);
 
-  const goPrev = () => {
-    if (currentIndex > 0) setCurrentIndex(currentIndex - 1);
-  };
-
-  const goNext = () => {
-    if (currentIndex < imageUrls.length - 1) setCurrentIndex(currentIndex + 1);
-  };
-
-  if (imageUrls.length === 0) return null;
-
+  // Segundo useEffect: ativa swipe no mobile
   useEffect(() => {
+    if (imageUrls.length === 0) return;
+
     const wrapper = document.querySelector(`.${styles.imageWrapper}`);
     if (!wrapper) return;
 
@@ -75,6 +69,17 @@ export default function ImageCarousel({ folderName }) {
       wrapper.removeEventListener("touchend", handleTouchEnd);
     };
   }, [currentIndex, imageUrls]);
+
+  const goPrev = () => {
+    if (currentIndex > 0) setCurrentIndex(currentIndex - 1);
+  };
+
+  const goNext = () => {
+    if (currentIndex < imageUrls.length - 1) setCurrentIndex(currentIndex + 1);
+  };
+
+  // Só agora pode retornar null se não houver imagem
+  if (imageUrls.length === 0) return null;
 
   return (
     <div
