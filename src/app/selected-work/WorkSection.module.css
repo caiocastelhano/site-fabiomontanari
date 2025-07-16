@@ -80,12 +80,13 @@
   color: #aaa;
 }
 
-/* TABLET */
-@media (max-width: 768px) {
+/* TABLET & MOBILE */
+@media (max-width: 900px) {
   .projectContent {
     flex-direction: column;
     gap: 32px;
     padding: 32px 16px;
+    text-align: center;
   }
 
   .textBlock,
@@ -95,32 +96,16 @@
   }
 
   .projectTitle {
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 1.4rem;
   }
 
   .role,
   .description {
-    text-align: center;
-  }
-
-  .platformLogo {
-    margin: 24px auto 0;
-  }
-}
-
-/* MOBILE */
-@media (max-width: 480px) {
-  .projectTitle {
-    font-size: 1.3rem;
-  }
-
-  .role,
-  .description {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 
   .platformLogo {
     width: 120px;
+    margin: 24px auto 0;
   }
 }

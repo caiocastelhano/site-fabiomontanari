@@ -43,6 +43,39 @@ export default function ImageCarousel({ folderName }) {
 
   if (imageUrls.length === 0) return null;
 
+  useEffect(() => {
+    const wrapper = document.querySelector(`.${styles.imageWrapper}`);
+    if (!wrapper) return;
+
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    const handleTouchStart = (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    };
+
+    const handleTouchEnd = (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      const diff = touchStartX - touchEndX;
+
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) {
+          goNext();
+        } else {
+          goPrev();
+        }
+      }
+    };
+
+    wrapper.addEventListener("touchstart", handleTouchStart);
+    wrapper.addEventListener("touchend", handleTouchEnd);
+
+    return () => {
+      wrapper.removeEventListener("touchstart", handleTouchStart);
+      wrapper.removeEventListener("touchend", handleTouchEnd);
+    };
+  }, [currentIndex, imageUrls]);
+
   return (
     <div
       className={styles.imageWrapper}

@@ -21,7 +21,6 @@
   border: none;
 }
 
-/* Botões */
 .arrowLeft,
 .arrowRight {
   position: absolute;
@@ -62,22 +61,13 @@
   outline-offset: 4px;
 }
 
-/* TABLET */
-@media (max-width: 768px) {
-  .imageWrapper {
-    height: 300px;
+/* TABLET & MOBILE */
+@media (max-width: 900px) {
+  .carousel {
+    max-width: none;
+    padding: 0 16px;
   }
 
-  .arrowLeft,
-  .arrowRight {
-    width: 32px;
-    height: 32px;
-    font-size: 1.2rem;
-  }
-}
-
-/* MOBILE */
-@media (max-width: 480px) {
   .imageWrapper {
     height: 220px;
   }
