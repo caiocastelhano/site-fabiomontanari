@@ -1,7 +1,7 @@
 /* DESKTOP */
 .heroSection {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   color: white;
   display: flex;
   align-items: center;
@@ -117,6 +117,11 @@
 @media (max-width: 1024px) {
   .heroSection {
     padding: 0 24px;
+    min-height: 100vh;
+  }
+
+  .gridItem {
+    aspect-ratio: 1.5 / 1;
   }
 
   .overlay {
@@ -149,7 +154,17 @@
 @media (max-width: 600px) {
   .heroSection {
     height: auto;
+    min-height: 100vh; /* Garante dobra cheia */
     padding: 80px 16px 60px;
+  }
+
+  .imageGrid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .gridItem {
+    aspect-ratio: 1 / 1; /* Mantém proporção quadrada */
   }
 
   .overlay {
@@ -172,11 +187,5 @@
   .link {
     font-size: 1rem;
     padding-bottom: 2px;
-  }
-
-  /* Imagens em 2 colunas no mobile */
-  .imageGrid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
   }
 }
