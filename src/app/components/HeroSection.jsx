@@ -23,7 +23,7 @@ export default function HeroSection({ language = 'en' }) {
               fill
               className={styles.gridImage}
               style={{ objectFit: "cover" }}
-              priority={num === 1}
+              priority
             />
           </div>
         ))}
