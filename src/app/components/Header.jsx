@@ -54,12 +54,14 @@ export default function Header() {
           <button
             onClick={() => toggleLanguage('en')}
             className={`${styles.langButton} ${language === 'en' ? styles.active : ''}`}
+            aria-label="Switch to English"
           >
             EN
           </button>
           <button
             onClick={() => toggleLanguage('pt')}
             className={`${styles.langButton} ${language === 'pt' ? styles.active : ''}`}
+            aria-label="Mudar para Português"
           >
             PT
           </button>
