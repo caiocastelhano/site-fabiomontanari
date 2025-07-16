@@ -19,6 +19,13 @@
   object-fit: cover;
   display: block;
   border: none;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  will-change: opacity;
+}
+
+.loaded {
+  opacity: 1;
 }
 
 .arrowLeft,

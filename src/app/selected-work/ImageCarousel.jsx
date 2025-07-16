@@ -3,38 +3,26 @@
 import { useState, useEffect } from "react";
 import styles from "./ImageCarousel.module.css";
 
-export default function ImageCarousel({ folderName }) {
+export default function ImageCarousel({ folderName, totalImages, alts = [] }) {
   const [imageUrls, setImageUrls] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isLoaded, setIsLoaded] = useState(false);
 
-  // Primeiro useEffect: carrega imagens válidas
+  // Gera URLs com base no número passado, sem usar fetch
   useEffect(() => {
+    if (!folderName || !totalImages) return;
+
     const urls = [];
 
-    for (let i = 1; i <= 10; i++) {
+    for (let i = 1; i <= totalImages; i++) {
       urls.push(`/images/selected-work/${folderName}/image${i}.webp`);
     }
 
-    const checkImages = async () => {
-      const validUrls = [];
+    setImageUrls(urls);
+    setCurrentIndex(0);
+  }, [folderName, totalImages]);
 
-      for (const url of urls) {
-        try {
-          const res = await fetch(url, { method: "HEAD" });
-          if (res.ok) validUrls.push(url);
-        } catch (err) {
-          console.error("Erro ao verificar imagem:", url);
-        }
-      }
-
-      setImageUrls(validUrls);
-      setCurrentIndex(0);
-    };
-
-    checkImages();
-  }, [folderName]);
-
-  // Segundo useEffect: ativa swipe no mobile
+  // Swipe para mobile
   useEffect(() => {
     if (imageUrls.length === 0) return;
 
@@ -78,7 +66,10 @@ export default function ImageCarousel({ folderName }) {
     if (currentIndex < imageUrls.length - 1) setCurrentIndex(currentIndex + 1);
   };
 
-  // Só agora pode retornar null se não houver imagem
+  useEffect(() => {
+    setIsLoaded(false);
+  }, [currentIndex]);
+
   if (imageUrls.length === 0) return null;
 
   return (
@@ -112,10 +103,13 @@ export default function ImageCarousel({ folderName }) {
       )}
 
       <img
+        key={imageUrls[currentIndex]}
         src={imageUrls[currentIndex]}
-        alt={`Image ${currentIndex + 1} of ${imageUrls.length} from project ${folderName}`}
-        className={styles.image}
+        alt={alts[currentIndex] || `Image ${currentIndex + 1} of ${imageUrls.length} from project ${folderName}`}
+        className={`${styles.image} ${isLoaded ? styles.loaded : ""}`}
+        onLoad={() => setIsLoaded(true)}
         loading={currentIndex === 0 ? "eager" : "lazy"}
+        decoding="async"
         tabIndex="0"
       />
 

@@ -45,14 +45,6 @@
   max-width: 800px;
 }
 
-.lightBackground {
-  background-color: #f9f9f9;
-}
-
-.darkBackground {
-  background-color: #eaeaea;
-}
-
 /* TABLET & MOBILE */
 @media (max-width: 900px) {
   .container {

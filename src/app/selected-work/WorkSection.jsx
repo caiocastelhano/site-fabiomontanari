@@ -39,7 +39,11 @@ export default function WorkSection({ project, projectKey, index }) {
         </div>
 
         <div className={styles.imageBlock}>
-          <ImageCarousel folderName={project.folder || projectKey} />
+          <ImageCarousel
+            folderName={project.folder || projectKey}
+            totalImages={project.totalImages}
+            alts={project.alts}
+          />
         </div>
       </div>
     </section>
