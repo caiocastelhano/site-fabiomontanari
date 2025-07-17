@@ -6,6 +6,13 @@
   color: #e2e2e2;
   font-family: sans-serif;
   line-height: 1.6;
+  background-color: #111;
+  background-image:
+    linear-gradient(rgba(17, 17, 17, 0.85), rgba(17, 17, 17, 0.85)),
+    url("/images/script-consultant/background.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .container {
