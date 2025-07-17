@@ -8,7 +8,7 @@ const workDictionary = {
         title: "SUTURE",
         role: "Created by & Screenwriter | Amazon Prime Original",
         description: `A gripping medical thriller exploring the thin line between healing and harm. Officially selected for the Berlinale International Film Festival's new TV series section (2025), nominated for Best Drama at the ABRA Awards, and reached the Top 10 most-watched series in multiple countries.\n\nAvailable on Prime Video (selected countries).`,
-        platformLogo: "/images/platforms/prime.png",
+        platformLogo: "/images/platforms/prime.webp",
         totalImages: 5
       },
       jointVenture: {
@@ -16,7 +16,7 @@ const workDictionary = {
         title: "JOINT VENTURE",
         role: "Screenwriter | HBO Originals",
         description: `Directed by Fernando Meirelles (City of God) and Quico Meirelles, this award-winning thriller follows a man determined to turn his underground business legitimate and find acceptance—only to face resistance, mafia threats, and escalating real-life consequences.\n\nAvailable on HBO.`,
-        platformLogo: "/images/platforms/hbo.png",
+        platformLogo: "/images/platforms/hbo.webp",
         totalImages: 13
       },
       onlyForLove: {
@@ -24,7 +24,7 @@ const workDictionary = {
         title: "ONLY FOR LOVE",
         role: "Screenwriter | Netflix Original",
         description: `A coming-of-age drama about a band on the brink of success, navigating ambition, big dreams, and personal demons on their way to the spotlight.\n\nAvailable on Netflix.`,
-        platformLogo: "/images/platforms/netflix.png",
+        platformLogo: "/images/platforms/netflix.webp",
         totalImages: 9
       },
       missingMatoaka: {
@@ -39,7 +39,7 @@ const workDictionary = {
         title: "INVISIBLE CITY",
         role: "Screenwriter Collaborator | Netflix Original",
         description: `A supernatural thriller from Carlos Saldanha (Ice Age, Rio) that blends Brazilian folklore with a modern crime mystery in Rio de Janeiro.\n\nAvailable on Netflix.`,
-        platformLogo: "/images/platforms/netflix.png",
+        platformLogo: "/images/platforms/netflix.webp",
         totalImages: 8
       },
       samantha: {
@@ -47,7 +47,7 @@ const workDictionary = {
         title: "SAMANTHA!",
         role: "Screenwriter | Netflix Original (Season Two)",
         description: `A sharp comedy about a former child star hilariously desperate to reclaim fame amidst family chaos and absurd celebrity antics.\n\nAvailable on Netflix.`,
-        platformLogo: "/images/platforms/netflix.png",
+        platformLogo: "/images/platforms/netflix.webp",
         totalImages: 7
       },
       madToTheMax: {
@@ -55,7 +55,7 @@ const workDictionary = {
         title: "MAD TO THE MAX",
         role: "Screenwriter | NatGeo Hybrid Format",
         description: `Three robotics experts must build vehicles and gadgets to survive a simulated apocalypse.\n\nAvailable on Disney+ (selected countries).`,
-        platformLogo: "/images/platforms/natgeo.png",
+        platformLogo: "/images/platforms/natgeo.webp",
         totalImages: 7
       },
       theGrillMan: {
@@ -84,7 +84,7 @@ const workDictionary = {
         title: "DRAUZIO VARELLA",
         role: "Screenwriter | Globo/Fantástico (Docuseries)",
         description: `Writer of three vérité-style docuseries featuring renowned physician Drauzio Varella. Highlights include Brasil Sem Cigarro, which sparked a nationwide anti-smoking campaign in Brazil.`,
-        platformLogo: "/images/platforms/globo.png",
+        platformLogo: "/images/platforms/globo.webp",
         totalImages: 3
       },
       chessShop: {
@@ -113,7 +113,7 @@ const workDictionary = {
         title: "SUTURA",
         role: "Criador e Roteirista | Original Amazon Prime",
         description: `Um thriller médico eletrizante sobre a tênue linha entre cura e dano. Selecionado oficialmente para a nova seção de séries do Festival de Berlim (2025), indicado a Melhor Drama no Prêmio ABRA e entre as 10 séries mais assistidas em diversos países.\n\nDisponível no Prime Video (países selecionados).`,
-        platformLogo: "/images/platforms/prime.png",
+        platformLogo: "/images/platforms/prime.webp",
         totalImages: 5
       },
       jointVenture: {
@@ -121,7 +121,7 @@ const workDictionary = {
         title: "PICO DA NEBLINA",
         role: "Roteirista | HBO Originals",
         description: `Dirigido por Fernando Meirelles (Cidade de Deus) e Quico Meirelles, este premiado thriller acompanha um homem determinado a legalizar seu negócio e encontrar aceitação — mas enfrenta resistência, ameaças da máfia e consequências cada vez mais graves.\n\nDisponível na HBO.`,
-        platformLogo: "/images/platforms/hbo.png",
+        platformLogo: "/images/platforms/hbo.webp",
         totalImages: 13
       },
       onlyForLove: {
@@ -129,7 +129,7 @@ const workDictionary = {
         title: "SÓ SE FOR POR AMOR",
         role: "Roteirista | Original Netflix",
         description: `Drama coming-of-age sobre uma banda à beira do sucesso, navegando entre ambição, sonhos grandes e fantasmas pessoais rumo aos holofotes.\n\nDisponível na Netflix.`,
-        platformLogo: "/images/platforms/netflix.png",
+        platformLogo: "/images/platforms/netflix.webp",
         totalImages: 9
       },
       missingMatoaka: {
@@ -144,7 +144,7 @@ const workDictionary = {
         title: "CIDADE INVISÍVEL",
         role: "Colaborador de Roteiro | Original Netflix",
         description: `Um thriller sobrenatural de Carlos Saldanha (A Era do Gelo, Rio) que mistura folclore brasileiro com um mistério policial contemporâneo no Rio de Janeiro.\n\nDisponível na Netflix.`,
-        platformLogo: "/images/platforms/netflix.png",
+        platformLogo: "/images/platforms/netflix.webp",
         totalImages: 8
       },
       samantha: {
@@ -152,7 +152,7 @@ const workDictionary = {
         title: "SAMANTHA!",
         role: "Roteirista | Original Netflix (2ª temporada)",
         description: `Uma comédia afiada sobre uma ex-estrela mirim desesperada (e hilária) para recuperar a fama em meio ao caos familiar e às loucuras do mundo das celebridades.\n\nDisponível na Netflix.`,
-        platformLogo: "/images/platforms/netflix.png",
+        platformLogo: "/images/platforms/netflix.webp",
         totalImages: 7
       },
       madToTheMax: {
@@ -160,7 +160,7 @@ const workDictionary = {
         title: "DESAFIO IMPOSSÍVEL",
         role: "Roteirista | Formato Híbrido NatGeo",
         description: `Três especialistas em robótica precisam construir veículos e dispositivos para sobreviver a um apocalipse simulado.\n\nDisponível no Disney+ (países selecionados).`,
-        platformLogo: "/images/platforms/natgeo.png",
+        platformLogo: "/images/platforms/natgeo.webp",
         totalImages: 7
       },
       theGrillMan: {
@@ -189,7 +189,7 @@ const workDictionary = {
         title: "DRAUZIO VARELLA",
         role: "Roteirista | Globo/Fantástico (Docusséries)",
         description: `Roteirista de três docusséries em estilo vérité com o renomado médico Drauzio Varella. Destaque para Brasil Sem Cigarro, que impulsionou uma campanha nacional contra o tabagismo.`,
-        platformLogo: "/images/platforms/globo.png",
+        platformLogo: "/images/platforms/globo.webp",
         totalImages: 3
       },
       chessShop: {
