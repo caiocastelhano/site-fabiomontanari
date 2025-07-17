@@ -7,7 +7,7 @@ const aboutDictionary = {
     multiculturalText: "Born and raised in Brazil, I earned my MFA at Columbia University (New York City) and now call Toronto home. Having worked across multiple countries—including the US, Brazil, Canada, Venezuela, and Argentina—my storytelling is enriched by diverse cultural perspectives. Turns out, broadening horizons works wonders for plot twists.",
 
     collaborationTitle: "Collaboration",
-    collaborationText: "I&apos;m perfectly happy writing solo, but very few things beat the magic of a well-oiled writers&apos; room in full flow. I&apos;ve worn many hats—from Staff Writer to Head Writer—and I&apos;ve also developed and sold original series for major players. Whether building something from scratch or jumping aboard mid-process, I&apos;m all in—as long as the coffee&apos;s flowing. Lots of coffee.",
+    collaborationText: "I'm perfectly happy writing solo, but very few things beat the magic of a well-oiled writers' room in full flow. I've worn many hats—from Staff Writer to Head Writer—and I've also developed and sold original series for major players. Whether building something from scratch or jumping aboard mid-process, I'm all in—as long as the coffee's flowing. Lots of coffee.",
 
     characterTitle: "Character-Driven Narratives",
     characterText: "I've tackled everything from musicals (Netflix), broad comedies (Netflix), and coming-of-age dramas (HBO), to medical thrillers (Prime Video). I love mixing genres to explore fresh storytelling possibilities. But I'm especially drawn to crafting nuanced, counterintuitive characters—often outsiders who never quite fit in. Maybe it's my past life as an actor, my current one as an immigrant, or simply my soft spot for misfits.",
@@ -17,8 +17,7 @@ const aboutDictionary = {
 
     innovationTitle: "Exploring New Frontiers",
     innovationText: (
-      <p>
-        I&apos;m always drawn to new formats, new technologies, and new ways of telling stories. I currently lead a research project on the intersection of AI and storytelling through{' '}
+      <p>{`I'm always drawn to new formats, new technologies, and new ways of telling stories. I currently lead a research project on the intersection of AI and storytelling through `}
         <a
           href="https://www.yorku.ca/research/connected-minds/"
           target="_blank"
@@ -26,15 +25,15 @@ const aboutDictionary = {
         >
           Connected Minds
         </a>
-        . I&apos;m also a Research Associate at{' '}
+        {`. I'm also a Research Associate at `}
         <a
           href="https://ampd.yorku.ca/sensorium/"
           target="_blank"
           rel="noopener noreferrer"
         >
           Sensorium
-        </a>{' '}
-        and a Fellow at{' '}
+        </a>
+        {` and a Fellow at `}
         <a
           href="https://www.yorku.ca/cerlac/"
           target="_blank"
@@ -42,30 +41,29 @@ const aboutDictionary = {
         >
           CERLAC
         </a>
-        . Innovation isn&apos;t a side project—it&apos;s part of how I keep pushing stories forward. I've also written an award-winning transmedia project recognized by Cannes Lions, Clio, and the One Club.
+        {`. Innovation isn't a side project—it's part of how I keep pushing stories forward. I've also written an award-winning transmedia project recognized by Cannes Lions, Clio, and the One Club.`}
       </p>
     ),
 
     teachingTitle: "Teaching & Mentorship",
     teachingText: (
-    <p>
-      I&apos;m currently the Area Head of Screenwriting at{' '}
-      <a
-        href="https://ampd.yorku.ca/people/fabio-montanari/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        York University
-      </a>{' '}
-      (Canada), where I teach both MFA and BFA film students. I&apos;ve taught in Brazil and in the U.S. (Barnard College and Columbia University), always balancing practice and pedagogy. I also mentor emerging filmmakers through initiatives like BBIC, Canada&apos;s largest program for Black creators. That balance between industry and academia is what keeps my storytelling alive—on and off the page.
-    </p>
+      <p>{`I'm currently the Area Head of Screenwriting at `}
+        <a
+          href="https://ampd.yorku.ca/people/fabio-montanari/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          York University
+        </a>
+        {` (Canada), where I teach both MFA and BFA film students. I've taught in Brazil and in the U.S. (Barnard College and Columbia University), always balancing practice and pedagogy. I also mentor emerging filmmakers through initiatives like BBIC, Canada's largest program for Black creators. That balance between industry and academia is what keeps my storytelling alive—on and off the page.`}
+      </p>
     ),
 
     childActorTitle: "Child actor",
     childActorText: "Yep, that's true—I acted professionally from childhood into my mid-20s, on TV, stage, and countless commercials. Thankfully, most footage is buried somewhere online. Acting profoundly shaped my understanding of drama, but these days, I happily stay behind the scenes.",
 
-    planBTitle: "Plan B (Don&apos;t Tell My Agent)",
-    planBText: "I&apos;ve been in the industry for almost two decades, but I still quietly believe I&apos;ll become a professional soccer player when I grow up. Just waiting on that call.",
+    planBTitle: "Plan B (Don't Tell My Agent)",
+    planBText: "I've been in the industry for almost two decades, but I still quietly believe I'll become a professional soccer player when I grow up. Just waiting on that call.",
 
     closingTitle: "Let's Talk",
     closingText: "Have a project in mind? Reach out and let's chat possibilities—ideally over coffee:\n\nfabiobmontanari@gmail.com (direct)\nluisagiesteira@atena.art.br (rep: Atena)",
@@ -89,8 +87,7 @@ const aboutDictionary = {
 
     innovationTitle: "Explorando novas fronteiras",
     innovationText: (
-      <p>
-        Sempre fui atraído por novos formatos, novas tecnologias e novas formas de contar histórias. Atualmente, lidero um projeto de pesquisa sobre a interseção entre IA e narrativa através do{' '}
+      <p>{`Sempre fui atraído por novos formatos, novas tecnologias e novas formas de contar histórias. Atualmente, lidero um projeto de pesquisa sobre a interseção entre IA e narrativa através do `}
         <a
           href="https://www.yorku.ca/research/connected-minds/"
           target="_blank"
@@ -98,15 +95,15 @@ const aboutDictionary = {
         >
           Connected Minds
         </a>
-        . Também sou Pesquisador Associado no{' '}
+        {`. Também sou Pesquisador Associado no `}
         <a
           href="https://ampd.yorku.ca/sensorium/"
           target="_blank"
           rel="noopener noreferrer"
         >
           Sensorium
-        </a>{' '}
-        e Fellow no{' '}
+        </a>
+        {` e Fellow no `}
         <a
           href="https://www.yorku.ca/cerlac/"
           target="_blank"
@@ -114,23 +111,22 @@ const aboutDictionary = {
         >
           CERLAC
         </a>
-        . Inovação não é um projeto paralelo—é parte do que me impulsiona a levar as histórias adiante. Também escrevi um projeto transmídia premiado e reconhecido por Cannes Lions, Clio e The One Club.
+        {`. Inovação não é um projeto paralelo—é parte do que me impulsiona a levar as histórias adiante. Também escrevi um projeto transmídia premiado e reconhecido por Cannes Lions, Clio e The One Club.`}
       </p>
     ),
 
     teachingTitle: "Ensino e mentoria",
     teachingText: (
-    <p>
-      Atualmente sou coordenador da área de Roteiro na{' '}
-      <a
-        href="https://ampd.yorku.ca/people/fabio-montanari/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        York University
-      </a>{' '}
-      (Canadá), onde ensino estudantes de cinema dos cursos de Mestrado (MFA) e Bacharelado (BFA). Já dei aulas no Brasil e nos Estados Unidos (Barnard College e Columbia University), sempre equilibrando prática e teoria. Também atuo como mentor de cineastas em formação por meio de iniciativas como o BBIC, maior programa do Canadá voltado para criadores negros. Esse equilíbrio entre indústria e academia é o que mantém minha escrita viva—dentro e fora da sala de aula.
-    </p>
+      <p>{`Atualmente sou coordenador da área de Roteiro na `}
+        <a
+          href="https://ampd.yorku.ca/people/fabio-montanari/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          York University
+        </a>
+        {` (Canadá), onde ensino estudantes de cinema dos cursos de Mestrado (MFA) e Bacharelado (BFA). Já dei aulas no Brasil e nos Estados Unidos (Barnard College e Columbia University), sempre equilibrando prática e teoria. Também atuo como mentor de cineastas em formação por meio de iniciativas como o BBIC, maior programa do Canadá voltado para criadores negros. Esse equilíbrio entre indústria e academia é o que mantém minha escrita viva—dentro e fora da sala de aula.`}
+      </p>
     ),
 
     childActorTitle: "Ator mirim",
