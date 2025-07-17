@@ -3,7 +3,7 @@ export const dictionary = {
     en: {
       title: 'Fabio Montanari',
       paragraph:
-        'Fabio Montanari is a screenwriter, filmmaker, and professor whose credits range from independent films to series on Netflix, HBO Max, and Prime Video. Fabio is also a Screenwriting professor at York University, where he leads a research project on AI & Storytelling. Find out more about his work.',
+        'I tell stories for screens big and small—streamers like Netflix, HBO Max, Prime Video, and some indie films that travelled the festival circuit. I teach screenwriting at York University and explore what happens when storytelling meets AI. Let’s dive in.',
       sections: [
         { id: 'selected-work', label: 'Selected Work' },
         { id: 'industry-research', label: 'Industry Engagement & Research' },
@@ -15,7 +15,7 @@ export const dictionary = {
     pt: {
       title: 'Fabio Montanari',
       paragraph:
-        'Fabio Montanari é roteirista, cineasta e professor, com trabalhos que vão de filmes independentes a séries na Netflix, HBO Max e Prime Video. É também professor de Roteiro na York University, onde lidera uma pesquisa sobre IA e Narrativas. Conheça mais sobre o seu trabalho.',
+        'Eu conto histórias para telas grandes e pequenas — plataformas como Netflix, HBO Max, Prime Video e alguns filmes independentes que circularam por festivais. Dou aulas de roteiro na Universidade de York e investigo o que acontece quando a narrativa encontra a inteligência artificial. Vamos nessa!',
       sections: [
         { id: 'selected-work', label: 'Trabalhos Selecionados' },
         { id: 'industry-research', label: 'Pesquisa & Parcerias com a Indústria' },
@@ -45,13 +45,13 @@ export const dictionary = {
     en: {
       title: 'Industry Engagement & Research',
       paragraph:
-        'From writers’ rooms to festival stages—I’m always up for a good story and a better conversation.',
+        'Talking craft, process, and the future of storytelling—onstage and off.',
       button: 'Join the Conversation',
     },
     pt: {
       title: 'Pesquisa & Parcerias com a Indústria',
       paragraph:
-        'De salas de roteiro a palcos de festivais — estou sempre em busca de uma boa história e de uma conversa ainda melhor.',
+        'Falando sobre técnica, processo e o futuro da narrativa — em cena e fora dela.',
       button: 'Participar da Conversa',
     },
   },
