@@ -31,13 +31,13 @@ export const dictionary = {
       title: 'Selected Work',
       paragraph:
         'From global streamers to indie gems—here’s a look at the stories I’ve helped bring to life.',
-      button: 'See All Works',
+      button: 'Explore the Projects',
     },
     pt: {
       title: 'Trabalhos Selecionados',
       paragraph:
         'De plataformas globais a pérolas independentes — aqui estão algumas das histórias que ajudei a transformar em realidade.',
-      button: 'Ver Todos os Trabalhos',
+      button: 'Explorar os Projetos',
     },
   },
 
@@ -46,13 +46,13 @@ export const dictionary = {
       title: 'Industry Engagement & Research',
       paragraph:
         'From writers’ rooms to festival stages—I’m always up for a good story and a better conversation.',
-      button: 'See Research & Industry Partnerships',
+      button: 'Join the Conversation',
     },
     pt: {
       title: 'Pesquisa & Parcerias com a Indústria',
       paragraph:
         'De salas de roteiro a palcos de festivais — estou sempre em busca de uma boa história e de uma conversa ainda melhor.',
-      button: 'Ver Pesquisa & Parcerias com a Indústria',
+      button: 'Participar da Conversa',
     },
   },
 
@@ -61,13 +61,13 @@ export const dictionary = {
       title: 'Script Consultant & Development',
       paragraph:
         'Got a story in the works? I’m here to help shape it.',
-      button: 'Explore Script Consulting & Development',
+      button: 'Ready to Write?',
     },
     pt: {
       title: 'Consultoria de Roteiro & Desenvolvimento',
       paragraph:
         'Tem uma história em andamento? Estou aqui para ajudar a dar forma a ela.',
-      button: 'Explorar Consultoria & Desenvolvimento',
+      button: 'Pronto para Escrever?',
     },
   },
 
@@ -76,13 +76,13 @@ export const dictionary = {
       title: 'About Me',
       paragraph:
         'Things you won’t find on my LinkedIn.',
-      button: 'Read More About Fabio',
+      button: 'Beyond the Bio',
     },
     pt: {
       title: 'Sobre Mim',
       paragraph:
         'Coisas que você não vai encontrar no meu LinkedIn.',
-      button: 'Leia Mais Sobre Fabio',
+      button: 'Além da Bio',
     },
   },
 
