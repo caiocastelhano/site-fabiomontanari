@@ -52,29 +52,32 @@
 .overlay {
   position: relative;
   z-index: 1;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
   background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(4px);
   padding: 60px 32px;
-  border-radius: 4px;
-  max-width: 1000px;
+  border-radius: 12px;
+  max-width: 900px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
+  animation: fadeInUp 0.6s ease both;
 }
 
-.visuallyHidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .paragraph {
   font-size: 1.35rem;
+  letter-spacing: 0.3px;
+  font-weight: 300;
   line-height: 1.7;
   margin-bottom: 48px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
@@ -111,6 +114,8 @@
 
 .link:hover::after {
   transform: scaleX(1);
+  color: #f0f0f0;
+  transform: scale(1.05);
 }
 
 /* TABLET */
@@ -137,10 +142,7 @@
   }
 
   .sectionLinks {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px 24px;
-    row-gap: 16px;
+    display: none;
   }
 
   .link {
@@ -168,9 +170,9 @@
   }
 
   .overlay {
-    padding: 40px 20px;
-    border-radius: 0;
-    box-shadow: none;
+    padding: 48px 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
   }
 
   .paragraph {
@@ -180,8 +182,7 @@
   }
 
   .sectionLinks {
-    flex-direction: column;
-    gap: 12px;
+    display: none;
   }
 
   .link {

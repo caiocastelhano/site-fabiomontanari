@@ -31,8 +31,7 @@ export default function HeroSection({ language = 'en' }) {
       </div>
 
       <div className={styles.overlay}>
-        <h1 className={styles.visuallyHidden}>{title}</h1>
-
+        
         <p className={styles.paragraph}>{paragraph}</p>
 
         <nav
