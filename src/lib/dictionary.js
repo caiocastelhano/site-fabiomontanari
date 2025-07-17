@@ -30,13 +30,13 @@ export const dictionary = {
     en: {
       title: 'Selected Work',
       paragraph:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
+        'From global streamers to indie gems—here’s a look at the stories I’ve helped bring to life.',
       button: 'See All Works',
     },
     pt: {
       title: 'Trabalhos Selecionados',
       paragraph:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
+        'De plataformas globais a pérolas independentes — aqui estão algumas das histórias que ajudei a transformar em realidade.',
       button: 'Ver Todos os Trabalhos',
     },
   },
@@ -45,13 +45,13 @@ export const dictionary = {
     en: {
       title: 'Industry Engagement & Research',
       paragraph:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
+        'From writers’ rooms to festival stages—I’m always up for a good story and a better conversation.',
       button: 'See Research & Industry Partnerships',
     },
     pt: {
       title: 'Pesquisa & Parcerias com a Indústria',
       paragraph:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
+        'De salas de roteiro a palcos de festivais — estou sempre em busca de uma boa história e de uma conversa ainda melhor.',
       button: 'Ver Pesquisa & Parcerias com a Indústria',
     },
   },
@@ -60,13 +60,13 @@ export const dictionary = {
     en: {
       title: 'Script Consultant & Development',
       paragraph:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
+        'Got a story in the works? I’m here to help shape it.',
       button: 'Explore Script Consulting & Development',
     },
     pt: {
       title: 'Consultoria de Roteiro & Desenvolvimento',
       paragraph:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
+        'Tem uma história em andamento? Estou aqui para ajudar a dar forma a ela.',
       button: 'Explorar Consultoria & Desenvolvimento',
     },
   },
@@ -75,13 +75,13 @@ export const dictionary = {
     en: {
       title: 'About Me',
       paragraph:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
+        'Things you won’t find on my LinkedIn.',
       button: 'Read More About Fabio',
     },
     pt: {
       title: 'Sobre Mim',
       paragraph:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
+        'Coisas que você não vai encontrar no meu LinkedIn.',
       button: 'Leia Mais Sobre Fabio',
     },
   },
@@ -90,7 +90,7 @@ export const dictionary = {
     en: {
       title: 'Contact',
       paragraph:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
+        'Let’s talk!',
       emails: [
         { label: 'Direct', email: 'fabiobmontanari@gmail.com' },
         { label: 'Agent (Atena)', email: 'luisagiesteira@atena.art.br' },
@@ -99,7 +99,7 @@ export const dictionary = {
     pt: {
       title: 'Contato',
       paragraph:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.',
+        'Vamos conversar!',
       emails: [
         { label: 'Direto', email: 'fabiobmontanari@gmail.com' },
         { label: 'Representante (Atena)', email: 'luisagiesteira@atena.art.br' },
