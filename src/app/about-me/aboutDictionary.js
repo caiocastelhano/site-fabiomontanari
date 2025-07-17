@@ -22,6 +22,7 @@ const aboutDictionary = {
           href="https://www.yorku.ca/research/connected-minds/"
           target="_blank"
           rel="noopener noreferrer"
+          className="aboutLink"
         >
           Connected Minds
         </a>
@@ -30,6 +31,7 @@ const aboutDictionary = {
           href="https://ampd.yorku.ca/sensorium/"
           target="_blank"
           rel="noopener noreferrer"
+          className="aboutLink"
         >
           Sensorium
         </a>
@@ -38,6 +40,7 @@ const aboutDictionary = {
           href="https://www.yorku.ca/cerlac/"
           target="_blank"
           rel="noopener noreferrer"
+          className="aboutLink"
         >
           CERLAC
         </a>
@@ -52,6 +55,7 @@ const aboutDictionary = {
           href="https://ampd.yorku.ca/people/fabio-montanari/"
           target="_blank"
           rel="noopener noreferrer"
+          className="aboutLink"
         >
           York University
         </a>
@@ -92,6 +96,7 @@ const aboutDictionary = {
           href="https://www.yorku.ca/research/connected-minds/"
           target="_blank"
           rel="noopener noreferrer"
+          className="aboutLink"
         >
           Connected Minds
         </a>
@@ -100,6 +105,7 @@ const aboutDictionary = {
           href="https://ampd.yorku.ca/sensorium/"
           target="_blank"
           rel="noopener noreferrer"
+          className="aboutLink"
         >
           Sensorium
         </a>
@@ -108,6 +114,7 @@ const aboutDictionary = {
           href="https://www.yorku.ca/cerlac/"
           target="_blank"
           rel="noopener noreferrer"
+          className="aboutLink"
         >
           CERLAC
         </a>
@@ -122,6 +129,7 @@ const aboutDictionary = {
           href="https://ampd.yorku.ca/people/fabio-montanari/"
           target="_blank"
           rel="noopener noreferrer"
+          className="aboutLink"
         >
           York University
         </a>
