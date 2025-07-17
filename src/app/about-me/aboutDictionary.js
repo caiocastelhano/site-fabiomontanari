@@ -7,7 +7,7 @@ const aboutDictionary = {
     multiculturalText: "Born and raised in Brazil, I earned my MFA at Columbia University (New York City) and now call Toronto home. Having worked across multiple countries—including the US, Brazil, Canada, Venezuela, and Argentina—my storytelling is enriched by diverse cultural perspectives. Turns out, broadening horizons works wonders for plot twists.",
 
     collaborationTitle: "Collaboration",
-    collaborationText: "I’m perfectly happy writing solo, but very few things beat the magic of a well-oiled writers’ room in full flow. I’ve worn many hats—from Staff Writer to Head Writer—and I’ve also developed and sold original series for major players. Whether building something from scratch or jumping aboard mid-process, I’m all in—as long as the coffee’s flowing. Lots of coffee.",
+    collaborationText: "I&apos;m perfectly happy writing solo, but very few things beat the magic of a well-oiled writers&apos; room in full flow. I&apos;ve worn many hats—from Staff Writer to Head Writer—and I&apos;ve also developed and sold original series for major players. Whether building something from scratch or jumping aboard mid-process, I&apos;m all in—as long as the coffee&apos;s flowing. Lots of coffee.",
 
     characterTitle: "Character-Driven Narratives",
     characterText: "I've tackled everything from musicals (Netflix), broad comedies (Netflix), and coming-of-age dramas (HBO), to medical thrillers (Prime Video). I love mixing genres to explore fresh storytelling possibilities. But I'm especially drawn to crafting nuanced, counterintuitive characters—often outsiders who never quite fit in. Maybe it's my past life as an actor, my current one as an immigrant, or simply my soft spot for misfits.",
@@ -18,7 +18,7 @@ const aboutDictionary = {
     innovationTitle: "Exploring New Frontiers",
     innovationText: (
       <p>
-        I’m always drawn to new formats, new technologies, and new ways of telling stories. I currently lead a research project on the intersection of AI and storytelling through{' '}
+        I&apos;m always drawn to new formats, new technologies, and new ways of telling stories. I currently lead a research project on the intersection of AI and storytelling through{' '}
         <a
           href="https://www.yorku.ca/research/connected-minds/"
           target="_blank"
@@ -26,7 +26,7 @@ const aboutDictionary = {
         >
           Connected Minds
         </a>
-        . I’m also a Research Associate at{' '}
+        . I&apos;m also a Research Associate at{' '}
         <a
           href="https://ampd.yorku.ca/sensorium/"
           target="_blank"
@@ -42,14 +42,14 @@ const aboutDictionary = {
         >
           CERLAC
         </a>
-        . Innovation isn’t a side project—it’s part of how I keep pushing stories forward. I've also written an award-winning transmedia project recognized by Cannes Lions, Clio, and the One Club.
+        . Innovation isn&apos;t a side project—it&apos;s part of how I keep pushing stories forward. I've also written an award-winning transmedia project recognized by Cannes Lions, Clio, and the One Club.
       </p>
     ),
 
     teachingTitle: "Teaching & Mentorship",
     teachingText: (
     <p>
-      I’m currently the Area Head of Screenwriting at{' '}
+      I&apos;m currently the Area Head of Screenwriting at{' '}
       <a
         href="https://ampd.yorku.ca/people/fabio-montanari/"
         target="_blank"
@@ -57,15 +57,15 @@ const aboutDictionary = {
       >
         York University
       </a>{' '}
-      (Canada), where I teach both MFA and BFA film students. I’ve taught in Brazil and in the U.S. (Barnard College and Columbia University), always balancing practice and pedagogy. I also mentor emerging filmmakers through initiatives like BBIC, Canada’s largest program for Black creators. That balance between industry and academia is what keeps my storytelling alive—on and off the page.
+      (Canada), where I teach both MFA and BFA film students. I&apos;ve taught in Brazil and in the U.S. (Barnard College and Columbia University), always balancing practice and pedagogy. I also mentor emerging filmmakers through initiatives like BBIC, Canada&apos;s largest program for Black creators. That balance between industry and academia is what keeps my storytelling alive—on and off the page.
     </p>
     ),
 
     childActorTitle: "Child actor",
     childActorText: "Yep, that's true—I acted professionally from childhood into my mid-20s, on TV, stage, and countless commercials. Thankfully, most footage is buried somewhere online. Acting profoundly shaped my understanding of drama, but these days, I happily stay behind the scenes.",
 
-    planBTitle: "Plan B (Don’t Tell My Agent)",
-    planBText: "I’ve been in the industry for almost two decades, but I still quietly believe I’ll become a professional soccer player when I grow up. Just waiting on that call.",
+    planBTitle: "Plan B (Don&apos;t Tell My Agent)",
+    planBText: "I&apos;ve been in the industry for almost two decades, but I still quietly believe I&apos;ll become a professional soccer player when I grow up. Just waiting on that call.",
 
     closingTitle: "Let's Talk",
     closingText: "Have a project in mind? Reach out and let's chat possibilities—ideally over coffee:\n\nfabiobmontanari@gmail.com (direct)\nluisagiesteira@atena.art.br (rep: Atena)",
