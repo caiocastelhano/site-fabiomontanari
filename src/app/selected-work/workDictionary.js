@@ -1,7 +1,7 @@
 const workDictionary = {
   en: {
     pageTitle: "Selected Work",
-    introText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.",
+    introText: "From Netflix, HBO Max, and Amazon Prime Video to award-winning indie films—I create stories across formats, genres, and scales. Here’s a glimpse.",
     projects: {
       suture: {
         folder: "suture",
@@ -106,7 +106,7 @@ const workDictionary = {
 
   pt: {
     pageTitle: "Trabalhos selecionados",
-    introText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium purus sit amet risus pharetra, quis condimentum velit gravida.",
+    introText: "Da Netflix, HBO Max e Amazon Prime Video a filmes independentes premiados — crio histórias em diferentes formatos, gêneros e escalas. Aqui vai um panorama.",
     projects: {
       suture: {
         folder: "suture",
