@@ -112,8 +112,8 @@ export const dictionary = {
     role: "Screenwriter / Filmmaker",
     nav: [
       'Selected Work',
-      'Industry Engagement & Research',
-      'Script Consultant & Development',
+      'Industry Engagement',
+      'Script Consultant',
       'About Me',
     ],
   },
@@ -121,8 +121,8 @@ export const dictionary = {
     role: "Roteirista / Diretor",
     nav: [
       'Trabalhos Selecionados',
-      'Pesquisa & Parcerias com a Indústria',
-      'Consultoria de Roteiro & Desenvolvimento',
+      'Atuação na Indústria ',
+      'Consultoria de Roteiro',
       'Sobre Mim',
     ],
   },
