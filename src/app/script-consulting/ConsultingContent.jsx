@@ -13,7 +13,11 @@ export default function ConsultingContent() {
     <main className={styles.page}>
       <div className={styles.container}>
         <h1 className={styles.pageTitle}>{t.pageTitle}</h1>
-        <p className={styles.intro}>{t.intro}</p>
+        {t.intro.split('\n\n').map((paragraph, index) => (
+          <p key={index} className={styles.intro}>
+            {paragraph}
+          </p>
+        ))}
         <section className={styles.blurbsSection}>
           <Blurb blurbs={t.blurbs} />
         </section>
