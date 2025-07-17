@@ -1,7 +1,7 @@
 .blurb {
   padding: 1.5rem;
   border-left: 2px solid #444;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 4px;
 }
 
@@ -25,6 +25,33 @@
 .carouselWrapper {
   position: relative;
   min-height: 250px;
+}
+
+.carouselWrapper :global(.custom-prev),
+.carouselWrapper :global(.custom-next) {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-120%);
+  font-size: 2rem;
+  color: #fff;
+  opacity: 0.5;
+  cursor: pointer;
+  z-index: 10;
+  transition: opacity 0.3s ease;
+  user-select: none;
+}
+
+.carouselWrapper :global(.custom-prev):hover,
+.carouselWrapper :global(.custom-next:hover) {
+  opacity: 1;
+}
+
+.carouselWrapper :global(.custom-prev) {
+  left: -3rem;
+}
+
+.carouselWrapper :global(.custom-next) {
+  right: -3rem;
 }
 
 .carousel :global(.swiper-pagination) {
