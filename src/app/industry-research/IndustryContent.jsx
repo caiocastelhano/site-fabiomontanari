@@ -10,21 +10,21 @@ export default function IndustryContent() {
   const t = industryDictionary[language];
 
   const images = [
-    { filename: "foto1.png", key: "foto1" },
-    { filename: "foto2.png", key: "foto2" },
-    { filename: "foto5.png", key: "foto5" },
-    { filename: "foto6.png", key: "foto6" },
-    { filename: "foto11.jpg", key: "foto11" },
-    { filename: "foto13.png", key: "foto13" },
-    { filename: "foto8.png", key: "foto8" },
-    { filename: "foto9.png", key: "foto9" },
-    { filename: "foto4.png", key: "foto4" },
-    { filename: "foto15.png", key: "foto15" },
-    { filename: "foto3.png", key: "foto3" },
-    { filename: "foto10.png", key: "foto10" },
-    { filename: "foto7.jpeg", key: "foto7" },
-    { filename: "foto14.jpg", key: "foto14" },
-    { filename: "foto12.png", key: "foto12" }
+    { filename: "image1.webp", key: "image1" },
+    { filename: "image2.webp", key: "image2" },
+    { filename: "image5.webp", key: "image5" },
+    { filename: "image6.webp", key: "image6" },
+    { filename: "image11.webp", key: "image11" },
+    { filename: "image13.webp", key: "image13" },
+    { filename: "image8.webp", key: "image8" },
+    { filename: "image9.webp", key: "image9" },
+    { filename: "image4.webp", key: "image4" },
+    { filename: "image15.webp", key: "image15" },
+    { filename: "image3.webp", key: "image3" },
+    { filename: "image10.webp", key: "image10" },
+    { filename: "image7.webp", key: "image7" },
+    { filename: "image14.webp", key: "image14" },
+    { filename: "image12.webp", key: "image12" }
   ];
 
   return (
