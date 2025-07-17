@@ -18,7 +18,7 @@ export default function AboutContent() {
     { key: "innovation", title: t.innovationTitle, text: t.innovationText },
     { key: "teaching", title: t.teachingTitle, text: t.teachingText },
     { key: "childActor", title: t.childActorTitle, text: t.childActorText },
-    { key: "childActor", title: t.childActorTitle, text: t.childActorText }
+    { key: "planB", title: t.planBTitle, text: t.planBText }
   ];
 
   return (
