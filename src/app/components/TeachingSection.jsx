@@ -8,7 +8,7 @@ export default function TeachingSection({ language = 'en' }) {
 
   return (
     <section
-      id="industry-research"
+      id="industry-engagement"
       className={styles.teachingSection}
       aria-label={
         language === 'pt'
@@ -19,7 +19,7 @@ export default function TeachingSection({ language = 'en' }) {
       <div className={`${styles.overlay} ${styles.hoverEffect}`}>
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.paragraph}>{paragraph}</p>
-        <Link href="/industry-research" className={styles.button}>
+        <Link href="/industry-engagement" className={styles.button}>
           {button}
         </Link>
       </div>

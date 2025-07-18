@@ -22,7 +22,7 @@ export default function Header() {
   const roleText = dictionary.header[language]?.role || dictionary.header.en.role;
   const navLinks = [
   '/selected-work',
-  '/industry-research',
+  '/industry-engagement',
   '/script-consultant',
   '/about-me',
 ];

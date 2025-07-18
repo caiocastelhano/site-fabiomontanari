@@ -11,7 +11,7 @@ The site is developed as a Next.js application with:
   - `/about-me`  
   - `/selected-work`  
   - `/script-consultant`  
-  - `/industry-research`
+  - `/industry-engagement`
 
 ## 🛠️ Stack
 

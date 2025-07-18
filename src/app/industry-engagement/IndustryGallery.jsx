@@ -49,7 +49,7 @@ export default function IndustryGallery({ images, captions }) {
             aria-label={`Open image: ${captions[key]}`}
           >
             <Image
-              src={`/images/industry-research/${filename}`}
+              src={`/images/industry-engagement/${filename}`}
               alt={captions[key]}
               width={300}
               height={200}
@@ -98,7 +98,7 @@ export default function IndustryGallery({ images, captions }) {
             </span>
 
             <Image
-              src={`/images/industry-research/${selectedImage.filename}`}
+              src={`/images/industry-engagement/${selectedImage.filename}`}
               alt={captions[selectedImage.key]}
               width={800}
               height={500}
