@@ -9,7 +9,8 @@ const workDictionary = {
         role: "Created by & Screenwriter | Amazon Prime Original",
         description: `A gripping medical thriller exploring the thin line between healing and harm. Officially selected for the Berlinale International Film Festival's new TV series section (2025), nominated for Best Drama at the ABRA Awards, and reached the Top 10 most-watched series in multiple countries.\n\nAvailable on Prime Video (selected countries).`,
         platformLogo: "/images/platforms/prime.webp",
-        totalImages: 5
+        totalImages: 5,
+        videos: ["https://www.youtube.com/embed/iHlwtTziLdQ"]
       },
       jointVenture: {
         folder: "joint-venture",
@@ -32,7 +33,8 @@ const workDictionary = {
         title: "MISSING MATOAKA",
         role: "Executive Story Editor",
         description: `A provocative transmedia narrative in feature-length reimagining historical myths to reveal truths about identity, loss, and the power of authentic storytelling.\n\nAwarded globally, it earned recognition including 8 Cannes Lions (Gold, Silver, Bronze), 3 Clio Awards, Cresta International Grand Prix and Gold Awards, and The One Show Gold Award in Innovation & Transformation.`,
-        totalImages: 2
+        totalImages: 2,
+        videos: ["https://player.vimeo.com/video/1102295925"]
       },
       invisibleCity: {
         folder: "invisible-city",
@@ -48,7 +50,8 @@ const workDictionary = {
         role: "Screenwriter | Netflix Original (Season Two)",
         description: `A sharp comedy about a former child star hilariously desperate to reclaim fame amidst family chaos and absurd celebrity antics.\n\nAvailable on Netflix.`,
         platformLogo: "/images/platforms/netflix.webp",
-        totalImages: 7
+        totalImages: 7,
+        videos: ["https://www.youtube.com/embed/kEyVo8LK3CQ"]
       },
       madToTheMax: {
         folder: "mad-to-the-max",
@@ -63,7 +66,8 @@ const workDictionary = {
         title: "THE GRILL MAN",
         role: "Writer & Director",
         description: `A bittersweet comedy about fighting obsolescence during the Soccer World Cup's frenzy. Screened at 50+ festivals (Santa Barbara, Palm Springs), winning multiple awards.`,
-        totalImages: 6
+        totalImages: 6,
+        videos: ["https://www.youtube.com/embed/DoRozrR6Dek"]
       },
       myWhiteShoes: {
         folder: "my-white-shoes",
@@ -114,7 +118,8 @@ const workDictionary = {
         role: "Criador e Roteirista | Original Amazon Prime",
         description: `Um thriller médico eletrizante sobre a tênue linha entre cura e dano. Selecionado oficialmente para a nova seção de séries do Festival de Berlim (2025), indicado a Melhor Drama no Prêmio ABRA e entre as 10 séries mais assistidas em diversos países.\n\nDisponível no Prime Video (países selecionados).`,
         platformLogo: "/images/platforms/prime.webp",
-        totalImages: 5
+        totalImages: 5,
+        videos: ["https://www.youtube.com/embed/iHlwtTziLdQ"]
       },
       jointVenture: {
         folder: "joint-venture",
@@ -137,7 +142,8 @@ const workDictionary = {
         title: "MISSING MATOAKA",
         role: "Editor Executivo de Roteiro",
         description: `Narrativa transmídia provocadora que reimagina mitos históricos para revelar verdades sobre identidade, perda e o poder de contar histórias autênticas.\n\nPremiado globalmente, recebeu 8 Cannes Lions (Ouro, Prata, Bronze), 3 Clio Awards, Grand Prix e Ouro no Cresta International, e Ouro no The One Show em Inovação e Transformação.`,
-        totalImages: 2
+        totalImages: 2,
+        videos: ["https://player.vimeo.com/video/1102295925"]
       },
       invisibleCity: {
         folder: "invisible-city",
@@ -153,7 +159,8 @@ const workDictionary = {
         role: "Roteirista | Original Netflix (2ª temporada)",
         description: `Uma comédia afiada sobre uma ex-estrela mirim desesperada (e hilária) para recuperar a fama em meio ao caos familiar e às loucuras do mundo das celebridades.\n\nDisponível na Netflix.`,
         platformLogo: "/images/platforms/netflix.webp",
-        totalImages: 7
+        totalImages: 7,
+        videos: ["https://www.youtube.com/embed/kEyVo8LK3CQ"]
       },
       madToTheMax: {
         folder: "mad-to-the-max",
@@ -168,7 +175,8 @@ const workDictionary = {
         title: "CHAPA",
         role: "Roteirista e Diretor",
         description: `Comédia melancólica sobre enfrentar a obsolescência durante a euforia da Copa do Mundo. Exibido em mais de 50 festivais (Santa Barbara, Palm Springs), com vários prêmios.`,
-        totalImages: 6
+        totalImages: 6,
+        videos: ["https://www.youtube.com/embed/DoRozrR6Dek"]
       },
       myWhiteShoes: {
         folder: "my-white-shoes",
