@@ -10,7 +10,7 @@ The site is developed as a Next.js application with:
 - **Internal pages**:
   - `/about-me`  
   - `/selected-work`  
-  - `/script-consulting`  
+  - `/script-consultant`  
   - `/industry-research`
 
 ## 🛠️ Stack

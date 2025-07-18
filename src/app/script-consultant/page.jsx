@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Script Consultant & Development | Fabio Montanari",
+  title: "Script Consultant | Fabio Montanari",
   description: "Fabio Montanari offers script consulting and original project development for studios, filmmakers, and writers, combining industry experience with storytelling expertise",
 };
 

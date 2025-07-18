@@ -8,7 +8,7 @@ export default function ConsultingSection({ language = 'en' }) {
 
   return (
     <section
-      id="script-consulting"
+      id="script-consultant"
       className={styles.consultingSection}
       aria-label={
         language === 'pt'
@@ -19,7 +19,7 @@ export default function ConsultingSection({ language = 'en' }) {
       <div className={`${styles.overlay} ${styles.hoverEffect}`}>
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.paragraph}>{paragraph}</p>
-        <Link href="/script-consulting" className={styles.button}>
+        <Link href="/script-consultant" className={styles.button}>
           {button}
         </Link>
       </div>
