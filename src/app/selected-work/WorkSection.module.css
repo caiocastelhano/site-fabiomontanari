@@ -6,18 +6,27 @@
 .projectContent {
   display: flex;
   align-items: center;
-  gap: 48px;
 }
 
 .textBlock {
-  flex: 1.2;
+  flex: 1.1;
   min-width: 260px;
   padding: 0px 24px;
   box-sizing: border-box;
 }
 
+.textRight .textBlock {
+  padding-left: 60px;
+  text-align: right;
+}
+
+.textLeft .textBlock {
+  padding-right: 60px;
+  text-align: left;
+}
+
 .imageBlock {
-  flex: 1.8;
+  flex: 1.9;
   min-width: 280px;
   max-width: none;
 }
@@ -61,6 +70,15 @@
   box-sizing: border-box;
 }
 
+.textRight .platformLogo {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.textLeft .platformLogo {
+  margin-left: 0;
+  margin-right: auto;
+}
 
 .lightBackground {
   background-color: #2a2a2a;
