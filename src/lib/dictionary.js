@@ -5,7 +5,7 @@ export const dictionary = {
         'I tell stories for screens big and small—streamers like Netflix, HBO Max, Prime Video, and some indie films that travelled the festival circuit. I teach screenwriting at York University and explore what happens when storytelling meets AI. Let’s dive in.',
       sections: [
         { id: 'selected-work', label: 'Selected Work' },
-        { id: 'industry-research', label: 'Industry Engagement' },
+        { id: 'industry-engagement', label: 'Industry Engagement' },
         { id: 'script-consultant', label: 'Script Consultant' },
         { id: 'about-me', label: 'About Me' },
         { id: 'contact', label: 'Contact' },
@@ -16,7 +16,7 @@ export const dictionary = {
         'Eu conto histórias para telas grandes e pequenas — plataformas como Netflix, HBO Max, Prime Video e alguns filmes independentes que circularam por festivais. Dou aulas de roteiro na Universidade de York e investigo o que acontece quando a narrativa encontra a inteligência artificial. Vamos nessa!',
       sections: [
         { id: 'selected-work', label: 'Trabalhos Selecionados' },
-        { id: 'industry-research', label: 'Atuação na Indústria' },
+        { id: 'industry-engagement', label: 'Atuação na Indústria' },
         { id: 'script-consultant', label: 'Consultoria de Roteiro' },
         { id: 'about-me', label: 'Sobre Mim' },
         { id: 'contact', label: 'Contato' },
