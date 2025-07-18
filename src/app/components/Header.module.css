@@ -1,5 +1,8 @@
 /* DESKTOP */
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   padding: 16px 24px;
   display: flex;
@@ -7,7 +10,6 @@
   align-items: center;
   background-color: #1f1f1f;
   border-bottom: 1px solid #3a3a3a;
-  position: relative;
   z-index: 1100;
 }
 
