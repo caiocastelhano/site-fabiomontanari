@@ -18,7 +18,8 @@ export default function ConsultingContent() {
             {paragraph}
           </p>
         ))}
-        <section className={styles.blurbsSection}>
+        <section className={styles.blurbsSection} aria-labelledby="testimonials-heading">
+          <h2 id="testimonials-heading" className={styles.visuallyHidden}>Testimonials</h2>
           <Blurb blurbs={t.blurbs} />
         </section>
       </div>

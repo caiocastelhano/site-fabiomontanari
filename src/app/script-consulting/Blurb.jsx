@@ -12,9 +12,8 @@ import styles from "./Blurb.module.css";
 export default function Blurb({ blurbs }) {
   return (
     <div className={styles.carouselWrapper}>
-      {/* SETAS FORA DO SWIPER */}
-      <div className="custom-prev" aria-label="Previous slide">←</div>
-      <div className="custom-next" aria-label="Next slide">→</div>
+      <button className="custom-prev" aria-label="Previous slide" type="button">←</button>
+      <button className="custom-next" aria-label="Next slide" type="button">→</button>
 
       <Swiper
         pagination={{ clickable: true }}
@@ -26,9 +25,12 @@ export default function Blurb({ blurbs }) {
         spaceBetween={40}
         slidesPerView={1}
         className={styles.carousel}
+        role="region"
+        aria-label="Testimonials carousel"
+        aria-live="polite"
       >
         {blurbs.map((blurb, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={`${blurb.author}-${index}`}>
             <div className={styles.blurb}>
               <p className={styles.text}>{blurb.text}</p>
               <p className={styles.author}>— {blurb.author}</p>

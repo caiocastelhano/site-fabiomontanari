@@ -29,6 +29,7 @@
 
 .carouselWrapper :global(.custom-prev),
 .carouselWrapper :global(.custom-next) {
+  all: unset;
   position: absolute;
   top: 50%;
   transform: translateY(-120%);
@@ -42,7 +43,7 @@
 }
 
 .carouselWrapper :global(.custom-prev):hover,
-.carouselWrapper :global(.custom-next:hover) {
+.carouselWrapper :global(.custom-next):hover {
   opacity: 1;
 }
 
