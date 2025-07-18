@@ -21,6 +21,7 @@
   flex-direction: column;
   gap: 24px;
   margin: 0 auto;
+  padding-top: 72px;
 }
 
 .figure {
