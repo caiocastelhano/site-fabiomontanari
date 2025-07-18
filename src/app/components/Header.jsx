@@ -23,7 +23,7 @@ export default function Header() {
   const navLinks = [
   '/selected-work',
   '/industry-research',
-  '/script-consulting',
+  '/script-consultant',
   '/about-me',
 ];
 
