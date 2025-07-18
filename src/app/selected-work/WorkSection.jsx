@@ -43,6 +43,7 @@ export default function WorkSection({ project, projectKey, index }) {
             folderName={project.folder || projectKey}
             totalImages={project.totalImages}
             alts={project.alts}
+            videos={project.videos}
           />
         </div>
       </div>
