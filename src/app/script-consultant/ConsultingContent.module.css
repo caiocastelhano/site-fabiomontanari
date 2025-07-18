@@ -1,3 +1,4 @@
+/* DESKTOP */
 .page {
   padding: 60px 24px;
   min-height: 100vh;
@@ -52,4 +53,44 @@
 
 .blurbsSection {
   margin-top: 3rem;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+  .container {
+    max-width: 70vw;
+    padding: 130px 24px;
+  }
+
+  .intro {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding: 0 8px;
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .container {
+    max-width: 88vw;
+    padding: 120px 16px;
+  }
+
+  .pageTitle {
+    font-size: 1.8rem;
+    margin-bottom: 32px;
+  }
+
+  .intro {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0;
+    margin-bottom: 1.4rem;
+  }
+
+  .blurbsSection {
+    margin-top: 2rem;
+  }
 }
