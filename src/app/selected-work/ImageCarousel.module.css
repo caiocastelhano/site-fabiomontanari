@@ -19,9 +19,14 @@
   object-fit: cover;
   display: block;
   border: none;
-  transition: opacity 0.3s ease-in-out;
+  transition: transform 0.4s ease, filter 0.4s ease;
   opacity: 0;
-  will-change: opacity;
+  will-change: opacity, transform, filter;
+}
+
+.image:hover {
+  transform: scale(1.03);
+  filter: brightness(0.9);
 }
 
 .loaded {
