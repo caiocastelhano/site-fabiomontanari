@@ -1,0 +1,44 @@
+/* DESKTOP */
+.heroTextSection {
+  padding: 64px 24px;
+  width: 100vw;
+  margin: 0 calc(-50vw + 50%);
+  text-align: center;
+  color: white;
+  background-color: #1f1f1f;
+}
+
+.paragraph {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .heroTextSection {
+    padding: 56px 24px;
+  }
+
+  .paragraph {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 700px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .heroTextSection {
+    padding: 48px 16px;
+  }
+
+  .paragraph {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    max-width: 90%;
+  }
+}
