@@ -1,12 +1,21 @@
 /* DESKTOP */
 .contactSection {
   position: relative;
-  background-image: url('/images/home/contact-background.webp');
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
   color: white;
   padding: 120px 24px;
   text-align: center;
+  z-index: 0;
+}
+
+.contactSection::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/home/contact-background.webp');
+  background-size: 120%;
+  background-position: 100% center;
+  z-index: -1;
 }
 
 .overlay {
