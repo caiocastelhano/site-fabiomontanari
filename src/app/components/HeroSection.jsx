@@ -6,12 +6,22 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, A11y, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { dictionary } from '../../lib/dictionary'; // ajuste o path conforme sua estrutura
+import { useState, useEffect } from 'react';
+import { dictionary } from '../../lib/dictionary';
 
 export default function HeroSection({ language = 'en' }) {
   const images = [1, 2, 3, 4];
   const { carouselCaptions = [] } =
     dictionary.hero[language] || dictionary.hero.en;
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 600);
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <section
@@ -41,8 +51,11 @@ export default function HeroSection({ language = 'en' }) {
                     : `Image ${num} from the carousel`
                 }
                 fill
-                className={styles.slideImage}
-                style={{ objectFit: 'cover', objectPosition: 'center top' }}
+                className={`${styles.slideImage} ${isMobile ? styles.slideImageMobile : ''}`}
+                style={{
+                  objectFit: 'cover',
+                  objectPosition: 'center center',
+                }}
                 priority
               />
               <div className={styles.mask} aria-hidden="true" />
