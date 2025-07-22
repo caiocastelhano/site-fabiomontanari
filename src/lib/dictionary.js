@@ -10,6 +10,12 @@ export const dictionary = {
         { id: 'about-me', label: 'About Me' },
         { id: 'contact', label: 'Contact' },
       ],
+      carouselCaptions: [
+        'My White Shoes | Writer & Director',
+        'Suture | Created By & Screenwriter',
+        'Joint Venture | Screenwriter',
+        'Only For Love | Screenwriter'
+      ]
     },
     pt: {
       paragraph:
@@ -21,6 +27,12 @@ export const dictionary = {
         { id: 'about-me', label: 'Sobre Mim' },
         { id: 'contact', label: 'Contato' },
       ],
+      carouselCaptions: [
+        'Meu Tênis Branco | Diretor e Roteirista',
+        'Sutura | Criador e Roteirista',
+        'Pico da Neblina | Roteirista',
+        'Só Se For Por Amor | Roteirista'
+      ]
     },
   },
 
