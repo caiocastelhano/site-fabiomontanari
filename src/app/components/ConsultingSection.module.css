@@ -1,12 +1,21 @@
 /* DESKTOP */
 .consultingSection {
   position: relative;
-  background-image: url('/images/home/consulting-background.webp');
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
   color: white;
   padding: 120px 24px;
   text-align: center;
+  z-index: 0;
+}
+
+.consultingSection::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/home/consultant-background.webp');
+  background-size: 120%; /* maior que 100% permite "mover" */
+  background-position: 100% center; /* move para a esquerda */
+  z-index: -1;
 }
 
 .overlay {

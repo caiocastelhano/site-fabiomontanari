@@ -1,12 +1,22 @@
 /* DESKTOP */
 .projectsSection {
   position: relative;
-  background-image: url('/images/home/projects-background.webp');
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
   color: white;
   padding: 120px 24px;
   text-align: center;
+  z-index: 0;
+}
+
+.projectsSection::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/home/projects-background.webp');
+  background-size: cover;
+  background-position: center;
+  transform: scaleX(-1);
+  z-index: -1;
 }
 
 .overlay {
