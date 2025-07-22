@@ -8,11 +8,21 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 0;
 }
 
 .heroSwiper {
   width: 100vw;
   height: 100%;
+}
+
+.heroSwiper :global(.swiper-slide) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .slideWrapper {
@@ -24,7 +34,6 @@
 }
 
 .slideImage {
-  object-fit: cover;
   position: absolute;
   inset: 0;
 }
@@ -32,12 +41,26 @@
 .mask {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    rgba(30, 30, 30, 0.3),
-    rgba(30, 30, 30, 0.3)
-  );
+  background: linear-gradient(rgba(30, 30, 30, 0.3), rgba(30, 30, 30, 0.3));
   z-index: 1;
   pointer-events: none;
+}
+
+.caption {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 4px;
+  z-index: 2;
+  max-width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .heroSwiper :global(.swiper-pagination) {
@@ -65,28 +88,17 @@
   opacity: 1;
 }
 
-.caption {
-  position: absolute;
-  bottom: 32px;
-  right: 32px;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  padding: 6px 14px;
-  font-size: 1rem;
-  font-weight: 500;
-  border-radius: 4px;
-  z-index: 2;
-  max-width: 90%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 /* TABLET */
 @media (max-width: 1024px) {
   .slideWrapper {
     height: 70vh;
     max-height: 600px;
+  }
+
+  .caption {
+    font-size: 0.85rem;
+    bottom: 14px;
+    right: 24px;
   }
 
   .heroSwiper :global(.swiper-pagination-bullet) {
@@ -98,12 +110,39 @@
 /* MOBILE */
 @media (max-width: 600px) {
   .slideWrapper {
-    height: 60vh;
+    height: 30vh;
     max-height: 500px;
+    position: relative;
   }
 
-  .heroSection {
-    padding: 0 12px;
+  .slideImageMobile {
+    object-fit: cover !important;
+    object-position: center center !important;
+  }
+
+  .caption {
+    position: absolute;
+    bottom: 36px;
+    right: 12px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 6px 12px;
+    font-size: 0.50rem;
+    font-weight: 500;
+    border-radius: 4px;
+    z-index: 2;
+    white-space: nowrap;
+    max-width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .heroSwiper :global(.swiper-slide) {
+    height: auto !important;
+  }
+
+  .heroSwiper :global(.swiper-pagination) {
+    bottom: 8px;
   }
 
   .heroSwiper :global(.swiper-pagination-bullet) {
@@ -111,5 +150,8 @@
     height: 8px;
     margin: 0 4px;
   }
-}
 
+  .heroSection {
+    padding: 0;
+  }
+}
