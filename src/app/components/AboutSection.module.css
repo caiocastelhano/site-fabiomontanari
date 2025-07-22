@@ -86,6 +86,8 @@
   .overlay {
     padding: 56px 28px;
     max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .title {
@@ -115,6 +117,8 @@
     padding: 48px 20px;
     box-shadow: none;
     border-radius: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .title {
