@@ -1,9 +1,12 @@
 import styles from './ContactSection.module.css';
 import { dictionary } from '../../lib/dictionary';
+import { useFadeInOnScroll } from '../../hooks/useFadeInOnScroll';
 
 export default function ContactSection({ language = 'en' }) {
   const { title, paragraph, emails } =
     dictionary.contact[language] || dictionary.contact.en;
+
+  const [ref, isVisible] = useFadeInOnScroll();
 
   return (
     <section
@@ -15,7 +18,10 @@ export default function ContactSection({ language = 'en' }) {
           : 'Contact section for Fabio Montanari'
       }
     >
-      <div className={`${styles.overlay} ${styles.hoverEffect}`}>
+      <div
+        ref={ref}
+        className={`${styles.overlay} ${styles.hoverEffect} ${styles.fadeWrapper} ${isVisible ? styles.visible : styles.hidden}`}
+      >
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.paragraph}>{paragraph}</p>
         <div className={styles.emails}>
