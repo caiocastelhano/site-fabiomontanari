@@ -6,9 +6,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, A11y, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { dictionary } from '../../lib/dictionary'; // ajuste o path conforme sua estrutura
 
 export default function HeroSection({ language = 'en' }) {
   const images = [1, 2, 3, 4];
+  const { carouselCaptions = [] } =
+    dictionary.hero[language] || dictionary.hero.en;
 
   return (
     <section
@@ -27,7 +30,7 @@ export default function HeroSection({ language = 'en' }) {
         slidesPerView={1}
         pagination={{ clickable: true }}
       >
-        {images.map((num) => (
+        {images.map((num, index) => (
           <SwiperSlide key={num}>
             <div className={styles.slideWrapper}>
               <Image
@@ -43,6 +46,9 @@ export default function HeroSection({ language = 'en' }) {
                 priority
               />
               <div className={styles.mask} aria-hidden="true" />
+              <div className={styles.caption}>
+                {carouselCaptions[index]}
+              </div>
             </div>
           </SwiperSlide>
         ))}

@@ -65,6 +65,23 @@
   opacity: 1;
 }
 
+.caption {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 6px 14px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 4px;
+  z-index: 2;
+  max-width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* TABLET */
 @media (max-width: 1024px) {
   .slideWrapper {
