@@ -1,20 +1,30 @@
 /* DESKTOP */
 .teachingSection {
   position: relative;
-  background-image: url('/images/home/teaching-background.webp');
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
   color: white;
   padding: 120px 24px;
   text-align: center;
+  z-index: 0;
+}
+
+.teachingSection::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/home/teaching-background.webp');
+  background-size: 120%; 
+  background-position: 5% center;
+  z-index: -1;
 }
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(4px);
   padding: 64px 32px;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 600px;
+  margin-left: 150px;
+  margin-right: auto;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, opacity 0.3s ease;
