@@ -13,7 +13,7 @@ const aboutDictionary = {
     characterText: "I've tackled everything from musicals (Netflix), broad comedies (Netflix), and coming-of-age dramas (HBO), to medical thrillers (Prime Video). I love mixing genres to explore fresh storytelling possibilities. But I'm especially drawn to crafting nuanced, counterintuitive characters—often outsiders who never quite fit in. Maybe it's my past life as an actor, my current one as an immigrant, or simply my soft spot for misfits.",
 
     directingTitle: "Directing",
-    directingText: "My indie films have screened at over 50 festivals worldwide, from Santa Barbara to Palm Springs Shortsfest. I especially enjoy directing non-professional actors—bringing out authentic performances that reflect my perspective as a director from the Global South, attuned to stories of inequality and disparity. Being on set keeps my storytelling sharp and offers a nice change of pace—after all, procrastinating is a lot tougher when there's a whole crew waiting on you.",
+    directingText: "My indie films have screened at over 50 festivals worldwide, from Santa Barbara to Palm Springs Shortsfest. I especially enjoy directing non-professional actors—bringing out authentic performances that reflect my perspective as a director from the Global South, attuned to stories of inequality and disparity. Being on set keeps my storytelling sharp—and gives me a reason to stop wearing PJs to work every day.",
 
     innovationTitle: "Exploring New Frontiers",
     innovationText: (
@@ -87,7 +87,7 @@ const aboutDictionary = {
     characterText: "Já trabalhei com musicais (Netflix), comédias escrachadas (Netflix), dramas de amadurecimento (HBO) e thrillers médicos (Prime Video). Gosto de misturar gêneros para explorar novas formas de contar histórias. Mas o que mais me atrai é criar personagens complexos e inesperados — muitas vezes outsiders, pessoas que não se encaixam. Talvez por ter sido ator, por ser imigrante, ou só por ter uma quedinha por quem anda fora da curva.",
 
     directingTitle: "Direção",
-    directingText: "Meus filmes independentes foram exibidos em mais de 50 festivais ao redor do mundo, de Santa Barbara ao Palm Springs Shortsfest. Tenho um prazer especial em dirigir atores não profissionais — buscando performances autênticas que refletem meu olhar de diretor do Sul Global, atento a histórias marcadas por desigualdade. Estar no set afia minha escuta narrativa e traz um bom contraste de ritmo: afinal, procrastinar é bem mais difícil com uma equipe inteira esperando por você.",
+    directingText: "Meus filmes independentes já foram exibidos em mais de 50 festivais ao redor do mundo, de Santa Barbara ao Palm Springs Shortsfest. Tenho um gosto especial por dirigir atores não profissionais — buscando interpretações autênticas que refletem minha perspectiva como diretor do Sul Global, sensível a histórias de desigualdade e disparidade. Estar no set mantém meu olhar narrativo afiado — e me dá um bom motivo para parar de trabalhar de pijama todo dia.",
 
     innovationTitle: "Explorando novas fronteiras",
     innovationText: (
