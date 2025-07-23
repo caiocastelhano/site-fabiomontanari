@@ -81,21 +81,21 @@
 }
 
 .lightBackground {
-  background-color: #2a2a2a;
-  color: #eee;
+  background-color: #434343; 
+  color: #eee;           
 }
 
 .lightBackground .role {
-  color: #bbb;
+  color: #ccc;             
 }
 
 .darkBackground {
-  background-color: #1c1c1c;
-  color: #eee;
+  background-color: #121212; 
+  color: #f0f0f0;           
 }
 
 .darkBackground .role {
-  color: #aaa;
+  color: #bcbcbc;          
 }
 
 /* TABLET & MOBILE */
