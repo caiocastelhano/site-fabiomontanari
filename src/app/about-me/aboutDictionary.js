@@ -1,7 +1,7 @@
 const aboutDictionary = {
   en: {
     title: "About Me",
-    intro: "By now, you probably know I've been actively working on the industry for the past two decades. Here's a few things you won't find on my LinkedIn.",
+    intro: "Here's a few things you won't find on my LinkedIn.",
 
     multiculturalTitle: "Multi-cultural experience",
     multiculturalText: "Born and raised in Brazil, I earned my MFA at Columbia University (New York City) and now call Toronto home. Having worked across multiple countries—including the US, Brazil, Canada, Venezuela, and Argentina—my storytelling is enriched by diverse cultural perspectives. Turns out, broadening horizons works wonders for plot twists.",
@@ -75,7 +75,7 @@ const aboutDictionary = {
 
   pt: {
     title: "Sobre mim",
-    intro: "Até agora, você provavelmente já sabe que venho atuando na área há mais de duas décadas. Aqui vão algumas coisas que não estão no meu LinkedIn.",
+    intro: "Aqui estão algumas coisas que você não vai encontrar no meu LinkedIn.",
 
     multiculturalTitle: "Experiência multicultural",
     multiculturalText: "Nascido e criado no Brasil, fiz meu mestrado em Direção na Universidade Columbia (Nova York) e atualmente moro em Toronto. Já trabalhei em vários países — incluindo Estados Unidos, Brasil, Canadá, Venezuela e Argentina — e minha maneira de contar histórias é atravessada por essas experiências culturais diversas. Ampliar horizontes faz muito bem para os enredos, especialmente nos momentos de virada.",
