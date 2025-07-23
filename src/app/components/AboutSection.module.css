@@ -92,12 +92,12 @@
 
   .title {
     font-size: 2.1rem;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
   }
 
   .paragraph {
     font-size: 1.15rem;
-    margin-bottom: 36px;
+    margin-bottom: 48px;
   }
 
   .button {
@@ -123,6 +123,7 @@
 
   .title {
     font-size: 1.8rem;
+    margin-bottom: 32px;
   }
 
   .paragraph {
