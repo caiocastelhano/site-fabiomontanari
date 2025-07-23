@@ -11,7 +11,6 @@ export default function ImageCarousel({ folderName, totalImages, alts = [], vide
   const stableVideos = useMemo(() => videos, []);
   const stableAlts = useMemo(() => alts, []);
 
-  // Monta a lista combinada de imagens e vídeos
   useEffect(() => {
     if (!folderName || !totalImages) return;
 
@@ -27,11 +26,10 @@ export default function ImageCarousel({ folderName, totalImages, alts = [], vide
       alt: `Video ${i + 1} from project ${folderName}`
     }));
 
-    setMediaItems([...videoItems, ...images]);
+    setMediaItems([...images, ...videoItems]);
     setCurrentIndex(0);
   }, [folderName, totalImages, stableVideos, stableAlts]);
 
-  // Swipe para mobile
   useEffect(() => {
     if (mediaItems.length === 0) return;
 
@@ -101,7 +99,6 @@ export default function ImageCarousel({ folderName, totalImages, alts = [], vide
         </button>
       )}
 
-      {/* Renderiza imagem ou vídeo */}
       {mediaItems[currentIndex].type === "image" ? (
         <img
           key={mediaItems[currentIndex].src}
