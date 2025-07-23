@@ -24,7 +24,7 @@ export default function ProjectsSection({ language = 'en' }) {
         className={`${styles.overlay} ${styles.hoverEffect} ${styles.fadeWrapper} ${isVisible ? styles.visible : styles.hidden}`}
       >
         <h2 className={styles.title}>{title}</h2>
-        <p className={styles.paragraph}>{paragraph}</p>
+        {/*<p className={styles.paragraph}>{paragraph}</p>*/}
         <Link href="/selected-work" className={styles.button}>
           {button}
         </Link>
