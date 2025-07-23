@@ -17,15 +17,14 @@ export default function Header() {
   const { language, toggleLanguage } = useLanguage();
   const [menuOpen, setMenuOpen] = useState(false);
   const wrapperRef = useRef(null);
-
   const navItems = dictionary.header[language]?.nav || dictionary.header.en.nav;
-  const roleText = dictionary.header[language]?.role || dictionary.header.en.role;
+
   const navLinks = [
-  '/selected-work',
-  '/industry-engagement',
-  '/script-consultant',
-  '/about-me',
-];
+    '/selected-work',
+    '/industry-engagement',
+    '/script-consultant',
+    '/about-me',
+  ];
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -35,68 +34,77 @@ export default function Header() {
     };
 
     document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
   return (
-    <header className={styles.header}>
-      <div className={styles.left}>
-        <Link href="/" className={`${styles.siteName} ${cinzel.className}`} title="Go to homepage">
-          <span className={styles.name}>Fabio Montanari</span>
-          <span className={styles.role}>{roleText}</span>
-        </Link>
-      </div>
-
-      <div className={styles.right} ref={wrapperRef}>
-        <div className={styles.langWrapper}>
-          <button
-            onClick={() => toggleLanguage('en')}
-            className={`${styles.langButton} ${language === 'en' ? styles.active : ''}`}
-            aria-label="Switch to English"
-          >
-            EN
-          </button>
-          <button
-            onClick={() => toggleLanguage('pt')}
-            className={`${styles.langButton} ${language === 'pt' ? styles.active : ''}`}
-            aria-label="Mudar para Português"
-          >
-            PT
-          </button>
+    <>
+      <header className={styles.header}>
+        <div className={styles.left}>
+          <Link href="/" className={`${styles.siteName} ${cinzel.className}`} title="Go to homepage">
+            <span className={styles.name}>Fabio Montanari</span>
+          </Link>
         </div>
 
-        <button
-          className={styles.menuWrapper}
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-          aria-expanded={menuOpen}
-          aria-controls="main-menu"
-        >
-          ☰
-        </button>
-
-        {menuOpen && (
-          <nav
-            id="main-menu"
-            className={styles.navMenu}
-            role="navigation"
-            tabIndex="-1"
-          >
+        <div className={styles.center}>
+          <nav className={styles.desktopNav}>
             <ul>
-              {navItems?.map((label, index) => {
-                const href = navLinks[index] || '#';
-                return (
-                  <li key={`${label}-${index}`}>
-                    <Link href={href}>{label}</Link>
-                  </li>
-                );
-              })}
+              {navItems?.map((label, index) => (
+                <li key={label}>
+                  <Link href={navLinks[index]}>{label}</Link>
+                </li>
+              ))}
             </ul>
           </nav>
-        )}
-      </div>
-    </header>
+        </div>
+
+        <div className={styles.right} ref={wrapperRef}>
+          <div className={styles.langWrapper}>
+            <button
+              onClick={() => toggleLanguage('en')}
+              className={`${styles.langButton} ${language === 'en' ? styles.active : ''}`}
+              aria-label="Switch to English"
+            >
+              EN
+            </button>
+            <button
+              onClick={() => toggleLanguage('pt')}
+              className={`${styles.langButton} ${language === 'pt' ? styles.active : ''}`}
+              aria-label="Mudar para Português"
+            >
+              PT
+            </button>
+          </div>
+
+          <button
+            className={styles.menuWrapper}
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+            aria-expanded={menuOpen}
+            aria-controls="main-menu"
+          >
+            ☰
+          </button>
+
+          {menuOpen && (
+            <nav
+              id="main-menu"
+              className={styles.navMenu}
+              role="navigation"
+              tabIndex="-1"
+            >
+              <ul>
+                {navItems?.map((label, index) => (
+                  <li key={`${label}-${index}`}>
+                    <Link href={navLinks[index]}>{label}</Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          )}
+        </div>
+      </header>
+    </>
   );
 }
+
