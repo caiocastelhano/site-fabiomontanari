@@ -97,13 +97,15 @@ export default function IndustryGallery({ images, captions }) {
               &times;
             </span>
 
-            <Image
-              src={`/images/industry-engagement/${selectedImage.filename}`}
-              alt={captions[selectedImage.key]}
-              width={800}
-              height={500}
-              className={styles.fullImage}
-            />
+            <div className={styles.fullImageWrapper}>
+              <Image
+                src={`/images/industry-engagement/${selectedImage.filename}`}
+                alt={captions[selectedImage.key]}
+                width={1200}
+                height={800}
+                className={styles.fullImage}
+              />
+            </div>
 
             <p className={styles.caption}>{captions[selectedImage.key]}</p>
           </div>
