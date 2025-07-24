@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import styles from './IndustryGallery.module.css';
+import { useFadeInOnScroll } from '../../hooks/useFadeInOnScroll';
 
 export default function IndustryGallery({ images, captions }) {
   const [selectedIndex, setSelectedIndex] = useState(null);
@@ -41,23 +42,28 @@ export default function IndustryGallery({ images, captions }) {
   return (
     <>
       <div className={styles.grid}>
-        {images.map(({ filename, key }, index) => (
-          <button
-            key={key}
-            className={styles.thumb}
-            onClick={() => openModal(index)}
-            aria-label={`Open image: ${captions[key]}`}
-          >
-            <Image
-              src={`/images/industry-engagement/${filename}`}
-              alt={captions[key]}
-              width={300}
-              height={200}
-              className={styles.image}
-              priority={index === 0}
-            />
-          </button>
-        ))}
+        {images.map(({ filename, key }, index) => {
+          const [ref, isVisible] = useFadeInOnScroll();
+
+          return (
+            <button
+              key={key}
+              ref={ref}
+              className={`${styles.thumb} ${styles.fadeWrapper} ${isVisible ? styles.visible : ''}`}
+              onClick={() => openModal(index)}
+              aria-label={`Open image: ${captions[key]}`}
+            >
+              <Image
+                src={`/images/industry-engagement/${filename}`}
+                alt={captions[key]}
+                width={300}
+                height={200}
+                className={styles.image}
+                priority={index === 0}
+              />
+            </button>
+          );
+        })}
       </div>
 
       {selectedImage && (
