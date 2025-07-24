@@ -1,20 +1,26 @@
+import { useFadeInOnScroll } from '../../hooks/useFadeInOnScroll';
 import styles from './WorkSection.module.css';
 import ImageCarousel from './ImageCarousel';
 
 export default function WorkSection({ project, projectKey, index }) {
   const isEven = index % 2 === 0;
 
+  const [ref, isVisible] = useFadeInOnScroll();
+
   return (
     <section
-      className={`${styles.section} ${isEven ? styles.lightBackground : styles.darkBackground}`}
+      className={`
+        ${styles.section}
+        ${isEven ? styles.lightBackground : styles.darkBackground}
+      `}
       aria-labelledby={`project-title-${projectKey}`}
     >
       <div className={`${styles.projectContent} ${isEven ? styles.textRight : styles.textLeft}`}>
-        <div className={styles.textBlock}>
-          <h2
-            className={styles.projectTitle}
-            id={`project-title-${projectKey}`}
-          >
+        <div
+          ref={ref}
+          className={`${styles.textBlock} ${styles.fadeWrapper} ${isVisible ? styles.visible : ''}`}
+        >
+          <h2 className={styles.projectTitle} id={`project-title-${projectKey}`}>
             {project.title}
           </h2>
 
