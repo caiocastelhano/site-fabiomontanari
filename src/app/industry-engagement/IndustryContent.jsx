@@ -34,11 +34,15 @@ export default function IndustryContent() {
   ];
 
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title} id="industry-title">{t.title}</h1>
-      <p className={styles.intro}>{t.intro}</p>
+    <>
+      <div className={styles.textBlock}>
+        <h1 className={styles.title} id="industry-title">{t.title}</h1>
+        <p className={styles.intro}>{t.intro}</p>
+      </div>
 
-      <IndustryGallery images={images} captions={t.captions} />
-    </div>
+      <div className={styles.imageBlock}>
+        <IndustryGallery images={images} captions={t.captions} />
+      </div>
+    </>
   );
 }
