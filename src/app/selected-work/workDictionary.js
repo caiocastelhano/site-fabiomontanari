@@ -26,7 +26,8 @@ const workDictionary = {
         role: "Screenwriter | Netflix Original",
         description: `A coming-of-age series about a band chasing the spotlight and confronting what it might cost them.\n\nAvailable on Netflix.`,
         platformLogo: "/images/platforms/netflix.webp",
-        totalImages: 9
+        totalImages: 9,
+        videos: ['https://www.youtube.com/embed/vVrR9jjeOXs']
       },
       missingMatoaka: {
         folder: "missing-matoaka",
@@ -34,7 +35,7 @@ const workDictionary = {
         role: "Executive Story Editor | Transmedia Project (BBDO)",
         description: `A bold Indigenous-led reimagining of the Pocahontas myth. \n\nWinner of Cannes Lions, Clio, and more.`,
         totalImages: 2,
-        videos: ["https://player.vimeo.com/video/1102295925"]
+        videos: ['https://www.youtube.com/embed/6PAqRmYklDk']
       },
       invisibleCity: {
         folder: "invisible-city",
@@ -136,7 +137,8 @@ const workDictionary = {
         role: "Roteirista | Original Netflix",
         description: `Drama de amadurecimento sobre uma banda à beira do sucesso, navegando entre ambição, sonhos grandes e fantasmas pessoais rumo aos holofotes.\n\nDisponível na Netflix.`,
         platformLogo: "/images/platforms/netflix.webp",
-        totalImages: 9
+        totalImages: 9,
+        videos: ['https://www.youtube.com/embed/vVrR9jjeOXs']
       },
       missingMatoaka: {
         folder: "missing-matoaka",
@@ -144,7 +146,7 @@ const workDictionary = {
         role: "Editor Executivo de Roteiro | Projeto Transmídia (BBDO)",
         description: `Uma ousada releitura indígena do mito de Pocahontas. \n\nVencedora dos prêmios Cannes Lions, Clio e outros.`,
         totalImages: 2,
-        videos: ["https://player.vimeo.com/video/1102295925"]
+        videos: ['https://www.youtube.com/embed/6PAqRmYklDk']
       },
       invisibleCity: {
         folder: "invisible-city",
