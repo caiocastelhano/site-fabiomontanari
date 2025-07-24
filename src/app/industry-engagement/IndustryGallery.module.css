@@ -2,7 +2,7 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 90px;
+  gap: 100px;
   margin-top: 48px;
   max-width: 1200px;
   margin-left: auto;
@@ -135,6 +135,17 @@
 
 .right {
   right: 16px;
+}
+
+.fadeWrapper {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* TABLET */
