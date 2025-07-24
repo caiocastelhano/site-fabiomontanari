@@ -4,27 +4,20 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import styles from './IndustryGallery.module.css';
 import { useFadeInOnScroll } from '../../hooks/useFadeInOnScroll';
+import { useLanguage } from '@/app/context/LanguageContext';
+import industryDictionary from './industryDictionary';
 
-export default function IndustryGallery({ images, captions }) {
+export default function IndustryGallery({ images }) {
+  const { language } = useLanguage();
+  const { captions, links, buttonText } = industryDictionary[language];
+
   const [selectedIndex, setSelectedIndex] = useState(null);
-
   const selectedImage = selectedIndex !== null ? images[selectedIndex] : null;
 
-  const openModal = (index) => {
-    setSelectedIndex(index);
-  };
-
-  const closeModal = () => {
-    setSelectedIndex(null);
-  };
-
-  const goToNext = () => {
-    setSelectedIndex((prev) => (prev < images.length - 1 ? prev + 1 : prev));
-  };
-
-  const goToPrev = () => {
-    setSelectedIndex((prev) => (prev > 0 ? prev - 1 : prev));
-  };
+  const openModal = (index) => setSelectedIndex(index);
+  const closeModal = () => setSelectedIndex(null);
+  const goToNext = () => setSelectedIndex((prev) => (prev < images.length - 1 ? prev + 1 : prev));
+  const goToPrev = () => setSelectedIndex((prev) => (prev > 0 ? prev - 1 : prev));
 
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -34,7 +27,6 @@ export default function IndustryGallery({ images, captions }) {
         if (e.key === 'Escape') closeModal();
       }
     };
-
     document.addEventListener('keydown', handleKeyDown);
     return () => document.removeEventListener('keydown', handleKeyDown);
   }, [selectedIndex]);
@@ -44,24 +36,40 @@ export default function IndustryGallery({ images, captions }) {
       <div className={styles.grid}>
         {images.map(({ filename, key }, index) => {
           const [ref, isVisible] = useFadeInOnScroll();
+          const link = links?.[key];
 
           return (
-            <button
+            <div
               key={key}
               ref={ref}
-              className={`${styles.thumb} ${styles.fadeWrapper} ${isVisible ? styles.visible : ''}`}
-              onClick={() => openModal(index)}
-              aria-label={`Open image: ${captions[key]}`}
+              className={`${styles.thumbWrapper} ${styles.fadeWrapper} ${isVisible ? styles.visible : ''}`}
             >
-              <Image
-                src={`/images/industry-engagement/${filename}`}
-                alt={captions[key]}
-                width={300}
-                height={200}
-                className={styles.image}
-                priority={index === 0}
-              />
-            </button>
+              <button
+                className={styles.thumb}
+                onClick={() => openModal(index)}
+                aria-label={`Open image: ${captions[key]}`}
+              >
+                <Image
+                  src={`/images/industry-engagement/${filename}`}
+                  alt={captions[key]}
+                  width={300}
+                  height={200}
+                  className={styles.image}
+                  priority={index === 0}
+                />
+              </button>
+
+              {link && (
+                <a
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.linkButton}
+                >
+                  {buttonText}
+                </a>
+              )}
+            </div>
           );
         })}
       </div>

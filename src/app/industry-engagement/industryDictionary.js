@@ -23,7 +23,18 @@ const industryDictionary = {
       image16: "Speaker at AWP 2025 (Los Angeles) panels | Scripting Into the Apocalypse: How Screenwriters Create for Global Change & Beyond Syd Field: Deconolizing the Screenwriting Workshop.",
       image17: "Speaker at AWP 2025 (Los Angeles) panels | Scripting Into the Apocalypse: How Screenwriters Create for Global Change & Beyond Syd Field: Deconolizing the Screenwriting Workshop.",
       image18: "Moderator | Podcast episode featuring a conversation with Ian Iqbal Rashid on Writing for TV."
-    }
+    },
+    links: {
+      image1: "https://www.primeirotratamento.com.br/2025/06/18/primeiro-tratamento-fabio-montanari-345/",
+      image2: "https://www.coletivocineforum.com/minicursos",
+      image3: "https://iffdigitalprogram24.my.canva.site/",
+      image4: "https://www.vaughanfilmfestival.com/iff2024",
+      image5: "https://portalpopline.com.br/sutura-serie-10-anos-sair-papel-criador-entrevista/",
+      image6: "https://events.yorku.ca/events/industry-talks-2-0/",
+      image7: "https://www.youtube.com/live/M1vthuCPH88?si=7-r6P3_3bj4OcjjA&t=876",
+      image11: "https://www.vaughanfilmfestival.com/iff2024"
+    },
+    buttonText: "Check it out"
   },
 
   pt: {
@@ -50,7 +61,18 @@ const industryDictionary = {
       image16: "Palestrante nos painéis do AWP 2025 (Los Angeles) | Scripting Into the Apocalypse: How Screenwriters Create for Global Change & Beyond Syd Field: Deconolizing the Screenwriting Workshop.",
       image17: "Palestrante nos painéis do AWP 2025 (Los Angeles) | Scripting Into the Apocalypse: How Screenwriters Create for Global Change & Beyond Syd Field: Deconolizing the Screenwriting Workshop.",
       image18: "Mediador | Episódio de podcast com Ian Iqbal Rashid sobre Escrita para TV."
-    }
+    },
+    links: {
+      image1: "https://www.primeirotratamento.com.br/2025/06/18/primeiro-tratamento-fabio-montanari-345/",
+      image2: "https://www.coletivocineforum.com/minicursos",
+      image3: "https://iffdigitalprogram24.my.canva.site/",
+      image4: "https://www.vaughanfilmfestival.com/iff2024",
+      image5: "https://portalpopline.com.br/sutura-serie-10-anos-sair-papel-criador-entrevista/",
+      image6: "https://events.yorku.ca/events/industry-talks-2-0/",
+      image7: "https://www.youtube.com/live/M1vthuCPH88?si=7-r6P3_3bj4OcjjA&t=876",
+      image11: "https://www.vaughanfilmfestival.com/iff2024"
+    },
+    buttonText: "Dá uma olhada"
   }
 };
 
