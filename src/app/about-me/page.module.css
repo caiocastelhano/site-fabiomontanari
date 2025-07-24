@@ -33,7 +33,7 @@
 }
 
 .initialText {
-  font-size: 1.2rem;
+  font-size: 1.55rem;
   text-align: center;
   color: #fff;
 }
@@ -41,7 +41,7 @@
 .blocks {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 36px;
+  gap: 56px;
   margin: 40px 0;
 }
 
@@ -61,14 +61,16 @@
 }
 
 .cardTitle {
-  font-size: 1.25rem;
+  font-family: "Cinzel", serif;
+  font-size: 1.45rem;
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
   color: #fff;
+  text-align: center;
 }
 
 .cardText p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   color: #eee;
 }
@@ -79,7 +81,7 @@
 }
 
 .closing h2 {
-  font-size: 1.4rem;
+  font-size: 1.55rem;
   font-weight: bold;
   margin-bottom: 24px;
 }
