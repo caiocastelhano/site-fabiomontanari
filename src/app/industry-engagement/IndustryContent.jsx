@@ -28,9 +28,6 @@ export default function IndustryContent() {
     { filename: "image16.webp", key: "image16" },
     { filename: "image17.webp", key: "image17" },
     { filename: "image18.webp", key: "image18" },
-    { filename: "image19.webp", key: "image19" },
-    { filename: "image20.webp", key: "image20" },
-    { filename: "image21.webp", key: "image21" },
   ];
 
   return (
