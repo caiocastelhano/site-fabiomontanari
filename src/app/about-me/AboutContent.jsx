@@ -5,6 +5,7 @@ import { useLanguage } from "../context/LanguageContext";
 import aboutDictionary from "./aboutDictionary";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import { SiImdb } from "react-icons/si";
+import { useFadeInOnScroll } from "../../hooks/useFadeInOnScroll";
 
 export default function AboutContent() {
   const { language } = useLanguage();
@@ -29,14 +30,22 @@ export default function AboutContent() {
         <p className={styles.initialText}>{t.intro}</p>
 
         <div className={styles.blocks}>
-          {blocks.map((block) => (
-            <div key={block.key} className={styles.textCard}>
-              <h2 className={styles.cardTitle}>{block.title}</h2>
-              <div className={styles.cardText}>
-                {typeof block.text === "string" ? <p>{block.text}</p> : block.text}
+          {blocks.map((block) => {
+            const [ref, isVisible] = useFadeInOnScroll();
+
+            return (
+              <div
+                key={block.key}
+                ref={ref}
+                className={`${styles.textCard} ${styles.fadeWrapper} ${isVisible ? styles.visible : ""}`}
+              >
+                <h2 className={styles.cardTitle}>{block.title}</h2>
+                <div className={styles.cardText}>
+                  {typeof block.text === "string" ? <p>{block.text}</p> : block.text}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         <section className={styles.closing}>
