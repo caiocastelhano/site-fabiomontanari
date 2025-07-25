@@ -24,6 +24,7 @@ export default function Blurb({ blurbs }) {
         modules={[Pagination, Navigation]}
         spaceBetween={40}
         slidesPerView={1}
+        autoHeight={true}
         className={styles.carousel}
         role="region"
         aria-label="Testimonials carousel"

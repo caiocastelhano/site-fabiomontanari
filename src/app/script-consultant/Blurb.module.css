@@ -24,7 +24,7 @@
 
 .carouselWrapper {
   position: relative;
-  min-height: 250px;
+  height: auto;
 }
 
 .carouselWrapper :global(.custom-prev),
