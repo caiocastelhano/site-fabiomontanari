@@ -89,11 +89,11 @@
   }
 
   .carouselWrapper :global(.custom-prev) {
-    left: -3rem;
+    left: -2rem;
   }
 
   .carouselWrapper :global(.custom-next) {
-    right: -3rem;
+    right: -2rem;
   }
 }
 
