@@ -9,7 +9,7 @@ const workDictionary = {
         role: "Created by & Screenwriter | Amazon Prime Original",
         description: `An unlikely doctor learns the craft—one illegal stitch at a time. Official selection, Berlinale International Film Festival TV series (2025).\n\nAvailable on Prime Video (selected countries).`,
         platformLogo: "/images/platforms/prime.webp",
-        totalImages: 5,
+        totalImages: 7,
         videos: ["https://www.youtube.com/embed/iHlwtTziLdQ"]
       },
       jointVenture: {
@@ -26,7 +26,7 @@ const workDictionary = {
         role: "Screenwriter | Netflix Original",
         description: `A coming-of-age series about a band chasing the spotlight and confronting what it might cost them.\n\nAvailable on Netflix.`,
         platformLogo: "/images/platforms/netflix.webp",
-        totalImages: 9,
+        totalImages: 6,
         videos: ['https://www.youtube.com/embed/vVrR9jjeOXs']
       },
       missingMatoaka: {
@@ -43,7 +43,7 @@ const workDictionary = {
         role: "Staff Writer | Netflix Original",
         description: `A supernatural thriller from Carlos Saldanha (Ice Age, Rio) that blends Brazilian folklore with a modern crime mystery.\n\nAvailable on Netflix.`,
         platformLogo: "/images/platforms/netflix.webp",
-        totalImages: 8
+        totalImages: 7
       },
       samantha: {
         folder: "samantha",
@@ -51,7 +51,7 @@ const workDictionary = {
         role: "Screenwriter | Netflix Original (Season Two)",
         description: `A family comedy about a washed-up child star chasing fame again.\n\nAvailable on Netflix.`,
         platformLogo: "/images/platforms/netflix.webp",
-        totalImages: 7,
+        totalImages: 6,
         videos: ["https://www.youtube.com/embed/kEyVo8LK3CQ"]
       },
       madToTheMax: {
@@ -60,14 +60,14 @@ const workDictionary = {
         role: "Screenwriter | NatGeo Hybrid Fiction/Non-Fiction",
         description: `Three experts must survive a post-apocalyptic world using science and engineering.\n\nAvailable on Disney+ (selected countries).`,
         platformLogo: "/images/platforms/natgeo.webp",
-        totalImages: 7
+        totalImages: 2
       },
       theGrillMan: {
         folder: "the-grill-man",
         title: "THE GRILL MAN",
         role: "Writer & Director",
         description: `While a nation celebrates the soccer World Cup, a grill cook faces one last shot at dignity. \n\nScreened at 50+ festivals, winning multiple awards.`,
-        totalImages: 6,
+        totalImages: 5,
         videos: ["https://www.youtube.com/embed/DoRozrR6Dek"]
       },
       myWhiteShoes: {
@@ -75,14 +75,14 @@ const workDictionary = {
         title: "MY WHITE SHOES",
         role: "Writer & Director",
         description: `In the heart of the city, two brothers confront a violent turning point that fractures their innocence—and their bond. \n\nKatharina Otto-Bernstein Award; Caucus Foundation Grant. \n\nEditing supervised by Carol Littleton (E.T.).`,
-        totalImages: 10
+        totalImages: 7
       },
       inTheWhistle: {
         folder: "in-the-whistle",
         title: "IN THE WHISTLE",
         role: "Co-Writer & Co-Director | Short film | Comedy",
         description: `A soccer referee is determined to make a point—even if it ruins the final.`,
-        totalImages: 5
+        totalImages: 4
       },
       drauzioFantastico: {
         folder: "drauzio-varella",
@@ -90,14 +90,14 @@ const workDictionary = {
         role: "Screenwriter | Globo/Fantástico (Docuseries)",
         description: `Three vérité-style docuseries featuring renowned physician Drauzio Varella.`,
         platformLogo: "/images/platforms/globo.webp",
-        totalImages: 3
+        totalImages: 2
       },
       chessShop: {
         folder: "chess-shop",
         title: "CHESS SHOP",
         role: "Director & Co-Writer | Short Film | Drama",
         description: `Two coworkers face closure—and their own fears—on the final day of a failing chess shop.`,
-        totalImages: 9
+        totalImages: 7
       },
       bestFriends: {
         folder: "best-friends",
@@ -119,7 +119,7 @@ const workDictionary = {
         role: "Criador e Roteirista | Original Amazon Prime",
         description: `Uma médica improvável aprende o ofício — um ponto ilegal por vez. Seleção oficial da Berlinale - Festival Internacional de Cinema (série de TV, 2025). Gênero: thriller médico. \n\nDisponível no Prime Video (países selecionados).`,
         platformLogo: "/images/platforms/prime.webp",
-        totalImages: 5,
+        totalImages: 7,
         videos: ["https://www.youtube.com/embed/iHlwtTziLdQ"]
       },
       jointVenture: {
@@ -137,7 +137,7 @@ const workDictionary = {
         role: "Roteirista | Original Netflix",
         description: `Drama de amadurecimento sobre uma banda à beira do sucesso, navegando entre ambição, sonhos grandes e fantasmas pessoais rumo aos holofotes.\n\nDisponível na Netflix.`,
         platformLogo: "/images/platforms/netflix.webp",
-        totalImages: 9,
+        totalImages: 6,
         videos: ['https://www.youtube.com/embed/vVrR9jjeOXs']
       },
       missingMatoaka: {
@@ -154,7 +154,7 @@ const workDictionary = {
         role: "Roteirista da equipe | Original Netflix",
         description: `Um thriller sobrenatural de Carlos Saldanha (A Era do Gelo, Rio) que mistura o folclore brasileiro com um mistério policial contemporâneo.\n\nDisponível na Netflix.`,
         platformLogo: "/images/platforms/netflix.webp",
-        totalImages: 8
+        totalImages: 7
       },
       samantha: {
         folder: "samantha",
@@ -162,7 +162,7 @@ const workDictionary = {
         role: "Roteirista | Original Netflix (2ª temporada)",
         description: `Uma comédia familiar sobre uma ex-estrela mirim em decadência tentando reconquistar a fama.\n\nDisponível na Netflix.`,
         platformLogo: "/images/platforms/netflix.webp",
-        totalImages: 7,
+        totalImages: 6,
         videos: ["https://www.youtube.com/embed/kEyVo8LK3CQ"]
       },
       madToTheMax: {
@@ -171,14 +171,14 @@ const workDictionary = {
         role: "Roteirista | Ficção híbrida da National Geographic",
         description: `Três especialistas precisam sobreviver em um mundo pós-apocalíptico usando ciência e engenharia.\n\nDisponível no Disney+ (países selecionados).`,
         platformLogo: "/images/platforms/natgeo.webp",
-        totalImages: 7
+        totalImages: 2
       },
       theGrillMan: {
         folder: "the-grill-man",
         title: "CHAPA",
         role: "Roteirista e Diretor",
         description: `Enquanto o país comemora a Copa do Mundo de futebol, um churrasqueiro encara sua última chance de dignidade.\n\nExibido em mais de 50 festivais e vencedor de diversos prêmios.`,
-        totalImages: 6,
+        totalImages: 5,
         videos: ["https://www.youtube.com/embed/DoRozrR6Dek"]
       },
       myWhiteShoes: {
@@ -186,14 +186,14 @@ const workDictionary = {
         title: "MEU TÊNIS BRANCO",
         role: "Roteirista e Diretor",
         description: `No coração da cidade, dois irmãos enfrentam um ponto de ruptura violento que abala sua inocência — e seu vínculo. \n\nPrêmio Katharina Otto-Bernstein; bolsa da Caucus Foundation. \n\nMontagem supervisionada por Carol Littleton (E.T.).`,
-        totalImages: 10
+        totalImages: 7
       },
       inTheWhistle: {
         folder: "in-the-whistle",
         title: "NO APITO",
         role: "Corroteirista, Codiretor | Curta-metragem | Comédia",
         description: `Um árbitro de futebol está determinado a fazer valer sua opinião — mesmo que isso arruíne a final.`,
-        totalImages: 5
+        totalImages: 4
       },
       drauzioFantastico: {
         folder: "drauzio-varella",
@@ -201,14 +201,14 @@ const workDictionary = {
         role: "Roteirista | Globo/Fantástico (Docusséries)",
         description: `Três séries documentais em estilo vérité com o renomado médico Drauzio Varella.`,
         platformLogo: "/images/platforms/globo.webp",
-        totalImages: 3
+        totalImages: 2
       },
       chessShop: {
         folder: "chess-shop",
         title: "CHESS SHOP",
         role: "Diretor e Corroteirista | Curta-metragem | Drama",
         description: `Dois colegas de trabalho enfrentam o fechamento — e seus próprios medos — no último dia de uma loja de xadrez em decadência.`,
-        totalImages: 9
+        totalImages: 7
       },
       bestFriends: {
         folder: "best-friends",
