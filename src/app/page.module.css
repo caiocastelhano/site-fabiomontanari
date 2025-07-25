@@ -42,12 +42,12 @@
 
 /* TABLET E MOBILE */
 @media (max-width: 600px) {
-  .main {
-    padding: 48px 16px 64px;
-  }
-
   .page {
     padding-top: 56px;
+  }
+
+  .main {
+    padding: 0 16px 64px;
   }
 
   .title {
@@ -59,8 +59,13 @@
   }
 }
 
+
 @media (max-width: 900px) and (min-width: 601px) {
   .page {
     padding-top: 60px;
+  }
+
+  .main {
+    padding-top: 0;
   }
 }
