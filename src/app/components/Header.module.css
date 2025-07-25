@@ -205,7 +205,13 @@
 /* MOBILE */
 @media (max-width: 600px) {
   .header {
+    height: 64px;
     padding: 12px 16px;
+    box-sizing: border-box;
+  }
+
+  .page {
+    padding-top: 64px;
   }
 
   .siteName {

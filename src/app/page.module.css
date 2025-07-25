@@ -6,6 +6,7 @@
   background-color: var(--background);
   font-family: sans-serif;
   padding-top: 72px;
+  overflow-x: hidden;
 }
 
 .main {
@@ -40,7 +41,7 @@
   color: #777;
 }
 
-/* TABLET E MOBILE */
+/* MOBILE */
 @media (max-width: 600px) {
   .page {
     padding-top: 56px;
@@ -52,6 +53,7 @@
 
   .title {
     font-size: 2rem;
+    margin-top: 24px;
   }
 
   .subtitle {
@@ -59,7 +61,7 @@
   }
 }
 
-
+/* TABLET */
 @media (max-width: 900px) and (min-width: 601px) {
   .page {
     padding-top: 60px;
@@ -67,5 +69,9 @@
 
   .main {
     padding-top: 0;
+  }
+
+  .title {
+    margin-top: 24px;
   }
 }
