@@ -1,7 +1,7 @@
 const consultingDictionary = {
   en: {
     pageTitle: "Script Consultant & Development",
-    intro: `I help writers shape their strongest stories—drawing on years of creating for networks, indies, and original series of my own. As a professor and mentor, I love helping writers find their voice and balance character-driven narratives with a clear sense of structure. \n\nHave a script that needs fresh eyes or a concept you want to build? Reach out. I’m ready to collaborate.`,
+    intro: `I help writers shape their strongest stories—drawing on years of creating for networks, indies, and original series of my own. As a professor and mentor, I love helping writers find their voice and balance character-driven narratives with a clear sense of structure. \n\nHave a script that needs fresh eyes or a concept you want to build? \n\nReach out. I’m ready to collaborate.`,
     blurbs: [
       {
         text: `Script notes from Fabio were instrumental to the advancement of my scripts. He does not provide a "paint by numbers" checklist like some services. Instead, Fabio provided thoughtful insights that revealed hidden decision points in the script, forcing my hand to take the sometimes painful steps necessary to take my script up several levels. He was engaged, supportive, and honest, sometimes frustratingly, but necessarily, so. I found his help invaluable and have returned to him multiple times.`,
@@ -20,7 +20,7 @@ const consultingDictionary = {
 
   pt: {
     pageTitle: "Consultoria e Desenvolvimento de Roteiro",
-    intro: `Ajudo roteiristas a moldar suas histórias mais potentes — com base em anos criando para emissoras, produções independentes e séries originais minhas. Como professor e mentor, adoro ajudar escritores a encontrar sua voz e equilibrar narrativas centradas nos personagens com uma estrutura bem definida. \n\nEstá com um roteiro que precisa de um novo olhar ou um conceito que quer desenvolver? Fale comigo. Estou pronto para colaborar.`,
+    intro: `Ajudo roteiristas a moldar suas histórias mais potentes — com base em anos criando para emissoras, produções independentes e séries originais minhas. Como professor e mentor, adoro ajudar escritores a encontrar sua voz e equilibrar narrativas centradas nos personagens com uma estrutura bem definida. \n\nEstá com um roteiro que precisa de um novo olhar ou um conceito que quer desenvolver? \n\nFale comigo. Estou pronto para colaborar.`,
     blurbs: [ 
       {
         text: `As anotações de Fabio foram instrumentais para o avanço dos meus roteiros. Ele não oferece um checklist genérico, mas sim observações cuidadosas que revelam decisões-chave escondidas no texto, forçando (no melhor sentido) a tomar decisões difíceis que elevaram o nível da história. Ele foi engajado, honesto e presente — às vezes até frustrantemente honesto, mas sempre necessário. Achei sua ajuda inestimável e já recorri a ele várias vezes.`,
