@@ -1,3 +1,4 @@
+/* DESKTOP */
 .page {
   display: flex;
   flex-direction: column;
@@ -39,9 +40,14 @@
   color: #777;
 }
 
+/* TABLET E MOBILE */
 @media (max-width: 600px) {
   .main {
     padding: 48px 16px 64px;
+  }
+
+  .page {
+    padding-top: 56px;
   }
 
   .title {
@@ -50,5 +56,11 @@
 
   .subtitle {
     font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 601px) {
+  .page {
+    padding-top: 60px;
   }
 }
