@@ -13,8 +13,8 @@
   position: absolute;
   inset: 0;
   background-image: url('/images/home/consultant-background.webp');
-  background-size: 120%;
-  background-position: 100% center; 
+  background-size: cover;
+  background-position: center; 
   z-index: -1;
 }
 

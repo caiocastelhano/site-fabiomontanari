@@ -13,8 +13,8 @@
   position: absolute;
   inset: 0;
   background-image: url('/images/home/about-background.webp');
-  background-size: 120%; 
-  background-position: 5% center;
+  background-size: cover;
+  background-position: center;
   z-index: -1;
 }
 
@@ -111,6 +111,12 @@
   .aboutSection {
     padding: 80px 16px 60px;
     background-position: center top;
+    min-height: 360px;
+    position: relative;
+  }
+
+  .aboutSection::before {
+    height: 100%;
   }
 
   .overlay {
