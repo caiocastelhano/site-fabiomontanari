@@ -11,10 +11,22 @@ export const dictionary = {
         { id: 'contact', label: 'Contact' },
       ],
       carouselCaptions: [
-        'My White Shoes | Writer & Director | Short Film',
-        'Suture | Created By & Screenwriter | Amazon Prime Video',
-        'Joint Venture | Screenwriter | HBO Originals',
-        'Only For Love | Screenwriter | Netflix Original'
+        {
+          titleLine: 'My White Shoes | Writer & Director',
+          platformLine: ''
+        },
+        {
+          titleLine: 'Suture | Created By & Screenwriter',
+          platformLine: 'Amazon Prime Video'
+        },
+        {
+          titleLine: 'Joint Venture | Screenwriter',
+          platformLine: 'HBO Originals'
+        },
+        {
+          titleLine: 'Only For Love | Screenwriter',
+          platformLine: 'Netflix Original'
+        }
       ]
     },
     pt: {
@@ -28,10 +40,22 @@ export const dictionary = {
         { id: 'contact', label: 'Contato' },
       ],
       carouselCaptions: [
-        'Meu Tênis Branco | Diretor e Roteirista | Curta-metragem',
-        'Sutura | Criador e Roteirista | Amazon Prime Video',
-        'Pico da Neblina | Roteirista | HBO Original',
-        'Só Se For Por Amor | Roteirista | Netflix Original'
+        {
+          titleLine: 'Meu Tênis Branco | Diretor e Roteirista',
+          platformLine: ''
+        },
+        {
+          titleLine: 'Sutura | Criador e Roteirista',
+          platformLine: 'Amazon Prime Video'
+        },
+        {
+          titleLine: 'Pico da Neblina | Roteirista',
+          platformLine: 'HBO Original'
+        },
+        {
+          titleLine: 'Só Se For Por Amor | Roteirista',
+          platformLine: 'Netflix Original'
+        }
       ]
     },
   },
