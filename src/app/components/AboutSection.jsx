@@ -23,10 +23,10 @@ export default function AboutSection({ language = 'en' }) {
         ref={ref}
         className={`${styles.overlay} ${styles.hoverEffect} ${styles.fadeWrapper} ${isVisible ? styles.visible : styles.hidden}`}
       >
-        <h2 className={styles.title}>{title}</h2>
+        {/* <h2 className={styles.title}>{title}</h2> */}
         {/* <p className={styles.paragraph}>{paragraph}</p>*/}
         <Link href="/about-me" className={styles.button}>
-          {button}
+          {title}
         </Link>
       </div>
     </section>
