@@ -59,20 +59,6 @@ export default function IndustryGallery({ images }) {
                 />
               </button>
 
-              <p className={styles.caption}>
-                {link ? (
-                  <a
-                    href={link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.captionLink}
-                  >
-                    {captions[key]}
-                  </a>
-                ) : (
-                  captions[key]
-                )}
-              </p>
             </div>
           );
         })}

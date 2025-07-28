@@ -154,17 +154,6 @@
   align-items: center;
 }
 
-.captionLink {
-  color: #333;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  transition: color 0.3s ease;
-}
-
-.captionLink:hover {
-  color: #555;
-}
-
 /* TABLET */
 @media (max-width: 900px) {
   .grid {
