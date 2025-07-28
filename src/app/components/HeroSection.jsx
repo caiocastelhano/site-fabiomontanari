@@ -62,7 +62,10 @@ export default function HeroSection({ language = 'en' }) {
               />
               <div className={styles.mask} aria-hidden="true" />
               <div className={styles.caption}>
-                {carouselCaptions[index]}
+                <div>{carouselCaptions[index].titleLine}</div>
+                {carouselCaptions[index].platformLine && (
+                  <div className={styles.platform}>{carouselCaptions[index].platformLine}</div>
+                )}
               </div>
             </div>
           </SwiperSlide>
