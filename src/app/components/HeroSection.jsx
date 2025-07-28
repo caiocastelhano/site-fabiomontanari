@@ -3,9 +3,10 @@
 import styles from './HeroSection.module.css';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, A11y, Pagination } from 'swiper/modules';
+import { Autoplay, A11y, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import { useState, useEffect } from 'react';
 import { dictionary } from '../../lib/dictionary';
 
@@ -34,11 +35,12 @@ export default function HeroSection({ language = 'en' }) {
     >
       <Swiper
         className={styles.heroSwiper}
-        modules={[Autoplay, A11y, Pagination]}
+        modules={[Autoplay, A11y, Pagination, Navigation]}
         autoplay={{ delay: 4000, disableOnInteraction: false }}
         loop
         slidesPerView={1}
         pagination={{ clickable: true }}
+        navigation
       >
         {images.map((num, index) => (
           <SwiperSlide key={num}>

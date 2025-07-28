@@ -11,10 +11,10 @@ export const dictionary = {
         { id: 'contact', label: 'Contact' },
       ],
       carouselCaptions: [
-        'My White Shoes | Writer & Director',
-        'Suture | Created By & Screenwriter',
-        'Joint Venture | Screenwriter',
-        'Only For Love | Screenwriter'
+        'My White Shoes | Writer & Director | Short Film',
+        'Suture | Created By & Screenwriter | Amazon Prime Video',
+        'Joint Venture | Screenwriter | HBO Originals',
+        'Only For Love | Screenwriter | Netflix Original'
       ]
     },
     pt: {
@@ -28,10 +28,10 @@ export const dictionary = {
         { id: 'contact', label: 'Contato' },
       ],
       carouselCaptions: [
-        'Meu Tênis Branco | Diretor e Roteirista',
-        'Sutura | Criador e Roteirista',
-        'Pico da Neblina | Roteirista',
-        'Só Se For Por Amor | Roteirista'
+        'Meu Tênis Branco | Diretor e Roteirista | Curta-metragem',
+        'Sutura | Criador e Roteirista | Amazon Prime Video',
+        'Pico da Neblina | Roteirista | HBO Original',
+        'Só Se For Por Amor | Roteirista | Netflix Original'
       ]
     },
   },
