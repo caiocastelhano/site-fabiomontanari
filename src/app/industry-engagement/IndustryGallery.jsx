@@ -59,16 +59,20 @@ export default function IndustryGallery({ images }) {
                 />
               </button>
 
-              {link && (
-                <a
-                  href={link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.linkButton}
-                >
-                  {buttonText}
-                </a>
-              )}
+              <p className={styles.caption}>
+                {link ? (
+                  <a
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.captionLink}
+                  >
+                    {captions[key]}
+                  </a>
+                ) : (
+                  captions[key]
+                )}
+              </p>
             </div>
           );
         })}
@@ -121,7 +125,20 @@ export default function IndustryGallery({ images }) {
               />
             </div>
 
-            <p className={styles.caption}>{captions[selectedImage.key]}</p>
+            {links[selectedImage.key] ? (
+              <p className={styles.caption}>
+                <a
+                  href={links[selectedImage.key]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.captionLink}
+                >
+                  {captions[selectedImage.key]}
+                </a>
+              </p>
+            ) : (
+              <p className={styles.caption}>{captions[selectedImage.key]}</p>
+            )}
           </div>
 
           <button
