@@ -12,17 +12,15 @@ export default function AboutSection({ language = 'en' }) {
   return (
     <section
       id="about-me"
-      className={styles.aboutSection}
+      ref={ref}
+      className={`${styles.aboutSection} ${styles.fadeWrapper} ${isVisible ? styles.visible : styles.hidden}`}
       aria-label={
         language === 'pt'
           ? 'Seção sobre Fabio Montanari'
           : 'About Fabio Montanari section'
       }
     >
-      <div
-        ref={ref}
-        className={`${styles.overlay} ${styles.hoverEffect} ${styles.fadeWrapper} ${isVisible ? styles.visible : styles.hidden}`}
-      >
+      <div className={`${styles.overlay} ${styles.hoverEffect}`}>
         {/* <h2 className={styles.title}>{title}</h2> */}
         {/* <p className={styles.paragraph}>{paragraph}</p>*/}
         <Link href="/about-me" className={styles.button}>

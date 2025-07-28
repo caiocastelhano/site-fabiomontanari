@@ -11,7 +11,8 @@ export default function ProjectsSection({ language = 'en' }) {
 
   return (
     <section
-      className={styles.projectsSection}
+      className={`${styles.projectsSection} ${styles.fadeWrapper} ${isVisible ? styles.visible : styles.hidden}`}
+      ref={ref}
       id="selected-work"
       aria-label={
         language === 'pt'
@@ -19,10 +20,7 @@ export default function ProjectsSection({ language = 'en' }) {
           : 'Selected work section'
       }
     >
-      <div
-        ref={ref}
-        className={`${styles.overlay} ${styles.hoverEffect} ${styles.fadeWrapper} ${isVisible ? styles.visible : styles.hidden}`}
-      >
+      <div className={`${styles.overlay} ${styles.hoverEffect}`}>
         {/* <h2 className={styles.title}>{title}</h2> */}
         {/*<p className={styles.paragraph}>{paragraph}</p>*/}
         <Link href="/selected-work" className={styles.button}>

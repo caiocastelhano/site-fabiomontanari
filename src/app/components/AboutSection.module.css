@@ -6,6 +6,7 @@
   padding: 120px 24px;
   text-align: center;
   z-index: 0;
+  background-color: var(--background)
 }
 
 .aboutSection::before {
@@ -75,6 +76,11 @@
 .visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
 }
 
 /* TABLET */
