@@ -154,19 +154,15 @@
   align-items: center;
 }
 
-.linkButton {
-  margin-top: 12px;
-  font-size: 0.9rem;
-  padding: 6px 24px;
-  background-color: #1c1c1c;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+.captionLink {
+  color: #333;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: color 0.3s ease;
 }
 
-.linkButton:hover {
-  background-color: #444;
+.captionLink:hover {
+  color: #555;
 }
 
 /* TABLET */

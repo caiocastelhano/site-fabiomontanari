@@ -33,8 +33,7 @@ const industryDictionary = {
       image6: "https://events.yorku.ca/events/industry-talks-2-0/",
       image7: "https://www.youtube.com/live/M1vthuCPH88?si=7-r6P3_3bj4OcjjA&t=876",
       image11: "https://www.vaughanfilmfestival.com/iff2024"
-    },
-    buttonText: "Check it out"
+    }
   },
 
   pt: {
@@ -71,8 +70,7 @@ const industryDictionary = {
       image6: "https://events.yorku.ca/events/industry-talks-2-0/",
       image7: "https://www.youtube.com/live/M1vthuCPH88?si=7-r6P3_3bj4OcjjA&t=876",
       image11: "https://www.vaughanfilmfestival.com/iff2024"
-    },
-    buttonText: "Dá uma olhada"
+    }
   }
 };
 
