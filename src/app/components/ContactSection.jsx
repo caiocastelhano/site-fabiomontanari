@@ -22,7 +22,7 @@ export default function ContactSection({ language = 'en' }) {
         ref={ref}
         className={`${styles.overlay} ${styles.hoverEffect} ${styles.fadeWrapper} ${isVisible ? styles.visible : styles.hidden}`}
       >
-        <h2 className={styles.title}>{title}</h2>
+        {/* <h2 className={styles.title}>{title}</h2> */}
         <p className={styles.paragraph}>{paragraph}</p>
         <div className={styles.emails}>
           {emails.map(({ label, email }) => (
