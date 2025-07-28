@@ -11,17 +11,15 @@ export default function ContactSection({ language = 'en' }) {
   return (
     <section
       id="contact"
-      className={styles.contactSection}
+      ref={ref}
+      className={`${styles.contactSection} ${styles.fadeWrapper} ${isVisible ? styles.visible : styles.hidden}`}
       aria-label={
         language === 'pt'
           ? 'Seção de contato com Fabio Montanari'
           : 'Contact section for Fabio Montanari'
       }
     >
-      <div
-        ref={ref}
-        className={`${styles.overlay} ${styles.hoverEffect} ${styles.fadeWrapper} ${isVisible ? styles.visible : styles.hidden}`}
-      >
+      <div className={`${styles.overlay} ${styles.hoverEffect}`}>
         {/* <h2 className={styles.title}>{title}</h2> */}
         <p className={styles.paragraph}>{paragraph}</p>
         <div className={styles.emails}>

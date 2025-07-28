@@ -12,17 +12,15 @@ export default function TeachingSection({ language = 'en' }) {
   return (
     <section
       id="industry-engagement"
-      className={styles.teachingSection}
+      ref={ref}
+      className={`${styles.teachingSection} ${styles.fadeWrapper} ${isVisible ? styles.visible : styles.hidden}`}
       aria-label={
         language === 'pt'
           ? 'Seção de pesquisa e parcerias com a indústria'
           : 'Industry engagement and research section'
       }
     >
-      <div
-        ref={ref}
-        className={`${styles.overlay} ${styles.hoverEffect} ${styles.fadeWrapper} ${isVisible ? styles.visible : styles.hidden}`}
-      >
+      <div className={`${styles.overlay} ${styles.hoverEffect}`}>
         {/* <h2 className={styles.title}>{title}</h2> */}
         {/*<p className={styles.paragraph}>{paragraph}</p>*/}
         <Link href="/industry-engagement" className={styles.button}>
