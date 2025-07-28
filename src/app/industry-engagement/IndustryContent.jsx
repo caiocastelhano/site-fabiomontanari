@@ -10,15 +10,15 @@ export default function IndustryContent() {
   const t = industryDictionary[language];
 
   const images = [
-    { filename: "image1.webp", key: "image1" },
     { filename: "image2.webp", key: "image2" },
     { filename: "image3.webp", key: "image3" },
+    { filename: "image1.webp", key: "image1" },
     { filename: "image4.webp", key: "image4" },
     { filename: "image5.webp", key: "image5" },
     { filename: "image6.webp", key: "image6" },
     { filename: "image7.webp", key: "image7" },
-    { filename: "image8.webp", key: "image8" },
     { filename: "image9.webp", key: "image9" },
+    { filename: "image8.webp", key: "image8" },
     { filename: "image10.webp", key: "image10" },
     { filename: "image11.webp", key: "image11" },
     { filename: "image12.webp", key: "image12" },
