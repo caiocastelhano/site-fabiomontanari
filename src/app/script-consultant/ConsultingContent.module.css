@@ -64,6 +64,25 @@
   margin-top: 3rem;
 }
 
+.paragraphAfterBlurbs {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #fff;
+  margin-top: 4rem;
+  margin-bottom: 1.6rem;
+}
+
+.fadeIn {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fadeIn:global(.visible) {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* TABLET */
 @media (max-width: 900px) {
   .container {
