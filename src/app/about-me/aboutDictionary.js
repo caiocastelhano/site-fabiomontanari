@@ -4,10 +4,10 @@ const aboutDictionary = {
     intro: "Here's a few things you won't find on my LinkedIn.",
 
     multiculturalTitle: "Multi-cultural experience",
-    multiculturalText: "Born and raised in Brazil, I earned my MFA at Columbia University (New York City) and now call Toronto home. Having worked across multiple countries—including the US, Brazil, Canada, Venezuela, and Argentina—my storytelling is enriched by diverse cultural perspectives. Turns out, broadening horizons works wonders for plot twists.",
+    multiculturalText: "Born and raised in Brazil, I earned my MFA at Columbia University in New York City and now call Toronto home. Having worked across multiple countries—including the US, Brazil, Canada, Venezuela, and Argentina—my storytelling is impacted by diverse cultural perspectives. Turns out, a little perspective can shift the entire plot.",
 
     collaborationTitle: "Collaboration",
-    collaborationText: "I'm perfectly happy writing solo, but very few things beat the magic of a well-oiled writers' room in full flow. I've worn many hats—from Staff Writer to Head Writer—and I've also developed and sold original series for major players. Whether building something from scratch or jumping aboard mid-process, I'm all in—as long as the coffee's flowing. Lots of coffee.",
+    collaborationText: "I'm perfectly happy writing solo, but very few things beat the magic of a writers' room in full flow. I've worn many hats—from Staff Writer to Head Writer—and I've also developed and sold original series for major players. Whether building something from scratch or joining mid-process, I'm all in—as long as the coffee's flowing. Lots of coffee.",
 
     characterTitle: "Character-Driven Narratives",
     characterText: "I've tackled everything from musicals (Netflix), broad comedies (Netflix), and coming-of-age dramas (HBO), to medical thrillers (Prime Video). I love mixing genres to explore fresh storytelling possibilities. But I'm especially drawn to crafting nuanced, counterintuitive characters—often outsiders who never quite fit in. Maybe it's my past life as an actor, my current one as an immigrant, or simply my soft spot for misfits.",
@@ -17,7 +17,7 @@ const aboutDictionary = {
 
     innovationTitle: "Exploring New Frontiers",
     innovationText: (
-      <p>{`I'm always drawn to new formats, new technologies, and new ways of telling stories. I currently lead a research project on the intersection of AI and storytelling through `}
+      <p>{`I'm always drawn to new formats, new technologies, and innovation as a way to push stories forward. I currently lead a research project on the intersection of AI and storytelling through `}
         <a
           href="https://www.yorku.ca/research/connected-minds/"
           target="_blank"
@@ -26,7 +26,7 @@ const aboutDictionary = {
         >
           Connected Minds
         </a>
-        {`. I'm also a Research Associate at `}
+        {`. I'm a Research Associate at `}
         <a
           href="https://ampd.yorku.ca/sensorium/"
           target="_blank"
@@ -44,7 +44,7 @@ const aboutDictionary = {
         >
           CERLAC
         </a>
-        {`. Innovation isn't a side project—it's part of how I keep pushing stories forward. I've also written an award-winning transmedia project recognized by Cannes Lions, Clio, and the One Club.`}
+        {`. I've also written an award-winning transmedia project recognized by Cannes Lions, Clio, and the One Club.`}
       </p>
     ),
 
