@@ -62,13 +62,13 @@ export const dictionary = {
 
   projects: {
     en: {
-      title: 'Selected Work',
+      title: 'SELECTED WORK',
       paragraph:
         'From global streamers to indie gems—here’s a look at the stories I’ve helped bring to life.',
       button: 'Explore the Projects',
     },
     pt: {
-      title: 'Trabalhos Selecionados',
+      title: 'TRABALHOS SELECIONADOS',
       paragraph:
         'De plataformas globais a pérolas independentes — aqui estão algumas das histórias que ajudei a transformar em realidade.',
       button: 'Explorar os Projetos',
@@ -77,13 +77,13 @@ export const dictionary = {
 
   teaching: {
     en: {
-      title: 'Industry Engagement & Research',
+      title: 'INDUSTRY ENGAGEMENT',
       paragraph:
         'Talking craft, process, and the future of storytelling—onstage and off.',
       button: 'Join the Conversation',
     },
     pt: {
-      title: 'Pesquisa & Parcerias com a Indústria',
+      title: 'PARCERIAS COM A INDÚSTRIA',
       paragraph:
         'Falando sobre técnica, processo e o futuro da narrativa — em cena e fora dela.',
       button: 'Participar da Conversa',
@@ -92,13 +92,13 @@ export const dictionary = {
 
   consulting: {
     en: {
-      title: 'Script Consultant & Development',
+      title: 'SCRIPT CONSULTANT',
       paragraph:
         'Got a story in the works? I’m here to help shape it.',
       button: 'Ready to Write?',
     },
     pt: {
-      title: 'Consultoria de Roteiro & Desenvolvimento',
+      title: 'CONSULTORIA DE ROTEIRO',
       paragraph:
         'Tem uma história em andamento? Estou aqui para ajudar a dar forma a ela.',
       button: 'Pronto para Escrever?',
@@ -107,13 +107,13 @@ export const dictionary = {
 
   about: {
     en: {
-      title: 'About Me',
+      title: 'ABOUT ME',
       paragraph:
         'Things you won’t find on my LinkedIn.',
       button: 'Beyond the Bio',
     },
     pt: {
-      title: 'Sobre Mim',
+      title: 'SOBRE MIM',
       paragraph:
         'Coisas que você não vai encontrar no meu LinkedIn.',
       button: 'Além da Bio',
