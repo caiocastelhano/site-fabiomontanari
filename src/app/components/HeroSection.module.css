@@ -169,6 +169,10 @@
     text-overflow: ellipsis;
   }
 
+  .platform {
+    font-size: 0.5rem;
+  }
+
   .heroSwiper :global(.swiper-slide) {
     height: auto !important;
   }
