@@ -1,7 +1,7 @@
 const consultingDictionary = {
   en: {
     pageTitle: "Script Consultant & Development",
-    intro: `I help writers shape their strongest stories—drawing on years of creating for networks, indies, and original series of my own. As a professor and mentor, I love helping writers find their voice and balance character-driven narratives with a clear sense of structure. \n\nHave a script that needs fresh eyes or a concept you want to build? \n\nReach out. I’m ready to collaborate.`,
+    intro: `I help writers shape their strongest stories—drawing on years of creating for networks, indies, and original series of my own. As a professor and mentor, I love helping writers find their voice and balance character-driven narratives with a clear sense of structure. \n\nHave a script that needs fresh eyes or a concept you want to build? \n\nLet’s discuss.`,
     blurbs: [
       {
         text: `Script notes from Fabio were instrumental to the advancement of my scripts. He does not provide a "paint by numbers" checklist like some services. Instead, Fabio provided thoughtful insights that revealed hidden decision points in the script, forcing my hand to take the sometimes painful steps necessary to take my script up several levels. He was engaged, supportive, and honest, sometimes frustratingly, but necessarily, so. I found his help invaluable and have returned to him multiple times.`,
@@ -9,11 +9,11 @@ const consultingDictionary = {
       },
       {
         text: `Working with Fabio as my thesis supervisor was an incredibly rewarding experience. He brought a deep sensitivity and curiosity to each conversation, always guiding me toward the emotional core of my story. His thoughtful feedback helped me clarify the truth of my characters and anchor each scene in specific, meaningful stakes. Fabio was consistently generous with his time, energy, and script notes—always detailed, always insightful. I'm deeply grateful for his support and guidance throughout my screenwriting process.`,
-        author: "Jessica Huras - Jessica's script just got awarded from Telefilm at the Regional level in Canada"
+        author: "Jessica Huras - Writer, Tides, Telefilm Production Program 2025"
       },
       {
         text: `I’ve had the pleasure of working with Fabio on a variety of projects, including three feature film screenplays and a theater play. Fabio’s cultural depth is remarkable. Beyond his sharp cinematic mind, he draws from a vast repertoire of literature and music, making him an endless source of inspiration and references. With an impressive track record of successful projects and academic training from some of the world’s top universities, Fabio is truly a master of the audiovisual craft — working with him often feels like being in the middle of a brilliant, engaging masterclass. Above all, he is kind, generous in collaboration, and knows how to bring his ideas forward while also respecting and building on the ideas of others.`,
-        author: "Rafael Barioni – CEO Moond Hunter (Creative Studio based in the USA, Colombia, Brazil, and Belgium)"
+        author: "Rafael Barioni - CEO Moond Hunter (Creative Studio based in the USA, Colombia, Brazil, and Belgium)"
       }
     ]
   },
@@ -28,7 +28,7 @@ const consultingDictionary = {
       },
       {
         text: `Trabalhar com o Fabio como meu orientador de tese foi uma experiência extremamente rica. Ele trouxe uma sensibilidade e curiosidade profundas a cada conversa, sempre me guiando para o núcleo emocional da minha história. Seus comentários me ajudaram a esclarecer as verdades dos personagens e dar significado real a cada cena. Fabio foi sempre generoso com seu tempo, energia e leituras — sempre detalhistas, sempre precisas. Sou profundamente grata por seu apoio ao longo de todo meu processo de escrita.`,
-        author: "Jessica Huras - Seu roteiro foi premiado recentemente pela Telefilm no Canadá (nível regional)"
+        author: "Jessica Huras - Roteirista, Tides, Telefilm Production Program 2025"
       },
       {
         text: `Tive o prazer de trabalhar com Fabio em uma variedade de projetos, incluindo três roteiros de longas-metragens e uma peça de teatro. A profundidade cultural do Fabio é impressionante. Para além de seu olhar cinematográfico afiado, ele se alimenta de um vasto repertório de literatura e música, tornando-se uma fonte inesgotável de inspiração e referências. Com um histórico impressionante de projetos bem-sucedidos e formação acadêmica em algumas das melhores universidades do mundo, Fabio é, de fato, um mestre da linguagem audiovisual — trabalhar com ele muitas vezes parece estar no meio de uma aula magna brilhante e envolvente. Acima de tudo, ele é gentil, generoso na colaboração e sabe como apresentar suas ideias respeitando e expandindo as ideias dos outros.`,
