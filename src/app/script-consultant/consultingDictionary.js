@@ -1,6 +1,6 @@
 const consultingDictionary = {
   en: {
-    pageTitle: "Script Consultant & Development",
+    pageTitle: "Script Consultant",
     intro: `I help writers shape their strongest stories—drawing on years of creating for networks, indies, and original series of my own. As a professor and mentor, I love helping writers find their voice and balance character-driven narratives with a clear sense of structure. \n\nHave a script that needs fresh eyes or a concept you want to build? \n\nLet’s discuss.`,
     blurbs: [
       {
@@ -19,8 +19,8 @@ const consultingDictionary = {
   },
 
   pt: {
-    pageTitle: "Consultoria e Desenvolvimento de Roteiro",
-    intro: `Ajudo roteiristas a moldar suas histórias mais potentes — com base em anos criando para emissoras, produções independentes e séries originais minhas. Como professor e mentor, adoro ajudar escritores a encontrar sua voz e equilibrar narrativas centradas nos personagens com uma estrutura bem definida. \n\nEstá com um roteiro que precisa de um novo olhar ou um conceito que quer desenvolver? \n\nFale comigo. Estou pronto para colaborar.`,
+    pageTitle: "Consultoria de Roteiro",
+    intro: `Eu ajudo roteiristas a dar forma às suas histórias mais potentes — com base em anos criando para emissoras, produções independentes e séries originais minhas. Como professor e mentor, meu foco é dar suporte para que roteiristas encontrem sua voz, em um equilíbrio entre uma estrutura sólida com personagens complexos. \n\nEstá com um roteiro que precisa de um novo olhar ou um conceito que quer desenvolver? \n\nFale comigo. Estou pronto para colaborar.`,
     blurbs: [ 
       {
         text: `As anotações de Fabio foram instrumentais para o avanço dos meus roteiros. Ele não oferece um checklist genérico, mas sim observações cuidadosas que revelam decisões-chave escondidas no texto, forçando (no melhor sentido) a tomar decisões difíceis que elevaram o nível da história. Ele foi engajado, honesto e presente — às vezes até frustrantemente honesto, mas sempre necessário. Achei sua ajuda inestimável e já recorri a ele várias vezes.`,
