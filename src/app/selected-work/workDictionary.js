@@ -80,7 +80,7 @@ const workDictionary = {
       inTheWhistle: {
         folder: "in-the-whistle",
         title: "IN THE WHISTLE",
-        role: "Co-Writer & Co-Director | Short film | Comedy",
+        role: "Co-Writer & Co-Director",
         description: `A soccer referee is determined to make a point—even if it ruins the final.`,
         totalImages: 4
       },
@@ -95,14 +95,14 @@ const workDictionary = {
       chessShop: {
         folder: "chess-shop",
         title: "CHESS SHOP",
-        role: "Director & Co-Writer | Short Film | Drama",
+        role: "Director & Co-Writer",
         description: `Two coworkers face closure—and their own fears—on the final day of a failing chess shop.`,
         totalImages: 7
       },
       bestFriends: {
         folder: "best-friends",
         title: "BEST FRIENDS",
-        role: "Director | Short Film | Comedy",
+        role: "Director",
         description: `A coming-of-age comedy about two friends at the edge of adolescence and first love.`,
         totalImages: 9
       }
@@ -111,13 +111,13 @@ const workDictionary = {
 
   pt: {
     pageTitle: "Trabalhos selecionados",
-    introText: "Da Netflix, HBO Max e Amazon Prime Video a filmes independentes premiados — crio histórias em diferentes formatos, gêneros e escalas. Aqui vai um panorama.",
+    introText: "De grandes streamers como Netflix, HBO Max e Prime Video a filmes independentes que circularam por festivais – eu conto histórias em várias formas, tons e tamanhos. Dá uma olhada.",
     projects: {
       suture: {
         folder: "suture",
         title: "SUTURA",
         role: "Criador e Roteirista | Original Amazon Prime",
-        description: `Uma médica improvável aprende o ofício — um ponto ilegal por vez. Seleção oficial da Berlinale - Festival Internacional de Cinema (série de TV, 2025). Gênero: thriller médico. \n\nDisponível no Prime Video (países selecionados).`,
+        description: `Um médico improvável aprende a curar — ponto por ponto, fora da lei. Seleção oficial da Berlinale - Festival Internacional de Cinema (série de TV, 2025). Gênero: thriller médico. \n\nDisponível no Prime Video (países selecionados).`,
         platformLogo: "/images/platforms/prime.webp",
         totalImages: 7,
         videos: ["https://www.youtube.com/embed/iHlwtTziLdQ"]
@@ -126,8 +126,7 @@ const workDictionary = {
         folder: "joint-venture",
         title: "PICO DA NEBLINA",
         role: "Roteirista | HBO Originals",
-        description: `Um thriller sobre um homem tentando se tornar legítimo enquanto navega pelo submundo do crime.
-        Dirigido por Quico e Fernando Meirelles (Cidade de Deus, Dois Papas). \n\nDisponível na HBO.`,
+        description: `Thriller sobre um homem tentando deixar o crime — sem ser engolido por ele. Dirigido por Quico e Fernando Meirelles (Cidade de Deus, Dois Papas). \n\nDisponível na HBO Max.`,
         platformLogo: "/images/platforms/hbo.webp",
         totalImages: 13
       },
@@ -135,7 +134,7 @@ const workDictionary = {
         folder: "only-for-love",
         title: "SÓ SE FOR POR AMOR",
         role: "Roteirista | Original Netflix",
-        description: `Drama de amadurecimento sobre uma banda à beira do sucesso, navegando entre ambição, sonhos grandes e fantasmas pessoais rumo aos holofotes.\n\nDisponível na Netflix.`,
+        description: `Drama musical sobre uma banda à beira do sucesso, navegando entre ambição, sonhos grandes e fantasmas pessoais.\n\nDisponível na Netflix.`,
         platformLogo: "/images/platforms/netflix.webp",
         totalImages: 6,
         videos: ['https://www.youtube.com/embed/vVrR9jjeOXs']
@@ -143,16 +142,16 @@ const workDictionary = {
       missingMatoaka: {
         folder: "missing-matoaka",
         title: "MISSING MATOAKA",
-        role: "Editor Executivo de Roteiro | Projeto Transmídia (BBDO)",
-        description: `Uma ousada releitura indígena do mito de Pocahontas. \n\nVencedora dos prêmios Cannes Lions, Clio e outros.`,
+        role: "Executive Story Editor | Projeto Transmídia (BBDO)",
+        description: `Uma resposta indígena ao mito colonial de Pocahontas — e aos séculos de apagamento. \n\nVencedora dos prêmios Cannes Lions, Clio e outros.`,
         totalImages: 2,
         videos: ['https://www.youtube.com/embed/6PAqRmYklDk']
       },
       invisibleCity: {
         folder: "invisible-city",
         title: "CIDADE INVISÍVEL",
-        role: "Roteirista da equipe | Original Netflix",
-        description: `Um thriller sobrenatural de Carlos Saldanha (A Era do Gelo, Rio) que mistura o folclore brasileiro com um mistério policial contemporâneo.\n\nDisponível na Netflix.`,
+        role: "Roteirista colaborador | Original Netflix",
+        description: `Thriller sobrenatural de Carlos Saldanha (A Era do Gelo, Rio) que mistura o folclore brasileiro com um mistério policial contemporâneo.\n\nDisponível na Netflix.`,
         platformLogo: "/images/platforms/netflix.webp",
         totalImages: 7
       },
@@ -160,7 +159,7 @@ const workDictionary = {
         folder: "samantha",
         title: "SAMANTHA!",
         role: "Roteirista | Original Netflix (2ª temporada)",
-        description: `Uma comédia familiar sobre uma ex-estrela mirim em decadência tentando reconquistar a fama.\n\nDisponível na Netflix.`,
+        description: `Comédia sobre uma ex-estrela mirim em decadência tentando reconquistar a fama.\n\nDisponível na Netflix.`,
         platformLogo: "/images/platforms/netflix.webp",
         totalImages: 6,
         videos: ["https://www.youtube.com/embed/kEyVo8LK3CQ"]
@@ -168,8 +167,8 @@ const workDictionary = {
       madToTheMax: {
         folder: "mad-to-the-max",
         title: "DESAFIO IMPOSSÍVEL",
-        role: "Roteirista | Ficção híbrida da National Geographic",
-        description: `Três especialistas precisam sobreviver em um mundo pós-apocalíptico usando ciência e engenharia.\n\nDisponível no Disney+ (países selecionados).`,
+        role: "Roteirista | NatGeo Híbrido Ficção/Não-ficção",
+        description: `Em um mundo pós-apocalíptico, três especialistas precisam usar seu conhecimento em engenharia e ciência para sobreviverem.\n\nDisponível no Disney+ (países selecionados).`,
         platformLogo: "/images/platforms/natgeo.webp",
         totalImages: 2
       },
@@ -177,7 +176,7 @@ const workDictionary = {
         folder: "the-grill-man",
         title: "CHAPA",
         role: "Roteirista e Diretor",
-        description: `Enquanto o país comemora a Copa do Mundo de futebol, um churrasqueiro encara sua última chance de dignidade.\n\nExibido em mais de 50 festivais e vencedor de diversos prêmios.`,
+        description: `Enquanto o país comemora a Copa do Mundo de futebol, um chapeiro encara sua última chance de dignidade.\n\nExibido em mais de 50 festivais e vencedor de diversos prêmios.`,
         totalImages: 5,
         videos: ["https://www.youtube.com/embed/DoRozrR6Dek"]
       },
@@ -185,36 +184,36 @@ const workDictionary = {
         folder: "my-white-shoes",
         title: "MEU TÊNIS BRANCO",
         role: "Roteirista e Diretor",
-        description: `No coração da cidade, dois irmãos enfrentam um ponto de ruptura violento que abala sua inocência — e seu vínculo. \n\nPrêmio Katharina Otto-Bernstein; bolsa da Caucus Foundation. \n\nMontagem supervisionada por Carol Littleton (E.T.).`,
+        description: `Uma história urbana sobre dois irmãos e o instante que rompe a inocência — e o vínculo entre eles. \n\nPrêmio Katharina Otto-Bernstein; bolsa da Caucus Foundation. \n\nMontagem supervisionada por Carol Littleton (E.T.).`,
         totalImages: 7
       },
       inTheWhistle: {
         folder: "in-the-whistle",
         title: "NO APITO",
-        role: "Corroteirista, Codiretor | Curta-metragem | Comédia",
+        role: "Co-Diretor e Corroteirista",
         description: `Um árbitro de futebol está determinado a fazer valer sua opinião — mesmo que isso arruíne a final.`,
         totalImages: 4
       },
       drauzioFantastico: {
         folder: "drauzio-varella",
         title: "DRAUZIO VARELLA",
-        role: "Roteirista | Globo/Fantástico (Docusséries)",
-        description: `Três séries documentais em estilo vérité com o renomado médico Drauzio Varella.`,
+        role: "Roteirista | Globo/Fantástico",
+        description: `Três séries documentais em estilo vérité com o médico Drauzio Varella.`,
         platformLogo: "/images/platforms/globo.webp",
         totalImages: 2
       },
       chessShop: {
         folder: "chess-shop",
         title: "CHESS SHOP",
-        role: "Diretor e Corroteirista | Curta-metragem | Drama",
-        description: `Dois colegas de trabalho enfrentam o fechamento — e seus próprios medos — no último dia de uma loja de xadrez em decadência.`,
+        role: "Diretor e Corroteirista",
+        description: `No último dia de uma loja de xadrez, dois colegas enfrentam o fim — e o medo da própria decadência.`,
         totalImages: 7
       },
       bestFriends: {
         folder: "best-friends",
         title: "BEST FRIENDS",
-        role: "Diretor | Curta-metragem | Comédia",
-        description: `Uma comédia de amadurecimento sobre dois amigos às vésperas da adolescência e do primeiro amor.`,
+        role: "Diretor",
+        description: `Dois amigos, o fim da infância e o começo do que vem depois — inclusive o amor.`,
         totalImages: 9
       }
     }
