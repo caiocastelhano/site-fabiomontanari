@@ -78,20 +78,20 @@ const aboutDictionary = {
     intro: "Algumas coisas que você não vai encontrar no meu LinkedIn.",
 
     multiculturalTitle: "Experiência multicultural",
-    multiculturalText: "Nascido e criado no Brasil, fiz meu mestrado em Direção na Universidade Columbia (Nova York) e atualmente moro em Toronto. Já trabalhei em vários países — incluindo Estados Unidos, Brasil, Canadá, Venezuela e Argentina — e minha maneira de contar histórias é atravessada por essas experiências culturais diversas. Ampliar horizontes faz muito bem para os enredos, especialmente nos momentos de virada.",
+    multiculturalText: "Nascido e criado no Brasil, fiz meu mestrado em Roteiro e Direção na Columbia University (Nova Iorque) e atualmente moro em Toronto. Já trabalhei em vários países — incluindo Estados Unidos, Brasil, Canadá, Venezuela e Argentina — e essas experiências arejam minhas histórias. Afinal, uma perspectiva diferente pode mudar tudo — até aquele Ato 3 que insiste em não fechar.",
 
     collaborationTitle: "Colaboração",
-    collaborationText: "Fico perfeitamente à vontade escrevendo sozinho, mas poucas coisas superam a magia de uma sala de roteiristas bem entrosada em plena ação. Já atuei em várias funções — de roteirista a head writer — e também desenvolvi e vendi séries originais para grandes players. Seja criando algo do zero ou entrando no meio do processo, estou dentro — desde que o café não pare. Muito café.",
+    collaborationText: "Adoro o ritual de sentar para escrever sozinho, mas poucas coisas superam a magia de uma sala de roteiristas bem entrosada. Já atuei em várias funções — de roteirista a head writer — também desenvolvi e vendi séries originais para grandes players. Seja criando algo do zero ou entrando no meio do processo, estou dentro — desde que haja café envolvido. Muito café.",
 
     characterTitle: "Narrativas centradas em personagem",
-    characterText: "Já trabalhei com musicais (Netflix), comédias escrachadas (Netflix), dramas de amadurecimento (HBO) e thrillers médicos (Prime Video). Gosto de misturar gêneros para explorar novas formas de contar histórias. Mas o que mais me atrai é criar personagens complexos e inesperados — muitas vezes outsiders, pessoas que não se encaixam. Talvez por ter sido ator, por ser imigrante, ou só por ter uma quedinha por quem anda fora da curva.",
+    characterText: "Já escrevi de tudo um pouco: dramas musicais e comédias populares (Netflix), dramas (HBO) e thrillers médicos (Prime Video). Gosto de misturar gêneros para explorar novas formas de contar histórias. Mas a parte do processo que eu mais curto é criar personagens inesperados — tenho uma queda especial por outsiders que, ao mesmo tempo, recusam esse papel de deslocados.",
 
     directingTitle: "Direção",
-    directingText: "Meus filmes independentes já foram exibidos em mais de 50 festivais ao redor do mundo, de Santa Barbara ao Palm Springs Shortsfest. Tenho um gosto especial por dirigir atores não profissionais — buscando interpretações autênticas que refletem minha perspectiva como diretor do Sul Global, sensível a histórias de desigualdade e disparidade. Estar no set mantém meu olhar narrativo afiado — e me dá um bom motivo para parar de trabalhar de pijama todo dia.",
+    directingText: "Meus filmes independentes já foram exibidos em mais de 50 festivais ao redor do mundo, de Santa Barbara ao Palm Springs Shortsfest. Tenho um prazer especial em dirigir atores não-profissionais, sempre na busca por performances autênticas. Tendo a dirigir histórias sobre desigualdade social, mesmo em gêneros diferentes. Estar no set mantém meu olhar narrativo afiado — e me dá uma desculpa pra sair do home office e vestir algo além do pijama.",
 
-    innovationTitle: "Explorando novas fronteiras",
+    innovationTitle: "Novas Fronteiras",
     innovationText: (
-      <p>{`Sempre fui atraído por novos formatos, novas tecnologias e novas formas de contar histórias. Atualmente, lidero um projeto de pesquisa sobre a interseção entre IA e narrativa através do `}
+      <p>{`Sempre tive fascínio por novos formatos, novas tecnologias e novas formas de contar histórias. Atualmente, lidero um projeto de pesquisa sobre a interseção entre IA e narrativa através do `}
         <a
           href="https://www.yorku.ca/research/connected-minds/"
           target="_blank"
@@ -118,13 +118,13 @@ const aboutDictionary = {
         >
           CERLAC
         </a>
-        {`. Inovação não é um projeto paralelo—é parte do que me impulsiona a levar as histórias adiante. Também escrevi um projeto transmídia premiado e reconhecido por Cannes Lions, Clio e The One Club.`}
+        {`. Também assino um projeto transmídia que foi premiado e reconhecido por Cannes Lions, Clio e The One Club.`}
       </p>
     ),
 
     teachingTitle: "Ensino e mentoria",
     teachingText: (
-      <p>{`Atualmente sou coordenador da área de Roteiro na `}
+      <p>{`Atualmente sou Area Head da área de Roteiro na `}
         <a
           href="https://ampd.yorku.ca/people/fabio-montanari/"
           target="_blank"
@@ -133,15 +133,15 @@ const aboutDictionary = {
         >
           York University
         </a>
-        {` (Canadá), onde ensino estudantes de cinema dos cursos de Mestrado (MFA) e Bacharelado (BFA). Já dei aulas no Brasil e nos Estados Unidos (Barnard College e Columbia University), sempre equilibrando prática e teoria. Também atuo como mentor de cineastas em formação por meio de iniciativas como o BBIC, maior programa do Canadá voltado para criadores negros. Esse equilíbrio entre indústria e academia é o que mantém minha escrita viva—dentro e fora da sala de aula.`}
+        {` (Canadá), onde ensino estudantes de cinema nos cursos de Mestrado (MFA) e Bacharelado (BFA). Já dei aulas no Brasil e nos Estados Unidos (Barnard College e Columbia University), sempre buscando equilibrar prática e teoria. Também atuo como mentor de cineastas em formação por meio de iniciativas como o BBIC, maior programa do Canadá voltado para criadores negros. Essa troca constante entre a indústria e a academia é o que mantém minha escrita viva — dentro e fora da sala de aula.`}
       </p>
     ),
 
     childActorTitle: "Ator mirim",
-    childActorText: "Sim, é verdade — atuei profissionalmente desde a infância até meados dos 20 e poucos anos, na TV, nos palcos e em incontáveis comerciais. Felizmente, boa parte desse material está enterrada pela internet. Atuar moldou profundamente meu entendimento sobre dramaturgia, mas hoje fico feliz nos bastidores.",
+    childActorText: "Pois é. Atuei profissionalmente desde a infância até meados dos 20 e poucos anos, na TV, em teatro profissional e em incontáveis comerciais. Felizmente, boa parte desse material está enterrado pela internet. Atuar moldou profundamente meu entendimento sobre dramaturgia, mas hoje prefiro muito mais estar atrás das câmeras.",
 
-    planBTitle: "Plano B (Não Conte ao Meu Agente)",
-    planBText: "Estou na indústria há quase duas décadas, mas ainda acredito — em segredo — que vou virar jogador de futebol profissional quando crescer. Só falta aquela ligação.",
+    planBTitle: "Plano B (não conta para minha agente)",
+    planBText: "Estou na indústria há quase duas décadas, mas ainda acredito que quando eu crescer eu vou virar jogador de futebol profissional. Acho que vai, hein.",
 
     closingTitle: "Vamos Conversar",
     closingText: "Tem um projeto em mente? Escreva e vamos conversar sobre possibilidades—de preferência com um café:\n\nfabiobmontanari@gmail.com (direto)\nluisagiesteira@atena.art.br (agência: Atena)",
