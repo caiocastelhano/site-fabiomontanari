@@ -75,7 +75,7 @@ const aboutDictionary = {
 
   pt: {
     title: "Sobre mim",
-    intro: "Aqui estão algumas coisas que você não vai encontrar no meu LinkedIn.",
+    intro: "Algumas coisas que você não vai encontrar no meu LinkedIn.",
 
     multiculturalTitle: "Experiência multicultural",
     multiculturalText: "Nascido e criado no Brasil, fiz meu mestrado em Direção na Universidade Columbia (Nova York) e atualmente moro em Toronto. Já trabalhei em vários países — incluindo Estados Unidos, Brasil, Canadá, Venezuela e Argentina — e minha maneira de contar histórias é atravessada por essas experiências culturais diversas. Ampliar horizontes faz muito bem para os enredos, especialmente nos momentos de virada.",
