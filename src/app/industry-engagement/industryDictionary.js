@@ -1,6 +1,6 @@
 const industryDictionary = {
   en: {
-    title: "Industry Engagement & Research",
+    title: "Industry Engagement",
 
     intro: `At its core, storytelling is about connecting with people where they are. I actively engage with fellow creators and audiences at festivals, panels, and industry events, covering everything from writers' room dynamics to my latest research on AI and Storytelling. Have an event or conversation in mind? Reach out—I'm always excited to join the discussion.`,
 
