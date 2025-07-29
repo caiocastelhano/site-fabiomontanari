@@ -2,14 +2,7 @@ export const dictionary = {
   hero: {
     en: {
       paragraph:
-        'I tell stories that travel—from streamers like Netflix, HBO Max, and Prime Video to indie films that found their way into festivals. I write, direct, and teach—always chasing character, rhythm, and meaning. At York University, I explore where stories come from, where they’re headed, and what happens when they collide with technology. Welcome.',
-      sections: [
-        { id: 'selected-work', label: 'Selected Work' },
-        { id: 'industry-engagement', label: 'Industry Engagement' },
-        { id: 'script-consultant', label: 'Script Consultant' },
-        { id: 'about-me', label: 'About Me' },
-        { id: 'contact', label: 'Contact' },
-      ],
+        'I tell stories that travel—from streamers like Netflix, HBO Max, and Prime Video to indie films that found their way into festivals. I write, direct, and teach—always chasing character, rhythm, and meaning. At York University, I explore where stories come from, where they’re headed, and what happens when they collide with technology.',
       carouselCaptions: [
         {
           titleLine: 'My White Shoes | Writer & Director',
@@ -31,14 +24,7 @@ export const dictionary = {
     },
     pt: {
       paragraph:
-        'Conto histórias que circulam — de plataformas como Netflix, HBO Max e Prime Video a filmes independentes que encontraram seu caminho em festivais. Escrevo, dirijo e dou aulas — sempre em busca de personagem, ritmo e sentido. Na York University, investigo de onde vêm as histórias, para onde vão e o que acontece quando colidem com a tecnologia. Bem-vindo.',
-      sections: [
-        { id: 'selected-work', label: 'Trabalhos Selecionados' },
-        { id: 'industry-engagement', label: 'Atuação na Indústria' },
-        { id: 'script-consultant', label: 'Consultoria de Roteiro' },
-        { id: 'about-me', label: 'Sobre Mim' },
-        { id: 'contact', label: 'Contato' },
-      ],
+        'Eu conto histórias que atravessam fronteiras — de plataformas como Netflix, HBO Max e Prime Video a filmes independentes que encontraram seu caminho em festivais. Escrevo, dirijo e ensino — sempre em busca de personagem, ritmo e sentido. Na York University, pesquiso de onde vêm as histórias, para onde vão e o que acontece quando colidem com a tecnologia.',
       carouselCaptions: [
         {
           titleLine: 'Meu Tênis Branco | Diretor e Roteirista',
@@ -83,7 +69,7 @@ export const dictionary = {
       button: 'Join the Conversation',
     },
     pt: {
-      title: 'PARCERIAS COM A INDÚSTRIA',
+      title: 'INDÚSTRIA EM PAUTA',
       paragraph:
         'Falando sobre técnica, processo e o futuro da narrativa — em cena e fora dela.',
       button: 'Participar da Conversa',
@@ -155,7 +141,7 @@ export const dictionary = {
     role: "Roteirista / Diretor",
     nav: [
       'Trabalhos Selecionados',
-      'Atuação na Indústria',
+      'Indústria em Pauta',
       'Consultoria de Roteiro',
       'Sobre Mim',
     ],
