@@ -39,7 +39,7 @@ const industryDictionary = {
   pt: {
     title: "Atuação na Indústria e Pesquisa",
     
-    intro: `No fundo, contar histórias é sobre se conectar com as pessoas onde elas estão. Participo ativamente de festivais, mesas e encontros da indústria, dialogando com criadores e públicos sobre temas que vão desde a dinâmica das salas de roteiro até minhas pesquisas mais recentes sobre IA e narrativa. Tem um evento ou conversa em mente? Escreve pra mim — estou sempre aberto ao diálogo.`,
+    intro: `Acredito mesmo que contar histórias é sobre se conectar com as pessoas onde elas estão. Por isso, participo ativamente de festivais, mesas e eventos da indústria, dialogando com criadores e públicos sobre temas que vão desde a dinâmica das salas de roteiro até minhas pesquisas mais recentes sobre IA e narrativa. Tem um evento ou conversa em mente? Escreve para mim — estou sempre aberto ao diálogo.`,
 
     captions: {
       image1: "Entrevista sobre minha carreira no maior podcast de roteiro do Brasil.",
