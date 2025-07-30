@@ -141,6 +141,7 @@
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: opacity, transform;
 }
 
 .visible {
@@ -167,6 +168,11 @@
 
 /* MOBILE */
 @media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+    row-gap: 64px; /* ✅ mais espaço vertical para o fade-in aparecer com mais destaque */
+  }
+
   .modal {
     flex-direction: column;
     align-items: center;
