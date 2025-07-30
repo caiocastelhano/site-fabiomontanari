@@ -55,6 +55,13 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap&subset=latin-ext"
         />
         <link
+          rel="preload"
+          href="https://fonts.gstatic.com/s/cinzel/v16/8vIT7w4qzmVxsZbyiNaeGdU.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap&subset=latin-ext"
           media="all"
