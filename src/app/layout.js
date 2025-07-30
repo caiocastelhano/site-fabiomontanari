@@ -48,6 +48,25 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="preload"
+          as="style"
+          href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap&subset=latin-ext"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap&subset=latin-ext"
+          media="all"
+          onload="this.media='all'"
+        />
+        <noscript>
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap&subset=latin-ext"
+          />
+        </noscript>
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <LanguageProvider>
           {children}

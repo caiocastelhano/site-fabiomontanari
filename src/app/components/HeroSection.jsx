@@ -39,7 +39,12 @@ export default function HeroSection({ language = 'en' }) {
         autoplay={{ delay: 4000, disableOnInteraction: false }}
         loop
         slidesPerView={1}
-        pagination={{ clickable: true }}
+        pagination={{
+          clickable: true,
+          renderBullet: (index, className) => {
+            return `<span class="${className}" aria-label="Go to slide ${index + 1}"></span>`;
+          },
+        }}
         navigation
       >
         {images.map((num, index) => (
@@ -58,7 +63,7 @@ export default function HeroSection({ language = 'en' }) {
                   objectFit: 'cover',
                   objectPosition: 'center center',
                 }}
-                priority
+                priority={index === 0}
               />
               <div className={styles.mask} aria-hidden="true" />
               <div className={styles.caption}>

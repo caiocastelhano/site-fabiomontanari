@@ -75,7 +75,7 @@
 }
 
 .heroSwiper :global(.swiper-pagination-bullet) {
-  display: inline-block;
+  position: relative;
   width: 10px;
   height: 10px;
   background: white;
@@ -83,6 +83,18 @@
   margin: 0 6px;
   opacity: 0.4;
   transition: opacity 0.3s ease;
+}
+
+/* NOVO: área clicável invisível maior */
+.heroSwiper :global(.swiper-pagination-bullet)::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  background: transparent;
 }
 
 .heroSwiper :global(.swiper-pagination-bullet-active) {
