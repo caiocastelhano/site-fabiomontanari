@@ -58,7 +58,6 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap&subset=latin-ext"
           media="all"
-          onload="this.media='all'"
         />
         <noscript>
           <link
