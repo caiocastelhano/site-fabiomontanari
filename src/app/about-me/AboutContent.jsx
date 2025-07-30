@@ -61,14 +61,32 @@ export default function AboutContent() {
         </section>
 
         <div className={styles.socialIcons}>
-          <a href="https://www.linkedin.com/in/fabio-montanari-1616a931/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
-            <FaLinkedin />
+          <a
+            href="https://www.linkedin.com/in/fabio-montanari-1616a931/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit Fabio Montanari's LinkedIn profile"
+            title="Visit Fabio Montanari's LinkedIn profile"
+          >
+            <FaLinkedin aria-hidden="true" focusable="false" />
           </a>
-          <a href="https://www.instagram.com/fabiomontanari/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
-            <FaInstagram />
+          <a
+            href="https://www.instagram.com/fabiomontanari/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit Fabio Montanari's Instagram profile"
+            title="Visit Fabio Montanari's Instagram profile"
+          >
+            <FaInstagram aria-hidden="true" focusable="false" />
           </a>
-          <a href="https://www.imdb.com/pt/name/nm5888483/" target="_blank" rel="noopener noreferrer" aria-label="IMDb" title="IMDb">
-            <SiImdb />
+          <a
+            href="https://www.imdb.com/pt/name/nm5888483/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit Fabio Montanari's IMDb page"
+            title="Visit Fabio Montanari's IMDb page"
+          >
+            <SiImdb aria-hidden="true" focusable="false" />
           </a>
         </div>
       </div>
