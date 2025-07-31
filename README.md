@@ -34,14 +34,14 @@ The site is developed as a Next.js application and includes:
 - CSS Modules
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [Swiper](https://swiperjs.com/) for carousels
-- [Netlify](https://www.netlify.com/) – hosting (production)
-- [Vercel](https://vercel.com/) – preview deployments (development)
+- [Netlify](https://www.netlify.com/) – production hosting
+- [Vercel](https://vercel.com/) – preview deployments
 
-## 🚧 Status
+## ✅ Status
 
-The website is in its final development stages.  
-You can preview the current version here:  
-👉 [https://site-fabiomontanari.vercel.app/](https://site-fabiomontanari.vercel.app/)
+The website is live and fully deployed.  
+Access the official site here:  
+👉 [https://www.fabiomontanari.com](https://www.fabiomontanari.com)
 
 ## 👨‍💻 Developer
 
