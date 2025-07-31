@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Fabio Montanari",
   description: "Discover the work of Fabio Montanari — Brazilian screenwriter, director, and educator exploring storytelling, research, and creative consulting.",
-  metadataBase: new URL("https://site-fabiomontanari.vercel.app/"),
+  metadataBase: new URL("https://fabiomontanari.com"),
   robots: "index, follow",
   alternates: {
     canonical: "/",
@@ -23,7 +23,7 @@ export const metadata = {
   openGraph: {
     title: "Fabio Montanari",
     description: "Discover the work of Fabio Montanari — Brazilian screenwriter, director, and educator exploring storytelling, research, and creative consulting.",
-    url: "https://site-fabiomontanari.vercel.app/",
+    url: "https://fabiomontanari.com/",
     siteName: "Fabio Montanari",
     images: [
       {
@@ -41,6 +41,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Fabio Montanari",
     description: "Discover the work of Fabio Montanari — Brazilian screenwriter, director, and educator exploring storytelling, research, and creative consulting.",
+    url: "https://fabiomontanari.com/", 
     images: ["/og-image.jpg"],
   },
 };
